@@ -21,8 +21,7 @@ title: Joonas Kuorilehto – kotisivu
 
 <!-- Pääsisältö -->
 <div id="laatikot">
-  <!-- Hyödyllisiä tuotoksia -->
-  <div id="tuotoksia" class="laatikko">
+  <div id="blogitekstit" class="laatikko">
     <h1>Blogissa</h1>
     {% for post in site.posts %}
     <h2><a href="{{ post.url }}">{{ post.title }}</a> <span class="pub_date">({{ post.date | date:"%d.%m.%Y" }})</span></h2>
