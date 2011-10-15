@@ -1,0 +1,62 @@
+---
+layout: main
+title: Joonas Kuorilehto – kotisivu
+---
+
+<!-- Oikean puolen palkki -->
+<div id="muualla" class="laatikko">
+  <h3>Joonas muualla</h3>
+  <p>
+  </p>
+  <ul>
+    <li><a href="http://citna.yx.fi/">
+          <img width="64" height="64" src="img/citna.jpg" />
+          Citna-blogi</a>
+        <small>Koiran oma blogi</small></li>
+    <li><a href="http://joneskoo.kapsi.fi/kuveja/">kuveja</a>
+        <small>Sekalaisia valokuvia, menossa mukana</small></li>
+  </ul>
+  <h3>Blogissa</h3>
+  <ul>
+    {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="blog_date">({{ post.date | date:"%Y-%m-%d" }})</span></li>
+    {% endfor %}
+  </ul>
+  
+  <span class="clear"/>
+</div>
+
+<!-- Pääsisältö -->
+<div id="laatikot">
+  <!-- Hyödyllisiä tuotoksia -->
+  <div id="tuotoksia" class="laatikko">
+    <h2>Hyödyllisiä tuotoksia?</h2>
+    <ul>
+      <li><a href="http://yx.fi/">yx.fi</a>-lyhyturlipalvelu
+          <small class="desc">Lyhentää pitkät URLit sopivan lyhyiksi saneltavaksi puhelimessa tai irkkiin.</small></li>
+      <li><a href="https://github.com/kapsiry/sikteeri">Sikteeri</a>
+          <small class="desc">
+            Mukana kehittämässä <a href="http://www.kapsi.fi/">
+            Kapsi Internet-käyttäjät</a> ry:n jäsenhallinta- ja
+            laskutusjärjestelmää.
+          </small></li>
+    </ul>
+  </div>
+
+  <!-- Quick & dirty -->
+  <div id="quickndirty" class="laatikko">    
+    <h2>Quick &amp; dirty</h2>
+    <ul>
+      <li>irssi-teema gdv.theme</li>
+      <li>bittivahti</li>
+      <li>varabitti</li>
+      <li>wshaper++</li>
+      <li>kuveja</li>
+      <li>adsl_carrier_plot</li>
+      <li><a href="https://joneskoo.kapsi.fi/upload.html">
+          HTTP upload-nopeustesti</a>
+          <small class="desc">Testaa yhteytesi lähetysnopeus.</small></li>
+    </ul>
+  </div>
+</div>

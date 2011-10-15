@@ -1,0 +1,21 @@
+---
+layout: main
+---
+
+<div id="muualla" class="laatikko">
+  <ul>
+    {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="blog_date">({{ post.date | date:"%Y-%m-%d" }})</span></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="laatikko">
+<h1>{{ page.title }}</h1>
+<p class="pub_date">Julkaistu: {{ page.date | date:"%d.%m.%Y" }}</p>
+
+  <div class="post_content">
+    {{content}}
+  </div>
+</div>
