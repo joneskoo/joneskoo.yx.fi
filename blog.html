@@ -10,7 +10,8 @@ title: Joonas Kuorilehto – kotisivu
   </p>
   <ul>
     <li><a href="http://citna.yx.fi/">
-          <img width="64" height="64" src="img/citna.jpg" />
+          <img width="64" height="64" src="img/citna.jpg" 
+               alt="Citna" />
           Citna-blogi</a>
         <small>Koiran oma blogi</small></li>
     <li><a href="http://joneskoo.kapsi.fi/kuveja/">kuveja</a>
@@ -32,6 +33,5 @@ title: Joonas Kuorilehto – kotisivu
     <h2><a href="{{ post.url }}">{{ post.title }}</a> <span class="pub_date">({{ post.date | date:"%d.%m.%Y" }})</span></h2>
     <p class="excerpt">{{ post.excerpt }}</p>
     {% endfor %}
-    </ul>
   </div>
 </div>
