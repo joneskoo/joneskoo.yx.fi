@@ -2,7 +2,9 @@
 layout: post
 title: Kanan sisäfilettä pippurikermakastikkeessa
 excerpt: |-
-Äidin tekemästä kanasta röyhkeästi apinoiden, tässäpä resepti aivan mahtavaan kanaruokaan. Helkan kanssa maisteluiden perusteella n. neljä annosta.
+    Äidin tekemästä kanasta röyhkeästi apinoiden, tässäpä resepti aivan
+    mahtavaan kanaruokaan. Helkan kanssa maisteluiden perusteella n. neljä
+    annosta.
 ---
 
 Äidin tekemästä kanasta röyhkeästi apinoiden, tässäpä resepti aivan mahtavaan kanaruokaan. Helkan kanssa maisteluiden perusteella n. neljä annosta.

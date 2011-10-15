@@ -2,7 +2,9 @@
 layout: post
 title: Hyödyllisiä vinkkejä, osa less
 excerpt: |-
-Olen käyttänyt, kuten varmasti lähes kaikki \*nix-käyttäjät, lessiä niin kauan kuin muistan. Tässä joku aika sitten tuli vastaan pari asiaa, joita en ollut hoksannut. Kenties ovat menneet muiltakin ohi?
+    Olen käyttänyt, kuten varmasti lähes kaikki \*nix-käyttäjät, lessiä niin
+    kauan kuin muistan. Tässä joku aika sitten tuli vastaan pari asiaa, joita en
+    ollut hoksannut. Kenties ovat menneet muiltakin ohi?
 ---
 
 Olen käyttänyt, kuten varmasti lähes kaikki \*nix-käyttäjät, lessiä niin kauan kuin muistan. Tässä joku aika sitten tuli vastaan pari asiaa, joita en ollut hoksannut. Kenties ovat menneet muiltakin ohi?
