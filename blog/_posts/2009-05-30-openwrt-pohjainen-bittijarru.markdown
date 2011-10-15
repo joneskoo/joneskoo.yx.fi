@@ -4,15 +4,7 @@ title: OpenWRT-pohjainen bittijarru
 tags:
     - kotiverkko
     - skriptit
-excerpt:
-    Yhteytenä kotonani on tällä hetkellä Soneran 24/2 Mbit/s ADSL2+ Annex
-    M-yhteys. Sen ongelma on ainakin kuluttajamodeemeilla, että jos ulospäin
-    lähtee dataa, niin viive nousee kohtuuttoman suureksi irkkaamiseen.
-    Keksinkin lopulta ongelmaan mitä parhaimman ratkaisun: läpinäkyvä jarruttava
-    silta ADSL-modeemin ja muun verkon välille. Silta pitää huolta, että IPv4-
-    ja IPv6-yhteydet saavat kaistan jaettua reilusti (= IPv6:lle vähintään
-    puolet) ja pienet paketit menevät joka tapauksessa ensin. Ratkaisun toteutin
-    OpenWRT:n päälle.
+excerpt: Yhteytenä kotonani on tällä hetkellä Soneran 24/2 Mbit/s ADSL2+ Annex M-yhteys. Sen ongelma on ainakin kuluttajamodeemeilla, että jos ulospäin lähtee dataa, niin viive nousee kohtuuttoman suureksi irkkaamiseen. Keksinkin lopulta ongelmaan mitä parhaimman ratkaisun: läpinäkyvä jarruttava silta ADSL-modeemin ja muun verkon välille. Silta pitää huolta, että IPv4- ja IPv6-yhteydet saavat kaistan jaettua reilusti (= IPv6:lle vähintään puolet) ja pienet paketit menevät joka tapauksessa ensin. Ratkaisun toteutin OpenWRT:n päälle.
 ---
 
 Kotona pyörittämäni Linux-palvelin suli jostain mystisestä syystä, jota en ole vieläkään jaksanut selvittää. Siirsin sen järjestelmän ajoon Vmwaren päälle iMacilleni. Huonona puolena en jaksanut alkaa kikkailemaan palomuuria vmwaren sisään kun vlan tagien kanssa oli jotain ongelmia.
