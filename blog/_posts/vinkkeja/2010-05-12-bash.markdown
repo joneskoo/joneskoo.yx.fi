@@ -2,7 +2,10 @@
 layout: post
 title: Hyödyllisiä vinkkejä, osa bash
 excerpt: |-
-Haluaisin kertoa muutamista liian vähän tunnetuista näppäristä asetuksista eri ohjelmissa. Kerron niistä lyhyesti ja annan kullekin copypastetettavat rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n asetustiedostosta ja siinä käyttämistäni asetuksista.
+    Haluaisin kertoa muutamista liian vähän tunnetuista näppäristä asetuksista
+    eri ohjelmissa. Kerron niistä lyhyesti ja annan kullekin copypastetettavat
+    rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n
+    asetustiedostosta ja siinä käyttämistäni asetuksista.
 ---
 
 Jatkan tällä vinkkisarjaa, tällä kertaa vuorossa bash. Samoja ideoita voi koittaa soveltaa muihinkin shelleihin.
