@@ -1,94 +1,136 @@
 body {
-	background: #eeeeff;
+  margin: 0;
+  border-top: solid 2px black;
+  font-family: 'Open Sans', Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Play', Monaco, Impact, sans-serif;
+}
+#content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+  max-width: 60em;
+  min-width: 300px;
+}
+pre, code {
+  margin: 1em;
+  margin-left: 1.5em;
+  background: #DDD;
+  width: 40em;
+  padding: 1ex;
+  outline: 2px dashed #DDD;
+}
+header, nav {
+  overflow: hidden;
+}
+header {
+}
+header p {
+  padding: 1ex;
+  margin-top: 0;
+  clear: left;
+}
+header h1 {
+  background: black;
+  color: white;
+  padding: 0.5ex;
+  margin: 0.5ex;
+  margin-left: 0;
+  display: inline;
+  float: left;
+}
+header h1 a {
+  text-decoration: none;
+  color: white;
+}
+header #photo {
+  float: right;
+  margin: 1ex;
+}
+header #photo small {
+  display: block;
+}
+nav {
+  background: #aaa;
+  margin-top: 0.5ex;
+  margin-bottom: 1ex;
+}
+nav a {
+  text-decoration: none;
+}
+nav a, header a {
+  color: black;
+}
+nav ul {
+  display: inline;
+  padding: 0.5ex;
+}
+nav li {
+  font-size: 125%;
+  display: inline;
+  margin: 2%;
+}
+nav .muualla {
+  width: 50%;
+  font-size: 75%;
 }
 
-a { color: #5555ee; }
-a:visited { color: #9999ff; }
-a:active { color: #ffffff; }
-a:hover { color: #aaaaff; }
-
-div.container {
-	background: #efefff;
-	color: black;
-	border: outset 4px #555555;
-	position: absolute;
-	right: 0;
-	left: 0;
-	max-width: 45em;
-	margin: auto;
-	margin-top: 1ex;
-	padding-left: 8px;
-    font-family: 'Metrophobic', arial, serif;
+.laatikko {
+  margin-bottom: 1ex;
+  padding: 1ex;
+  border: 1px solid #bbb;
+  background: #eee;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
 }
-p.listitem {
-    padding-left: 1em;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 10pt;
-    font-family: Arial, "MS Trebuchet", sans-serif;
-    
+.laatikko h2 {
+  margin-top: 0;
 }
-.sidebox .irssi-pre {
-    word-wrap:break-word;
-    font-family: Courier, monospace;
+.laatikko ul {
+  padding-left: 2em;
+}
+.laatikko li {
+  list-style: square outside;
+}
+.laatikko li small {
+  display: block;
+}
+#laatikot, #muualla {
+  padding: 0;
+  margin: 0;
+}
+#laatikot {
+  float: left;
+  width: 70%;
+}
+#muualla {
+  background: #eee;
+  float: right;
+  width: 29%;
+}
+#muualla img {
+  float:right;
+  margin: 2px;
+}
+p {
+  margin-left: 1ex;
 }
 h1 {
-    font-family: 'Orbitron', arial, serif;
-	color: #0033ff;
-	margin-top: 0.7ex;
+  margin-left: 0.25ex;
 }
 h2 {
-	font-size: 14pt;
+  margin-left: 0.5ex;
 }
 h3 {
-    font-size: 12pt;
+  margin-left: 0.75ex;
 }
-div.photo {
-	float: right;
-	margin-left: 0.5ex;
+.clear {
+  clear: both;
 }
-
-iframe {
-    border: 0;
+.pub_date {
+  font-size: 50%;
+  display: block;
 }
-
-/*list-style: none/disc/circle/square/decimal/zero inside/outside url();*/
-ul {
-	list-style-type: square;
-	margin-left: 0px;
-	padding-left: 2ex;
-}
-
-.fingerprint {
-	font-style: italic;
-	font-size: small;
-}
-div.sidebox {
-	background-color: #c3c3df;
-	margin-left: 1ex;
-	padding: 8px;
-	float: right;
-	width: 220px;
-	font-size: 12px;
-}
-/* for e71 page */
-div.strongmessage {
-    padding: 0px 4px 0px 4px;
-    background-color: #ffc3df;
-    margin-right: 210px;
-    border: 1px dashed #000000;
-}
-div.graph {
-    text-align: center;
-}
-blockquote {
-    font-size: 12pt;
-    margin: 1ex 0px 1ex 4px;
-    padding: 4px;
-    background-color: #d3d3ef;
-    quotes: "\201C" "\201D";
-}
-blockquote:before { content: open-quote; font-weight: bold; }
-blockquote:after { content: close-quote; font-weight: bold; }
