@@ -76,7 +76,7 @@ nav .muualla {
   font-size: 75%;
 }
 
-.laatikko {
+.laatikko, .kuva {
   margin-bottom: 1ex;
   padding: 1ex;
   border: 1px solid #bbb;
@@ -133,4 +133,17 @@ h3 {
 .pub_date {
   font-size: 50%;
   display: block;
+}
+
+.kuva {
+  text-align: center;
+}
+
+.kuva h3 {
+  display: none;
+}
+
+.kuva img {
+  max-width: 95%;
+  height: auto;
 }
