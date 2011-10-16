@@ -1,0 +1,22 @@
+<!-- Oikean puolen palkki -->
+<div id="muualla" class="laatikko">
+  <h3>Joonas muualla</h3>
+  <p>
+  </p>
+  <ul>
+    <li><a href="http://citna.yx.fi/">
+          <img width="64" height="64" src="img/citna.jpg" 
+               alt="Citna" />
+          Citna-blogi</a>
+        <small>Koiran oma blogi</small></li>
+    <li><a href="http://joneskoo.kapsi.fi/kuveja/">kuveja</a>
+        <small>Sekalaisia valokuvia, menossa mukana</small></li>
+  </ul>
+  <h3>Blogissa</h3>
+  <ul>
+    {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="blog_date">({{ post.date | date:"%Y-%m-%d" }})</span></li>
+    {% endfor %}
+  </ul>
+</div>
