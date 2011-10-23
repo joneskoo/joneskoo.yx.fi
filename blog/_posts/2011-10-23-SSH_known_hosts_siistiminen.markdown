@@ -20,4 +20,4 @@ kirjauduttua. Aika nopeasti listasta saa käytyä läpi tarpeelliset.
 Tässäpä koodit, jos lukijoilla sattuisi olemaan sama ongelma. Pitäisi toimia
 Pythonin sekä uusilla 2.x että 3.x versioilla.
 
-<script src="https://gist.github.com/1306614.js?file=ssh-knownhosts-cleanup.py"></script>
+<script language="Javascript" type="text/javascript" src="https://gist.github.com/1306614.js?file=ssh-knownhosts-cleanup.py"></script>
