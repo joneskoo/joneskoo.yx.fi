@@ -17,6 +17,8 @@ pre {
   margin: 1em;
   margin-left: 1.5em;
   background: #DDD;
+  width: 40em;
+  overflow: scroll;
   padding: 1ex;
   outline: 2px dashed #DDD;
 }
@@ -147,7 +149,6 @@ h3 {
   height: auto;
 }
 .highlight .hll { background-color: #ffffcc }
-.highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #008000; font-weight: bold } /* Keyword */
