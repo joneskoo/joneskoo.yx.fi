@@ -20,7 +20,7 @@ kirjauduttua. Aika nopeasti listasta saa käytyä läpi tarpeelliset.
 Tässäpä <a href="https://gist.github.com/1306614">koodit</a>, jos lukijoilla sattuisi olemaan sama ongelma. Pitäisi toimia
 Pythonin sekä uusilla 2.x että 3.x versioilla.
 
-{% hilight python %}
+{% highlight python %}
 import re
 import sys
 import os
@@ -56,4 +56,4 @@ with open(KNOWN_HOSTS, 'w') as f:
 
 print("OK. Cleaned up", KNOWN_HOSTS)
 print("Change: from %d lines to %d lines." % (oldlines, len(knownhosts)))
-{% endhilight %}
+{% endhighlight %}
