@@ -1,10 +1,10 @@
 ---
 layout: post
-title: SSH known\_hosts-tiedoston siistiminen
+title: SSH known_hosts-tiedoston siistiminen
 tags:
     - skriptit
 excerpt: |-
-    Kyllästyin viimein ssh known\_hosts-tiedoston sotkuisuuteen ja koodasin
+    Kyllästyin viimein ssh known_hosts-tiedoston sotkuisuuteen ja koodasin
     yksinkertaisen skriptin, joka yhdistää saman palvelimen rivit yhdeksi.
 ---
 
