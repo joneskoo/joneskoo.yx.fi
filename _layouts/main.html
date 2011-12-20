@@ -3,7 +3,12 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Joonas Kuorilehto</title>
+  <title>{% if page.title %}
+           {{page.title}} (Joonas Kuorilehto)
+         {% else %}
+           Joonas Kuorilehto
+         {% endif %}
+  </title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans|Play' rel='stylesheet' type='text/css'>
   <link href="http://joneskoo.kapsi.fi/css/style.css" rel="stylesheet" type="text/css">
   <script type="text/javascript">
