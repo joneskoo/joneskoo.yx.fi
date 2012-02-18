@@ -6,7 +6,12 @@ tags:
     - ipv6
     - angst
 excerpt: |-
-    
+    Saunalahden mobiilidatan IP-osoitteiden loppumisen vuoksi Saunalahti
+    lopettaa julkisten IPv4-osoitteiden jakamisen. Huonon ohjeistuksen vuoksi
+    tiedotteesta sai kuvan, että julkisia osoitteita ei enää saisi. Kuitenkin
+    tosiasiassa tarjolle tuotiin uusi APN "internet4", jonka saa erikseen
+    tilaamalla käyttöön (ilmaiseksi). Eli ongelma olikin lopulta
+    tiedottamisessa.
 ---
 
 Saunalahdella on ollut muutaman kuukauden ajan ongelmia IP-osoitteiden
