@@ -34,10 +34,16 @@ Asetus **erasedups** kertoo bashille, että komentohistoriasta tulee säilyttä�
 * **hostcomplete** yrittää täydentää DNS-nimiä @-merkin jälkeen tabulaattoritäydennyksenä.
 * **magic-space** avaa huutomerkillä haetut (!wget) käskyt välilyöntiä painamalla.
 
+GNU readlinen käyttämään .inputrc-tiedostoon kannattaa lisätä seuraavat rivit:
+
 <pre>
-bind '"\e[A"':history-search-backward
-bind '"\e[B"':history-search-forward
+"\e[B": history-search-forward
+"\e[A": history-search-backward
 </pre>
+
+Niiden avulla voi hakea komentohistoriasta kirjoittamalla käskyn alun ja
+painamalla nuolta ylöspäin tai alaspäin. Haku käyttää kirjoitettua alkua
+etuliitteenä.
 
 Nämä [Textmate-editorin blogikirjoituksen kommenteista][tmblog] apinoidut rivit tuovat käyttöön ylöspäin ja alaspäin nuolinäppäimille historiahaun. Näiden kanssa on mahdollista hakea komentohistoriasta kirjoittamalla käskyn alku ja käyttämällä ylös ja alas nuolinäppäimiä. Erittäin kätevä! Suosittelen erittäin lämpimästi.
 
