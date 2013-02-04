@@ -53,12 +53,11 @@ header #photo small {
   display: block;
 }
 nav {
-  background: #aaa;
   margin-top: 0.5ex;
   margin-bottom: 1ex;
-}
-nav a {
-  text-decoration: none;
+  background: #eee;
+  color: white;
+  border: 1px solid #ddd;
 }
 nav a, header a {
   color: black;
@@ -80,12 +79,8 @@ nav .muualla {
 .laatikko, .kuva {
   margin-bottom: 1ex;
   padding: 1ex;
-  border: 1px solid #bbb;
+  border: 1px solid #ddd;
   background: #eee;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
 }
 .laatikko h2 {
   margin-top: 0;
