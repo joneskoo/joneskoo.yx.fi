@@ -82,16 +82,6 @@ nav .muualla {
   background: #eee;
 }
 
-aside {
-  float: right;
-  width: 29%;
-  display: block;
-}
-
-section {
-  margin-bottom: 6px;
-}
-
 p  { margin-left: 1ex; }
 h1 { margin-left: 0.25ex; }
 h2 { margin-left: 0.5ex; }
@@ -107,25 +97,30 @@ h3 { margin-left: 0.75ex; }
 .kuva h3  { display: none; }
 .kuva img { max-width: 95%; height: auto; }
 
-@media all and (max-width: 780px) {
-  aside {
-    float: inherit;
-  }
-  aside {
-    width: auto;
-  }
+aside {
+  float: inherit;
+  width: auto;
 }
 
-@media not all and (max-width: 780px) {
+section {
+  margin-left: 1ex;
+  padding: 2px;
+  background: #fafafa;
+}
+
+@media screen and (min-width: 800px) {
+  aside {
+    float: right;
+    width: 29%;
+    display: block;
+  }
+
+  section {
+    margin-bottom: 6px;
+  }
   #laatikot {
     width: 67%;
     margin-left: 1ex;
-  }
-}
-
-@media all and (max-width: 400px) {
-  header #photo {
-    float: left;
   }
 }
 
