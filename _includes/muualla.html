@@ -1,22 +1,13 @@
-<!-- Oikean puolen palkki -->
-<div id="muualla" class="laatikko">
-  <h3>Joonas muualla</h3>
+<section id="muualla">
+  <h2>Joonas muualla</h2>
   <p>
   </p>
   <ul>
-    <li><a href="http://citna.yx.fi/">
-          <img width="64" height="64" src="img/citna.jpg" 
+    <li><img width="48" height="48" src="img/citna.jpg" 
                alt="Citna" />
-          Citna-blogi</a>
+        <a href="http://citna.yx.fi/">Citna-blogi</a>
         <small>Koiran oma blogi</small></li>
     <li><a href="https://github.com/joneskoo/">Github/joneskoo</a>
         <small>Suurin osa koodiprojekteistani on jaossa Githubissa.</small></li>
   </ul>
-  <h3>Blogissa</h3>
-  <ul>
-    {% for post in site.posts limit: 5 %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a>
-        <span class="blog_date">({{ post.date | date:"%Y-%m-%d" }})</span></li>
-    {% endfor %}
-  </ul>
-</div>
+</section>

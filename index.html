@@ -4,12 +4,25 @@ title: Kuka minä?
 ---
 
 <!-- Oikean puolen palkki -->
-{% include muualla.html %}
+<aside>
+  <section id="blogissa">
+    <h2>Tuoreimmat kirjoitukset blogissa</h2>
+    <ul>
+      {% for post in site.posts limit: 3 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a>
+          <span class="blog_date">({{ post.date | date:"%Y-%m-%d" }})</span></li>
+      {% endfor %}
+    </ul>
+    <a href="/blog.html">Lisää julkaisuja blogissa…</a>
+  </section>
+
+  {% include muualla.html %}
+</aside>
 
 <!-- Pääsisältö -->
 <div id="laatikot">
   <!-- Hyödyllisiä tuotoksia -->
-  <div id="tuotoksia" class="laatikko">
+  <section id="tuotoksia">
     <h2>Hyödyllisiä tuotoksia?</h2>
     <ul>
       <li><a href="http://yx.fi/">yx.fi</a>-lyhyturlipalvelu
@@ -21,10 +34,10 @@ title: Kuka minä?
             laskutusjärjestelmää.
           </small></li>
     </ul>
-  </div>
+  </section>
 
   <!-- Quick & dirty -->
-  <div id="quickndirty" class="laatikko">    
+  <section id="quickndirty">    
     <h2>Quick &amp; dirty</h2>
     <ul>
       <li>irssi-teema <a href="public/gdv.theme">gdv.theme</a>
@@ -52,5 +65,5 @@ title: Kuka minä?
           HTTP upload-nopeustesti</a>
           <small class="desc">Testaa yhteytesi lähetysnopeus.</small></li>
     </ul>
-  </div>
+  </section>
 </div>

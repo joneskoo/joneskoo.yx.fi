@@ -9,8 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 #content {
   margin-left: auto;
   margin-right: auto;
-  width: 96%;
-  max-width: 1100px;
+  max-width: 900px;
   min-width: 300px;
 }
 pre {
@@ -76,73 +75,60 @@ nav .muualla {
   font-size: 75%;
 }
 
-.laatikko, .kuva {
+.kuva {
   margin-bottom: 1ex;
   padding: 1ex;
   border: 1px solid #ddd;
   background: #eee;
 }
-.laatikko h2 {
-  margin-top: 0;
-}
-.laatikko ul {
-  padding-left: 2em;
-}
-.laatikko li {
-  list-style: square outside;
-}
-.laatikko li small {
-  display: block;
-}
-#laatikot, #muualla {
-  padding: 0;
-  margin: 0;
-}
-#laatikot {
-  float: left;
-  width: 70%;
-}
-#muualla {
-  background: #eee;
+
+aside {
   float: right;
   width: 29%;
-}
-#muualla img {
-  float:right;
-  margin: 2px;
-}
-p {
-  margin-left: 1ex;
-}
-h1 {
-  margin-left: 0.25ex;
-}
-h2 {
-  margin-left: 0.5ex;
-}
-h3 {
-  margin-left: 0.75ex;
-}
-.clear {
-  clear: both;
-}
-.pub_date {
-  font-size: 50%;
   display: block;
 }
+
+section {
+  margin-bottom: 6px;
+}
+
+p  { margin-left: 1ex; }
+h1 { margin-left: 0.25ex; }
+h2 { margin-left: 0.5ex; }
+h3 { margin-left: 0.75ex; }
+
+.clear { clear: both; }
+.pub_date { font-size: 50%; display: block; }
 
 .kuva {
   text-align: center;
 }
 
-.kuva h3 {
-  display: none;
+.kuva h3  { display: none; }
+.kuva img { max-width: 95%; height: auto; }
+
+@media all and (max-width: 780px) {
+  aside {
+    float: inherit;
+  }
+  aside {
+    width: auto;
+  }
 }
 
-.kuva img {
-  max-width: 95%;
-  height: auto;
+@media not all and (max-width: 780px) {
+  #laatikot {
+    width: 67%;
+    margin-left: 1ex;
+  }
 }
+
+@media all and (max-width: 400px) {
+  header #photo {
+    float: left;
+  }
+}
+
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
