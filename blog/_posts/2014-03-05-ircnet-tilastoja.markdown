@@ -7,7 +7,7 @@ tags:
 excerpt: |-
   Tein pikaisen katsauksen IRCnet-verkon hetkellisiin käyttäjämääriin ja
   erityisesti verkon suomalaisten käyttäjien osuuteen. Tutkimukseni
-  perusteella näyttäisi että jopa 39&nbsp;% IRCnetin käyttäjistä voisi
+  perusteella näyttäisi että jopa 45&nbsp;% IRCnetin käyttäjistä voisi
   olla suomalaisia. Irkin tulevaisuus herättää kysymyksiä.
 ---
 
@@ -68,88 +68,87 @@ Kuten näkyy, tein reittikyselyn irc.nebula.fi:llä (irkkaan [Kapsin][kapsi]
 shell-palvelimen kautta). Tästä johtuen verkon reittikartta on Nebulan
 IRC-palvelimen näkemys maailmasta.
 
-IRCnet-palvelinten välisissä yhteyksissä on käytössä tarkkojen reittien piilotus (mask); tästä johtuen esimerkiksi Alankomaiden (.nl) sisäiset palvelimet eivät näy kartassa vaan niistä näkyy ainoastaan *.nl. Tosiasiassa palvelimia on luultavasti useampia.
+IRCnet-palvelinten välisissä yhteyksissä on käytössä tarkkojen reittien piilotus (mask); tästä johtuen esimerkiksi Alankomaiden (.nl) sisäiset palvelimet eivät näy kartassa vaan niistä näkyy ainoastaan *.nl. Tosiasiassa palvelimia on useampia.
 
 Käyttäjätilastojen osalta parempia lukuja saisi jos seuraisi käyttäjämäärää eri
 vuorokaudenaikoihin. Olen kuitenkin sivuttanut sen tällä kertaa, sillä palvelin
 kertoo kuitenkin yhteyksien maksimimäärän. Koska nykyinen tilanne on lähellä
 maksimia, teen oletuksen että tilanne ei eri vuorokaudenaikaan ole
-ratkaisevasti eri. Tämän kirjoituksen tiedot hain 5.3.2014 klo 22:00
-Tyynenmeren aikaa eli Suomessa 6.3.2014 klo 08:00.
+ratkaisevasti eri. Tämän kirjoituksen tiedot hain 5.3.2014 klo 23:40
+Tyynenmeren aikaa eli Suomessa 6.3.2014 klo 09:40.
 
 Eri palvelinten käyttäjätilastot sain /LUSERS-käskyllä (esim. /LUSERS
-irc.opoy.fi). Kaikilta palvelimilta tietoja ei saa, joten joudun tyytymään
-osatulokseen. LUSERS-käskyn tulos näyttää seuraavalta:
+irc.opoy.fi irc.opoy.fi). LUSERS-käskyn tulos näyttää seuraavalta:
 
 <pre>
-[irc.nebula.fi] I have 5424 users, 0 services and 1 servers
-[irc.nebula.fi] 5424 5567 Current local users 5424, max 5567
-[irc.nebula.fi] 48332 56017 Current global users 48332, max 56017
+[irc.nebula.fi] I have 5434 users, 0 services and 1 servers
+[irc.nebula.fi] 5434 5567 Current local users 5434, max 5567
+[irc.nebula.fi] 48892 56017 Current global users 48892, max 56017
 </pre>
 
 Tässä vapaamuotoinen tiivistelmäni ja yhdistelmä MAP ja LUSERS-käskyjen
 tuloksista:
 
 <pre>
-  irc.nebula.fi             5424
-   `- *.tut.fi             +2524
-       |- irc2.inet.fi     +910
-       |- *.oamk.fi        +35
-       |- irc.elisa.fi     +2028
-       |- irc.tdc.fi       +429
-       |- irc.opoy.fi      +299
-       |- *.lut.fi         +345
-       |- *.hut.fi         +3868
-       |   |- *.oulu.fi    +1378
-       |   |- *.jyu.fi     +562
-       |   `- irc1.inet.fi +1051  = yht. 18853
-       |- *.no                                499
-       `- *.nl                               +0
-           |- *.be                           +308
-           |- *.pl                           +0
-           |   |- *.tw                       +1
-           |   |- ircnet.eversible.com       +1914
-           |   |- ircnet.nerim.fr            +267
-           |   |- *.ee                       +1
-           |   `- *.cz                       +264
-           |- *.it                           +7
-           |- *.is                           +0
-           |- *.irc6.net                     +935
-           |- *.at                           +1
-           |   |- hub.uk                     +7
-           |   |   |- *.jp                   +15
-           |   |   |- *.dotsrc.org           +84
-           |   |   |- ircnet.blacklotus.net  +1303
-           |   |   |- *.DE                   +298
-           |   |   |- *.hu                   +825
-           |   |   |- irc.atw-inter.net      +2287
-           |   |   |- ircnet.optilian.net    +209
-           |   |   `- *.si                   +138
-           |   `- *.se                       +3
-           `- *.il                           +5 = yht. 9371
-(28 224 yhteyden palvelin tuntematon)
+                      yhteyksiä  - palvelimia
+  irc.nebula.fi             5431 - 1
+   `- *.tut.fi             +5325 - 2
+       |- irc2.inet.fi     +931  - 1
+       |- *.oamk.fi        +35   - 1
+       |- irc.elisa.fi     +2074 - 1
+       |- irc.tdc.fi       +430  - 1
+       |- irc.opoy.fi      +303  - 1
+       |- *.lut.fi         +348  - 1
+       |- *.hut.fi         +3914 - 1
+       |   |- *.oulu.fi    +1378 - 1
+       |   |- *.jyu.fi     +570  - 1
+       |   `- irc1.inet.fi +1057  = yht. 21796
+       |- *.no                                648   - 4
+       `- *.nl                               +3971  - 7
+           |- *.be                           +309   - 1
+           |- *.pl                           +1126  - 3
+           |   |- *.tw                       +73    - 2
+           |   |- ircnet.eversible.com       +1969  - 1
+           |   |- ircnet.nerim.fr            +265   - 1
+           |   |- *.ee                       +749   - 4
+           |   `- *.cz                       +612   - 3
+           |- *.it                           +274   - 5
+           |- *.is                           +80    - 3
+           |- *.irc6.net                     +937   - 1
+           |- *.at                           +131   - 2
+           |   |- hub.uk                     +7     - 1
+           |   |   |- *.jp                   +6416  - 4
+           |   |   |- *.dotsrc.org           +87    - 1
+           |   |   |- ircnet.blacklotus.net  +1329  - 1
+           |   |   |- *.DE                   +3301  - 6
+           |   |   |- *.hu                   +1112  - 4
+           |   |   |- irc.atw-inter.net      +2280  - 1
+           |   |   |- ircnet.optilian.net    +210   - 1
+           |   |   `- *.si                   +140   - 1
+           |   `- *.se                       +1032  - 4
+           `- *.il                           +4     = (yht. 27062)
 </pre>
 
-Selvästikin hubeilta saadut yhteysmäärät eivät ole kaikkien hubin taakse
-jäävien palvelimien yhteyksien määrä, sillä ei ole uskottavaa että Alankomaissa
-ei olisi esimerkiksi yhtään käyttäjää. Vastaavasti Puolan 0 käyttäjää ei ole
-uskottava luku. Yhteensä menetelmälläni löytyi siis 28&nbsp;224 yhteyttä eli 58&nbsp;% todellisesta yhteysmäärästä.
+Nebulan palvelimen yhteyksistä valtaosa luultavasti ovat Kapsin palvelimelta.
+Julkisia tietoja ei ole, mutta yhdistyksen jäsenmäärä 5205 jäsentä on samaa
+suuruusluokkaa ja siltä ajalta kun olin ylläpitäjä muistikuvan mukaan
+IRC-yhteyksien määrä oli suunnilleen jäsenmäärän luokkaa tai kenties yhteensä
+jopa vähän korkeampi.
 
-Tästä huolimatta uskoisin että suomalaisten palvelinten osalta tulos voisi olla
-uskottava. Nebulan palvelimen yhteyksistä valtaosa luultavasti ovat Kapsin
-palvelimelta. Julkisia tietoja ei ole, mutta yhdistyksen jäsenmäärä 5205
-jäsentä on samaa suuruusluokkaa ja siltä ajalta kun olin ylläpitäjä muistikuvan mukaan IRC-yhteyksien määrä oli suunnilleen jäsenmäärän luokkaa tai kenties yhteensä jopa vähän korkeampi.
+On hyvä huomata että käyttäjän ja yhteyden välillä on pieni ero. Joillakin
+käyttäjillä on useampia yhteyksiä, toisaalta osa käyttäjistä voi sulkea
+yhteyden kun ei ole paikalla. Käytän termejä tässä hieman sekaisin. Oletan että
+sama ilmiö on jokseenkin alueista riippumaton, mutta tämä voi aiheuttaa hieman
+poikkeamaa käyttäjä- ja yhteysmäärien välillä.
 
-Luultavasti epätarkan ja epätieteellisen selvitykseni perusteella näyttäisi
-että IRCnetissä on hieman vajaa 50&nbsp;000 yhtäaikaista käyttäjää (määrä
-vaihtelee vuorokaudenajan mukaan). Näistä n. 19&nbsp;000 vaikuttaisi olevan
-suomalaisilla palvelimilla eli n. 39&nbsp;% kaikista IRCnet-käyttäjistä olisi
-suomalaisia. Edelleen suurinpiirtein kolmasosa suomalaisista käyttäjistä olisi
-Kapsin jäseniä, eli noin 27&nbsp;% Suomen IRCnet-käyttäjistä ja 11&nbsp;%
-kaikista IRCnet-käyttäjistä. 42&nbsp;% yhteyksistä jäi tuntemattomiksi, mutta
-todennäköisesti näihin ei jää kovin monta suomalaista käyttäjää. Jos
-menetelmässäni ei ole periaatteellista virhettä, arvio suomalaisten osuudesta
-pitäisi olla pessimistinen.
+Tämän selvitykseni perusteella näyttäisi että IRCnetissä on hieman vajaa
+50&nbsp;000 yhtäaikaista käyttäjää (määrä vaihtelee vuorokaudenajan mukaan).
+Näistä n. 22&nbsp;000 vaikuttaisi olevan suomalaisilla palvelimilla eli n.
+45&nbsp;% kaikista IRCnet-käyttäjistä olisi suomalaisia. Jos kuvitellaan että
+Kapsin jäsenistä kaikki irkkaisivat IRCnetissä ja jokaisella olisi täsmälleen
+yksi yhteys, suurinpiirtein kolmasosa suomalaisista irkkaajista olisi Kapsin
+jäseniä, eli noin 24&nbsp;% Suomen IRCnet-käyttäjistä ja 11&nbsp;% kaikista
+IRCnet-käyttäjistä.
 
 Minussa tulos herättää ristiriitaisia tunteita. Toisaalta tulos kertoo IRC:n
 edelleen vahvasta asemassa Suomessa, mutta toisaalta hieman huolestuttavasti
@@ -159,6 +158,11 @@ kokonaan kadonneet? Mikä korvaa irkin? Minulle pikaviestimet eivät ikinä ole
 korvanneet irkin omanlaista kulttuuriaan.
 
 Irkkailemisiin. Kuulen mielelläni kommentteja irkissä tai sähköpostitse (osoite sivun ylänurkassa).
+
+**Päivitys 1. Lisätty kommentti erosta yhteyksien ja käyttäjien välillä.**
+
+**Päivitys 2. Vaihdettu LUSERS käskyn syntaksia; laskee oikein useiden hubin
+kautta löytyvät yhteydet.**
 
 -- Joonas Kuorilehto (joneskoo), Kaliforniassa 5.3.2014.
 
