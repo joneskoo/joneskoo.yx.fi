@@ -15,3 +15,10 @@ phone_number: +358 500 779 695
 
 # Build settings
 markdown: rdiscount
+
+defaults:
+  -
+    scope:
+      path: "blog"
+    values:
+      layout: "post"
