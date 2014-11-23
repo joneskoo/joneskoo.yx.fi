@@ -8,3 +8,5 @@ tmp
 vuosikokous2011
 wings
 ydinvoimaa.jpg
+vagrant-ubuntu-precise-32.box
+vagrant-debian-squeeze-32.box
