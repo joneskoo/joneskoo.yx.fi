@@ -1,3 +1,5 @@
 .DS_Store
 _site
 kuveja.html
+kuveja.json
+.sass-cache

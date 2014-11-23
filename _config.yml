@@ -1,3 +1,21 @@
-pygments: true
-safe: true
+# Site settings
+title: Joonas Kuorilehto
+email: joneskoo@derbian.fi
+description: >
+  Nörtti, radioamatööri, tietotekniikan DI,
+  päivätöissä tietoturva-alalla.
+  Kiinnostunut teknologiasta ja säätämisestä.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://joneskoo.kapsi.fi" # the base hostname & protocol for your site
+
+linkedin_username: joneskoo
+github_username:  joneskoo
+amateur_callsign: OH8GDV
+phone_number: +358 500 779 695
+
+# Build settings
 markdown: rdiscount
+
+collections:
+  _blog:
+    output: true
