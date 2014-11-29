@@ -86,11 +86,13 @@ Skriptien avulla riittää kun määrittelee cloud-config kuvauksen ja antaa
 käskyn luoda virtuaalikoneen. Noin minuuttia myöhemmin virtuaalikone on
 valmis käyttöön.
 
+<strong>PÄIVITYS 29.11.2014: Lisäsin tuen Fedora 20:lle.</strong>
+
 
 [ec2]: http://aws.amazon.com/ec2/ "Amazon Web Services - EC2 (Elastic Compute Cloud)"
 [digitalocean]: https://www.digitalocean.com/?refcode=7895291a5a1b "Digital Ocean"
 [ci]: http://cloudinit.readthedocs.org/en/latest/topics/examples.html "Cloud-init esimerkkejä"
 [ubuntu-cloud]: https://cloud-images.ubuntu.com/ "Ubuntu Cloud Images: Ubuntu Cloud Images are pre-installed disk images that have been customized by Ubuntu engineering to run on cloud-platforms such as Amazon EC2, Openstack, Windows and LXC."
 [ci-kvm]: http://serverascode.com/2014/03/17/trusty-libvirt.html "Boot Ubuntu Trusty Tahr 14.04 with libvirt"
-[ubuntu-cloud-init]: https://github.com/joneskoo/ubuntu-cloud-init "Quickly bring up Ubuntu Cloud instances in local KVM with virsh using cloud-init"
+[ubuntu-cloud-init]: https://github.com/joneskoo/cloud-init-start "Quickly bring up Cloud instances in local KVM with virsh using cloud-config"
 [rh]: https://rhn.redhat.com/errata/RHEA-2013-0535.html "RHEA-2013:0535-1 Product Enhancement Advisory, new package: cloud-init"
