@@ -1,0 +1,8 @@
+BEGIN:VCARD
+VERSION:2.1
+FN:Joonas Kuorilehto
+N:Kuorilehto;Joonas
+TEL;CELL:+358 500 779 695
+EMAIL;HOME;INTERNET:joneskoo@derbian.fi
+PHOTO;MEDIATYPE=image/jpeg:https://joneskoo.kapsi.fi/img/joneskoo.jpg
+END:VCARD

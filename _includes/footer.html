@@ -18,6 +18,10 @@
           {% if site.amateur_callsign %}
           <li>DE {{site.amateur_callsign}}</li>
           {% endif %}
+
+          {% if site.vcard_file %}
+          <small><a href="{{site.vcard_file}}">vCard</a></small>
+          {% endif %}
         </ul>
       </div>
 
