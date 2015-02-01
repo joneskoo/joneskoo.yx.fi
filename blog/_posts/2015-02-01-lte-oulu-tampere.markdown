@@ -86,5 +86,13 @@ Oulu–Tampere-reitille voin suositella Saunalahden 100 Mbit/s
 LTE-liittymää. Nopeudet jäävät autossa 5-25 Mbit/s välille,
 mutta sekin riittää hyvin liikkeellä.
 
+---
+
+**Päivitys 1.2.2015 20:49**. Kilpailevien operaattorien kuuluvuus vertailun vuoksi. Valitettavasti ainakaan vielä nettiyhteydeksi autoon ei ole muita vaihtoehtoja kuin Elisa/Saunalahti.
+
+![Soneran LTE-kuuluvuus](/blog/img/2015-02-01-sonera.png =250x "Soneran LTE-kuuluvuus")
+![DNA:n 4G-kuuluvuus](/blog/img/2015-02-01-dna.png =250x "DNA:n 4G-kuuluvuus")
+
+
 [antenni]: https://www.4g-antennit.fi/product/348/mobevo-w435-2-4-dbi-4glte-kaksoisantenni-2-metrin-kaapeleilla "Mobevo W435 4G/LTE kaksoisantenni, 4g-antennit.fi"
 [kuuluvuus]: http://elisa.fi/kuuluvuus/ "Elisa/Saunalahti kuuluvuuskartta"
