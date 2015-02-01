@@ -21,11 +21,11 @@ Olin pari viikkoa
 aiemmin ostanut autokäyttöön
 [imukuppikiinitteisen LTE-antennin][antenni], jotta kuuluvuus olisi
 paras mahdollinen. Huawein B593s-22 LTE-modeemin WLAN-tukiasema
-rajoittaa kotikokemusten perusteella yhteyden nopeutta. Joka tarvitsin
-invertterin sen käyttämiseksi autossa, joten otin mukaan kotoa myös
-Applen Airport Extreme 802.11ac -tukiaseman. Vähän tuli ehkä liioiteltua
-hätävarjelua, mutta toimiipahan. Tiedän, koska käytän tällä hetkellä
-ainoana yhteytenä kotona kyseistä kalustoa.
+rajoittaa kotikokemusten perusteella yhteyden nopeutta. Joka tapauksessa
+tarvitsin invertterin sen käyttämiseksi autossa, joten otin mukaan kotoa
+myös Applen Airport Extreme 802.11ac -tukiaseman. Vähän tuli ehkä
+liioiteltua hätävarjelua, mutta toimiipahan. Tiedän, koska käytän tällä
+hetkellä ainoana yhteytenä kotona kyseistä kalustoa.
 
 ![Viritys](/blog/img/2015-02-01-mobiilibitti.jpg =250x "Ihmeviritys. Huawei B593s-22 LTE-modeemi, Apple Airport Extreme 802.11ac, Mobevo W435-antenni")
 
