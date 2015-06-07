@@ -15,8 +15,8 @@ excerpt: |-
     vielä ymmärtävät.
 ---
 
-Kävin lauantaina puhumassa LTE-kokemuksistani Itäsuomalaisten
-radioharrastajien kesäpäivillä Vuokatissa, Sotkamossa.
+Kävin lauantaina puhumassa LTE-kokemuksistani [Itäsuomalaisten
+radioharrastajien kesäpäivillä][garde] Vuokatissa, Sotkamossa.
 Aiheenani oli *“LTE käytännössä - vieläkö kiinteää yhteyttä tarvitaan?”*
 Otsikosta voi päätellä yleiskuvan tähänastisista kokemuksistani.
 
@@ -49,6 +49,9 @@ paikkaan.
 
 Esitystäni varten mittasin kotiyhteyteni toimintaa. Seuraavat mittaukset
 on tehty kotonani Oulun Kuivasjärvellä välillä 15.4.2015 – 5.6.2015.
+Latausnopeus on kunkin viikon keskiarvo; 100 MB tiedosto on ladattu
+kerran tunnissa ja nopeus kirjattu, siis 24x7 = 168 latausta (16,8 GB)
+per piste.
 
 ![Latausnopeus kotona](/blog/img/2015-06-06-elisa-lte-lataus.png)
 
@@ -59,6 +62,9 @@ pikkuhiljaa eli huippunopeutta ei saavuteta kuin myöhemmin latauksessa.
 Nopeudet ovat erittäin vakaita.
 Minimiä ei kannata tuijottaa, koska yksittäinen näyte sotkee niin
 paljon. Kuvaajan minimi on nimittäin huonoin viikon 168 latauksesta.
+
+Vasteaika on mitattu fpingillä 1 paketti kerran 10 sekunnissa samalla
+aikavälillä.
 
 | &nbsp;     | Latausnopeus           | Vasteaika       |
 | ---------: | :--------------------- | :-------------- |
@@ -212,5 +218,5 @@ fping -l -D -p 100 hilla.kapsi.fi > fping-`date +%s`.log 2>&1
 Molemmissa mittauksissa käytin siis Kapsin palvelimia, jotka sijaitsevat
 Helsingissä hyvien yhteyksien päässä.
 
-
+[garde]: https://garde.fi/oh8g.php?func=SHOW&id=46 "Itäsuomalaiset radioharrastajien kesäpäivät 5.-7.6.2015, Vuokatti"
 [tre]: {% post_url 2015-02-01-lte-oulu-tampere %} "LTE-kokemuksia automatkalta Oulu–Tampere"
