@@ -3,3 +3,4 @@ _site
 kuveja.html
 kuveja.json
 .sass-cache
+/public
