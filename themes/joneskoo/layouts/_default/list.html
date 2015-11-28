@@ -1,0 +1,35 @@
+{{ partial "head.html" . }}
+
+<body>
+
+  {{ partial "header.html" . }}
+
+  <div class="page-content">
+
+    <div class="wrapper">
+
+      <section>
+        <div id="blogitekstit" class="laatikko">
+
+        {{ range .Data.Pages }}
+
+        <h2>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          (<time class="pub_date">{{ .Date.Format "2006-01-02" }}</time>)
+        </h2>
+
+        <p class="excerpt">
+          {{ .Summary }}
+        </p>
+
+        {{ end }}
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+  {{ partial "footer.html" . }}
+
+</body>
+</html>

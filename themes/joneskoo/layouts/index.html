@@ -1,0 +1,51 @@
+{{ partial "head.html" . }}
+
+  <body>
+
+    {{ partial "header.html" . }}
+
+    <div class="page-content">
+
+      <div class="wrapper">
+
+        <div class="home">
+
+        <section id="blogissa">
+          <h2>Uusimmat blogikirjoitukset</h2>
+          
+          <ul class="blogissa">{{ range where .Data.Pages "Section" "blog" | first 3 }}
+            <li>
+              <span>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                (<time class="pull-right post-list">{{ .Date.Format "2006-01-02" }}</time>)
+              </span>
+            </li>
+          {{ end }}</ul>
+
+          <p>
+            <a href="/blog.html">Lisää kirjoituksia blogissa…</a>
+          </p>
+        </section>
+
+        {{ range .Site.Data.content.content }}
+          <section>
+            <h2>{{ .title }}</h2>
+            <ul>
+              {{ range .items }}
+                <li>
+                  <a href="{{ .url }}">{{ .title }}</a>
+                  <small class="desc">{{ .description }}</small>
+                </li>
+              {{ end }}
+            </ul>
+          </section>
+        {{ end }}
+        </div>
+    </div>
+  </div>
+
+  {{ partial "footer.html" . }}
+
+  </body>
+
+</html>

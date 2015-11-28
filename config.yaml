@@ -1,0 +1,32 @@
+baseurl: "https://joneskoo.kapsi.fi" # the base hostname & protocol for your site
+disablePathToLower: true
+languageCode: fi-fi
+
+# Site settings
+title: Joonas Kuorilehto
+email: joneskoo@derbian.fi
+params:
+    description: >-
+      Nörtti, radioamatööri, tietotekniikan DI,
+      päivätöissä tietoturva-alalla.
+      Kiinnostunut teknologiasta ja säätämisestä.
+    author: Joonas Kuorilehto
+
+linkedin_username: joneskoo
+github_username:  joneskoo
+twitter_username: joneskoo_yx
+amateur_callsign: OH8GDV
+phone_number: +358 500 779 695
+vcard_file: /public/joneskoo.vcf
+
+# Build settings
+markdown: rdiscount
+theme: joneskoo
+pygmentsstyle: xcode
+
+defaults:
+  -
+    scope:
+      path: "blog"
+    values:
+      layout: "post"
