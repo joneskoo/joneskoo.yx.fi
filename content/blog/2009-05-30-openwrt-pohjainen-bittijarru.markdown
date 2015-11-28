@@ -13,7 +13,8 @@ tags:
 - kotiverkko
 - skriptit
 title: OpenWRT-pohjainen bittijarru
-url: /2009/05/30/openwrt-pohjainen-bittijarru/
+aliases:
+ - /blog/2009/05/30/openwrt-pohjainen-bittijarru.html
 ---
 
 

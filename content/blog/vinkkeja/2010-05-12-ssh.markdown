@@ -6,7 +6,12 @@ excerpt: |-
   rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n
   asetustiedostosta ja siinä käyttämistäni asetuksista.
 title: Hyödyllisiä vinkkejä, osa ssh
-url: /2010/05/12/ssh/
+tags:
+ - vinkkejä
+ - skriptit
+ - shell
+aliases:
+ - /blog/2010/05/12/ssh.html
 ---
 
 Haluaisin kertoa muutamista liian vähän tunnetuista näppäristä asetuksista eri ohjelmissa. Kerron niistä lyhyesti ja annan kullekin copypastetettavat rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n asetustiedostosta ja siinä käyttämistäni asetuksista.

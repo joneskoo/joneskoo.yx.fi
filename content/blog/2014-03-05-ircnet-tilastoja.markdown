@@ -9,7 +9,8 @@ tags:
 - irc
 - Suomi
 title: Tilastoja IRCnet-verkon käyttäjistä
-url: /2014/03/05/ircnet-tilastoja/
+aliases:
+ - /blog/2014/03/05/ircnet-tilastoja.html
 ---
 
 Joku viikko sitten katson mielenkiinnosta paljonko IRCnetissä on tällä hetkellä

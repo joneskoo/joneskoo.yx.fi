@@ -5,7 +5,10 @@ excerpt: |-
   mahtavaan kanaruokaan. Helkan kanssa maisteluiden perusteella n. neljä
   annosta.
 title: Kanan sisäfilettä pippurikermakastikkeessa
-url: /2011/02/17/kanan-sisafiletta-kermassa/
+tags:
+ - resepti
+aliases:
+ - /blog/2011/02/17/kanan-sisafiletta-kermassa.html
 ---
 
 Äidin tekemästä kanasta röyhkeästi apinoiden, tässäpä resepti aivan mahtavaan kanaruokaan. Helkan kanssa maisteluiden perusteella n. neljä annosta.

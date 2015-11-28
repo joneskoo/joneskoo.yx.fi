@@ -13,7 +13,8 @@ tags:
 - LTE
 - matka
 title: LTE käytännössä - havaintoja kotoa ja matkalta
-url: /2015/06/06/lte-autoiluhavaintoja/
+aliases:
+ - /blog/2015/06/06/lte-autoiluhavaintoja.html
 ---
 
 Kävin lauantaina puhumassa LTE-kokemuksistani [Itäsuomalaisten

@@ -4,7 +4,10 @@ excerpt: |-
   Reilusti lihaisa ja arkinen lihapata perunamuusilla ja kermakastikkeella.
   Kopioitu Ameriikan ihmeitä -blogista.
 title: Arkinen lihapata
-url: /2014/04/13/lihapata/
+tags:
+ - resepti
+aliases:
+ - /blog/2014/04/13/lihapata.html
 ---
 
 Kopioin tännekin talteen [yhteisestä blogistamme][helkajoonas] arkisen

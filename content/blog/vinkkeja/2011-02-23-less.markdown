@@ -6,6 +6,12 @@ excerpt: |-
   ollut hoksannut. Kenties ovat menneet muiltakin ohi?
 title: Hyödyllisiä vinkkejä, osa less
 url: /2011/02/23/less/
+tags:
+ - vinkkejä
+ - skriptit
+ - shell
+aliases:
+ - /blog/2011/02/23/less.html
 ---
 
 Olen käyttänyt, kuten varmasti lähes kaikki \*nix-käyttäjät, lessiä niin kauan kuin muistan. Tässä joku aika sitten tuli vastaan pari asiaa, joita en ollut hoksannut. Kenties ovat menneet muiltakin ohi?

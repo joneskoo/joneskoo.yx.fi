@@ -12,7 +12,8 @@ tags:
 - ipv6
 - angst
 title: Saunalahden mobiiliyhteyksien NAT
-url: /2011/12/20/saunalahti-nat/
+aliases:
+ - /blog/2011/12/20/saunalahti-nat.html
 ---
 
 Saunalahdella on ollut muutaman kuukauden ajan ongelmia IP-osoitteiden

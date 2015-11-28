@@ -8,9 +8,11 @@ excerpt: |-
   yhteys.
 tags:
 - saunalahti
+- LTE
 - kotiverkko
 title: LTE-kokemuksia automatkalta Oulu–Tampere
-url: /2015/02/01/lte-oulu-tampere/
+aliases:
+ - /blog/2015/02/01/lte-oulu-tampere.html
 ---
 
 Kävin työmatkan vuoksi Tampereella. Helka halusi mukaan matkaan,

@@ -10,7 +10,8 @@ excerpt: |-
 tags:
 - skriptit
 title: Jekyll ja uudet sivut
-url: /2011/10/15/jekyll_ja_uudet_sivut/
+aliases:
+ - /blog/2011/10/15/jekyll_ja_uudet_sivut.html
 ---
 
 Taas on tullut aika kirjoittaa kotisivut uusiksi. Tekniikka kehittyy ja silleen.

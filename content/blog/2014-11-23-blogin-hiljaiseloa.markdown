@@ -6,7 +6,8 @@ excerpt: |-
 tags:
 - meta
 title: Blogin hiljaiseloa
-url: /2014/11/23/blogin-hiljaiseloa/
+aliases:
+ - /blog/2014/11/23/blogin-hiljaiseloa.html
 ---
 
 Asuin kaksi vuotta Yhdysvalloissa Kaliforniassa ja siellä oman

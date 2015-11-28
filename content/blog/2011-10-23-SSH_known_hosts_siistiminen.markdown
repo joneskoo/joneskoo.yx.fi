@@ -6,7 +6,8 @@ excerpt: |-
 tags:
 - skriptit
 title: SSH known_hosts-tiedoston siistiminen
-url: /2011/10/23/SSH_known_hosts_siistiminen/
+alises:
+ - /blog/2011/10/23/SSH_known_hosts_siistiminen.html
 ---
 
 Kyllästyin viimein ssh known\_hosts-tiedoston sotkuisuuteen ja koodasin

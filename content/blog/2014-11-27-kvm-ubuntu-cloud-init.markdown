@@ -10,7 +10,8 @@ tags:
 - kvm
 - ubuntu
 title: Ubuntu ja cloud-init kotipalvelimella
-url: /2014/11/27/kvm-ubuntu-cloud-init/
+aliases:
+ - /blog/2014/11/27/kvm-ubuntu-cloud-init.html
 ---
 
 Virtuaalikoneen asennuksen ei tarvitse olla vaikeaa. Ubuntu julkaisee
