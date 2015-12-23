@@ -13,8 +13,13 @@
   <!-- Play font -->
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
   <link rel="canonical" href="">
-  <link rel="alternate" type="application/atom+xml" title="FIXME" href="/blog/atom.xml" />
 
+  {{ if .RSSlink }}
+    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+  {{ end }}
+
+  <!-- FIXME: Google analytics account ID to config -->
   <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-27608925-1']);
