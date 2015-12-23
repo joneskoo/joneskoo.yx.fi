@@ -26,10 +26,3 @@ vcard_file: /public/joneskoo.vcf
 markdown: rdiscount
 theme: joneskoo
 pygmentsstyle: xcode
-
-defaults:
-  -
-    scope:
-      path: "blog"
-    values:
-      layout: "post"
