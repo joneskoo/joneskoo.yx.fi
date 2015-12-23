@@ -10,9 +10,10 @@ excerpt: |-
   vielä ymmärtävät.
 tags:
 - saunalahti
-- LTE
+- lte
 - matka
 title: LTE käytännössä - havaintoja kotoa ja matkalta
+slug: lte-autoiluhavaintoja
 aliases:
  - /blog/2015/06/06/lte-autoiluhavaintoja.html
 ---

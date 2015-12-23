@@ -12,6 +12,7 @@ tags:
 - ipv6
 - angst
 title: Saunalahden mobiiliyhteyksien NAT
+slug: saunalahti-nat
 aliases:
  - /blog/2011/12/20/saunalahti-nat.html
 ---
@@ -38,10 +39,10 @@ Uusin Saunalahden tiedote asiasta oli hyvin synkkä:
 > Lokakuussa alkanut muutos laajenee 23.1.2012 alkaen koskemaan kaikkia mobiili-
 > ja mobiililaajakaistaliittymiä lukuunottamatta prepaid-liittymiä, ja se on
 > voimassa kaikkina vuorokaudenaikoina.
-> 
+>
 > IP-osoitteiden myöntämiskäytännön muuttaminen ei vaadi toimenpiteitä
 > asiakkaalta eikä vaikuta normaaliin internet-käyttöön.
-> 
+>
 > Lue lisätiedot ja ohjeet erityistilanteisiin: saunalahti.fi/asiakaspalvelu > Ohjeet tuotteittain > Mobiililaajakaista > Mobiililaajakaistan käyttäminen > Osoitteenmuunnos (NAT)
 
 Ehkä en vain tajua mutta tiedote antaa ymmärtää että osoitteenmuutos tulee

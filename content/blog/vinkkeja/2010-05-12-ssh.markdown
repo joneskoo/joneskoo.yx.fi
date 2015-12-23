@@ -6,6 +6,7 @@ excerpt: |-
   rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n
   asetustiedostosta ja siinä käyttämistäni asetuksista.
 title: Hyödyllisiä vinkkejä, osa ssh
+slug: ssh
 tags:
  - vinkkejä
  - skriptit
@@ -68,9 +69,9 @@ Host *
     TCPKeepAlive yes
     ServerAliveCountMax 3
     ServerAliveInterval 10
-</pre>        
+</pre>
 
-Yllä oleva pätkä tarkoittaisi, että kaikkiin osoitteisiin yhdistäessä käytetään pakkausta ja keepalive-toiminnallisuutta, joka katkaisee yhteyden jos liikenne ei kulje 3·10&nbsp;=&nbsp;30 sekunnin aikana. Ensimmäinen on erittäin näppärä GPRS-yhteyksiä käytettäessä eikä omien kokemusteni perusteella ole koskaan haitaksi. Jälkimmäisestä on hyötyä, jos käyttää ssh-porttiohjauksia. Kun keepalive katkaisee ssh-yhteyden, ssh kuolee ja sen voi yhdistää uudestaan. Muuten portti voi jäädä varatuksi ja käyttökelvottomaksi kun ssh-yhteys ei ole vielä katkennut mutta yhteys ei myöskään toimi. 
+Yllä oleva pätkä tarkoittaisi, että kaikkiin osoitteisiin yhdistäessä käytetään pakkausta ja keepalive-toiminnallisuutta, joka katkaisee yhteyden jos liikenne ei kulje 3·10&nbsp;=&nbsp;30 sekunnin aikana. Ensimmäinen on erittäin näppärä GPRS-yhteyksiä käytettäessä eikä omien kokemusteni perusteella ole koskaan haitaksi. Jälkimmäisestä on hyötyä, jos käyttää ssh-porttiohjauksia. Kun keepalive katkaisee ssh-yhteyden, ssh kuolee ja sen voi yhdistää uudestaan. Muuten portti voi jäädä varatuksi ja käyttökelvottomaksi kun ssh-yhteys ei ole vielä katkennut mutta yhteys ei myöskään toimi.
 
 Ensimmäisenä tiedostossa löytynyt asetus jää voimaan, eli yleiset oletukset kannattaa laittaa loppuun, jotta tarkemmat osoitekohtaiset asetukset ohittavat ne.
 

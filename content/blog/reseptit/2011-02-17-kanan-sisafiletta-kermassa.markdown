@@ -5,6 +5,7 @@ excerpt: |-
   mahtavaan kanaruokaan. Helkan kanssa maisteluiden perusteella n. neljä
   annosta.
 title: Kanan sisäfilettä pippurikermakastikkeessa
+slug: kanan-sisafiletta-kermassa
 tags:
  - resepti
 aliases:

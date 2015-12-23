@@ -7,8 +7,8 @@ excerpt: |-
   olla suomalaisia. Irkin tulevaisuus herättää kysymyksiä.
 tags:
 - irc
-- Suomi
 title: Tilastoja IRCnet-verkon käyttäjistä
+slug: ircnet-tilastoja
 aliases:
  - /blog/2014/03/05/ircnet-tilastoja.html
 ---
@@ -28,44 +28,44 @@ Onneksi IRCnet ei tee käyttäjämäärien tutkimisesta tarpeettoman vaikeaa.
 Aloitan tutkimukseni listaamalla verkon rakenteen MAP-komennolla (/MAP):
 
 <pre>
-Server 
-irc.nebula.fi 
- `- *.tut.fi 
-     |- irc2.inet.fi 
-     |- *.oamk.fi 
-     |- *.no 
-     |- irc.elisa.fi 
-     |- irc.tdc.fi 
-     |- irc.opoy.fi 
-     |- *.nl 
-     |   |- *.be 
-     |   |- *.pl 
-     |   |   |- *.tw 
-     |   |   |- ircnet.eversible.com 
-     |   |   |- ircnet.nerim.fr 
-     |   |   |- *.ee 
-     |   |   `- *.cz 
-     |   |- *.it 
-     |   |- *.is 
-     |   |- *.irc6.net 
-     |   |- *.at 
-     |   |   |- hub.uk 
-     |   |   |   |- *.jp 
-     |   |   |   |- *.dotsrc.org 
-     |   |   |   |- ircnet.blacklotus.net 
-     |   |   |   |- *.DE 
-     |   |   |   |- *.hu 
-     |   |   |   |- irc.atw-inter.net 
-     |   |   |   |- ircnet.optilian.net 
-     |   |   |   `- *.si 
-     |   |   `- *.se 
-     |   `- *.il 
-     |- *.lut.fi 
-     `- *.hut.fi 
-         |- *.oulu.fi 
-         |- *.jyu.fi 
-         `- irc1.inet.fi 
-End of MAP 
+Server
+irc.nebula.fi
+ `- *.tut.fi
+     |- irc2.inet.fi
+     |- *.oamk.fi
+     |- *.no
+     |- irc.elisa.fi
+     |- irc.tdc.fi
+     |- irc.opoy.fi
+     |- *.nl
+     |   |- *.be
+     |   |- *.pl
+     |   |   |- *.tw
+     |   |   |- ircnet.eversible.com
+     |   |   |- ircnet.nerim.fr
+     |   |   |- *.ee
+     |   |   `- *.cz
+     |   |- *.it
+     |   |- *.is
+     |   |- *.irc6.net
+     |   |- *.at
+     |   |   |- hub.uk
+     |   |   |   |- *.jp
+     |   |   |   |- *.dotsrc.org
+     |   |   |   |- ircnet.blacklotus.net
+     |   |   |   |- *.DE
+     |   |   |   |- *.hu
+     |   |   |   |- irc.atw-inter.net
+     |   |   |   |- ircnet.optilian.net
+     |   |   |   `- *.si
+     |   |   `- *.se
+     |   `- *.il
+     |- *.lut.fi
+     `- *.hut.fi
+         |- *.oulu.fi
+         |- *.jyu.fi
+         `- irc1.inet.fi
+End of MAP
 </pre>
 
 Kuten näkyy, tein reittikyselyn irc.nebula.fi:llä (irkkaan [Kapsin][kapsi]

@@ -8,8 +8,10 @@ excerpt: |-
   kuvafeedin. Vanhalla saitilla näihin oli vain linkki, mikä alkoi tuntua
   rajoittuneelta.
 tags:
-- skriptit
+ - skriptit
+ - meta
 title: Jekyll ja uudet sivut
+slug: jekyll_ja_uudet_sivut
 aliases:
  - /blog/2011/10/15/jekyll_ja_uudet_sivut.html
 ---

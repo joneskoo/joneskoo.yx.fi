@@ -6,6 +6,7 @@ excerpt: |-
   rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n
   asetustiedostosta ja siinä käyttämistäni asetuksista.
 title: Hyödyllisiä vinkkejä, osa bash
+slug: bash
 tags:
  - vinkkejä
  - shell

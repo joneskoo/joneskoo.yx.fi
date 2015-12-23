@@ -10,6 +10,7 @@ tags:
 - kvm
 - ubuntu
 title: Ubuntu ja cloud-init kotipalvelimella
+slug: kvm-ubuntu-cloud-init
 aliases:
  - /blog/2014/11/27/kvm-ubuntu-cloud-init.html
 ---

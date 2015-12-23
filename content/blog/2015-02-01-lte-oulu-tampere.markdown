@@ -8,9 +8,10 @@ excerpt: |-
   yhteys.
 tags:
 - saunalahti
-- LTE
+- lte
 - kotiverkko
 title: LTE-kokemuksia automatkalta Oulu–Tampere
+slug: lte-oulu-tampere
 aliases:
  - /blog/2015/02/01/lte-oulu-tampere.html
 ---

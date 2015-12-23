@@ -6,6 +6,7 @@ excerpt: |-
 tags:
 - meta
 title: Blogin hiljaiseloa
+slug: blogin-hiljaiseloa
 aliases:
  - /blog/2014/11/23/blogin-hiljaiseloa.html
 ---

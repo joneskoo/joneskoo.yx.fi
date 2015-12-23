@@ -4,6 +4,7 @@ excerpt: |-
   Reilusti lihaisa ja arkinen lihapata perunamuusilla ja kermakastikkeella.
   Kopioitu Ameriikan ihmeitä -blogista.
 title: Arkinen lihapata
+slug: lihapata
 tags:
  - resepti
 aliases:
@@ -56,4 +57,3 @@ Ensi kerralla voisi heittää pataan mukaan esim. porkkanoita mutta eipä sitä 
 [helkajoonas]: http://helkajajoonas.yx.fi/
 [resepti]: http://helkajajoonas.yx.fi/2014/04/arkijuttuja-lihapataa.html
 [worcester]: http://fi.wikipedia.org/wiki/Worcesterkastike
-

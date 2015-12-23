@@ -13,6 +13,7 @@ tags:
 - kotiverkko
 - skriptit
 title: OpenWRT-pohjainen bittijarru
+slug: openwrt-pohjainen-bittijarru
 aliases:
  - /blog/2009/05/30/openwrt-pohjainen-bittijarru.html
 ---
@@ -24,7 +25,7 @@ Yhteytenä kotonani on tällä hetkellä Soneran 24 / 2 Mbit/s ADSL2+ Annex M-yh
 
 Kotona pyörittämäni Linux-palvelin suli jostain mystisestä syystä, jota en ole vieläkään jaksanut selvittää. Siirsin sen järjestelmän ajoon Vmwaren päälle iMacilleni. Huonona puolena en jaksanut alkaa kikkailemaan palomuuria vmwaren sisään kun vlan tagien kanssa oli jotain ongelmia.
 
-Keksinkin lopulta ongelmaan mitä parhaimman ratkaisun: läpinäkyvä jarruttava silta ADSL-modeemin ja muun verkon välille. Silta pitää huolta, että IPv4- ja IPv6-yhteydet saavat kaistan jaettua reilusti (= IPv6:lle vähintään puolet) ja pienet paketit menevät joka tapauksessa ensin. Ratkaisun toteutin OpenWRT:n päälle. Käytännössä wshaper++-skripti toimi suoraan kun latasin oikeat kernelimoduulit, jotka asensin opkg:llä. Säädin verkkoasetukset niin, että portissa 1 on management, WAN-portissa on Internet-yhteys ja portit 2-4 ovat sillattu siihen. 
+Keksinkin lopulta ongelmaan mitä parhaimman ratkaisun: läpinäkyvä jarruttava silta ADSL-modeemin ja muun verkon välille. Silta pitää huolta, että IPv4- ja IPv6-yhteydet saavat kaistan jaettua reilusti (= IPv6:lle vähintään puolet) ja pienet paketit menevät joka tapauksessa ensin. Ratkaisun toteutin OpenWRT:n päälle. Käytännössä wshaper++-skripti toimi suoraan kun latasin oikeat kernelimoduulit, jotka asensin opkg:llä. Säädin verkkoasetukset niin, että portissa 1 on management, WAN-portissa on Internet-yhteys ja portit 2-4 ovat sillattu siihen.
 
 ## Pakettien asentelua ##
 
@@ -70,7 +71,7 @@ sch_htb
 cls_u32
 </pre>
 
-Editoin hieman wshaper++-skriptiä sopimaan paremmin tähän tarkoitukseen. Vaihdoin sfq:n skriptistä esfq:n, kun en aluksi hoksannut että vanha sfq-moduulikin olisi ollut tarjolla. 
+Editoin hieman wshaper++-skriptiä sopimaan paremmin tähän tarkoitukseen. Vaihdoin sfq:n skriptistä esfq:n, kun en aluksi hoksannut että vanha sfq-moduulikin olisi ollut tarjolla.
 
 Lähinnä korvasin sfq:n esfq:lla ja lisäsin alkuun pätkän
 
@@ -91,4 +92,3 @@ Jarru käyntiin!
 # ./wshaper++ eth0.1 512
 # ./wshaper++ eth0.2 512
 </pre>
-

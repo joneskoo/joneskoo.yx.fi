@@ -6,7 +6,8 @@ excerpt: |-
 tags:
 - skriptit
 title: SSH known_hosts-tiedoston siistiminen
-alises:
+slug: ssh-known-hosts-siistiminen
+aliases:
  - /blog/2011/10/23/SSH_known_hosts_siistiminen.html
 ---
 
