@@ -12,7 +12,7 @@
 
         <section id="blogissa">
           <h2>Uusimmat blogikirjoitukset</h2>
-          
+
           <ul class="blogissa">{{ range where .Data.Pages "Section" "blog" | first 3 }}
             <li>
               <span>
@@ -23,7 +23,7 @@
           {{ end }}</ul>
 
           <p>
-            <a href="/blog.html">Lisää kirjoituksia blogissa…</a>
+            <a href="/blog/">Lisää kirjoituksia blogissa…</a>
           </p>
         </section>
 
