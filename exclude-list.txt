@@ -3,3 +3,4 @@ kuveja
 kuveja*
 tmp
 .*.swp
+.well-known
