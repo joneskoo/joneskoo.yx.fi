@@ -20,6 +20,7 @@ RewriteEngine On
 RewriteRule ^kuveja/?(index\.html)?$ https://joneskoo.kapsi.fi/kuveja.html [R=301,L]
 RewriteRule ^blog/atom\.xml$ https://joneskoo.kapsi.fi/index.xml [R=301,L]
 RewriteRule ^blog\.html?$ https://joneskoo.kapsi.fi/blog/ [R=301,L]
+RewriteRule ^\d\d\d\d/\d\d/(.*)$ https://joneskoo.kapsi.fi/blog/$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} !joneskoo.kapsi.fi
 RewriteRule ^(.*)$ https://joneskoo.kapsi.fi/$1
