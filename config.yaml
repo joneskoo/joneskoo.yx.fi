@@ -2,9 +2,6 @@ baseurl: "https://joneskoo.kapsi.fi" # the base hostname & protocol for your sit
 disablePathToLower: true
 languageCode: fi-fi
 
-permalinks:
-  blog: /:year/:month/:slug/
-
 # Site settings
 title: Joonas Kuorilehto
 email: joneskoo@derbian.fi
