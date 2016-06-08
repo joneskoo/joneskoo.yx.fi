@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{{- $baseurl := .Site.BaseURL -}}
 <html>
 <head>
   <meta charset="utf-8">
@@ -6,13 +7,24 @@
   {{ .Hugo.Generator }}
   <meta name="viewport" content="width=device-width initial-scale=1">
 
+  <!-- opengraph and twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@joneskoo_yx">
+  <meta name="twitter:creator" content="@joneskoo_yx">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ if .Section }}{{ .Summary }}{{else}}{{.Site.Title}}{{end}}">
+  <meta property="og:image" content="{{ $baseurl }}{{ .Site.Data.me.photo }}">
+
+  <link rel="canonical" href="{{ .Permalink }}">
+
   <title>{{ .Title }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}" />
+  <meta name="description" content="{{ .Site.Params.description }}">
 
   <link rel="stylesheet" href="/css/style.css">
+
   <!-- Play font -->
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-  <link rel="canonical" href="">
 
   {{ if .RSSlink }}
     <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
