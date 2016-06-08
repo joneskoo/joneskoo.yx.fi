@@ -11,6 +11,7 @@ tags:
 - saunalahti
 - ipv6
 - angst
+- mobiili
 title: Saunalahden mobiiliyhteyksien NAT
 slug: saunalahti-nat
 aliases:
