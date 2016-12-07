@@ -101,7 +101,7 @@ valmis käyttöön.
 
 
 [ec2]: http://aws.amazon.com/ec2/ "Amazon Web Services - EC2 (Elastic Compute Cloud)"
-[digitalocean]: https://www.digitalocean.com/?refcode=7895291a5a1b "Digital Ocean"
+[digitalocean]: https://m.do.co/c/51f6517e0d88 "Digital Ocean"
 [ci]: http://cloudinit.readthedocs.org/en/latest/topics/examples.html "Cloud-init esimerkkejä"
 [ubuntu-cloud]: https://cloud-images.ubuntu.com/ "Ubuntu Cloud Images: Ubuntu Cloud Images are pre-installed disk images that have been customized by Ubuntu engineering to run on cloud-platforms such as Amazon EC2, Openstack, Windows and LXC."
 [ci-kvm]: http://serverascode.com/2014/03/17/trusty-libvirt.html "Boot Ubuntu Trusty Tahr 14.04 with libvirt"
