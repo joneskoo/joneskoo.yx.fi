@@ -1,6 +1,7 @@
 joneskoo.yx.fi {
   root /var/www/joneskoo.yx.fi
   git http://github.com/joneskoo/joneskoo.yx.fi {
+    hook /webhook {$GITHUB_WEBHOOK_SECRET}
     path  /tmp/joneskoo.yx.fi
     then  hugo --destination=/var/www/joneskoo.yx.fi
   }
