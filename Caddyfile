@@ -1,4 +1,4 @@
-0.0.0.0:80 {
+joneskoo.yx.fi {
   root /var/www/joneskoo.yx.fi
   git http://github.com/joneskoo/joneskoo.yx.fi {
     path  /tmp/joneskoo.yx.fi
