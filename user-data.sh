@@ -16,6 +16,7 @@ mkdir -p /var/www /var/www/joneskoo.yx.fi
 chown -R www-data:www-data /var/www
 chmod -R a+rX /var/www
 
+apt-get update && apt-get install -qyy python-pygments
 wget https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19-64bit.deb
 dpkg -i hugo_0.19-64bit.deb
 
