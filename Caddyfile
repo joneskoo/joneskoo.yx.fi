@@ -5,4 +5,8 @@ joneskoo.yx.fi {
     path  /tmp/joneskoo.yx.fi
     then  hugo --destination=/var/www/joneskoo.yx.fi
   }
+
+  header / {
+    Strict-Transport-Security "max-age=31536000;"
+  }
 }
