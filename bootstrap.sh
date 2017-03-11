@@ -1,6 +1,7 @@
 #!/bin/bash
 set -eux
-mkdir -p /etc/caddy /etc/ssl/caddy
+mkdir -p /etc/caddy /etc/caddy/sites /etc/ssl/caddy
+echo 'import sites/*' > /etc/caddy/Caddyfile
 chown -R root:www-data /etc/caddy
 chown -R www-data:root /etc/ssl/caddy
 chmod 0770 /etc/ssl/caddy
@@ -9,7 +10,7 @@ curl -fsSL https://getcaddy.com | bash -s git,hugo
 curl -fsSL -o /etc/systemd/system/caddy.service https://raw.githubusercontent.com/mholt/caddy/master/dist/init/linux-systemd/caddy.service
 # Inject a randomly generated token for github webhook
 sed -i '/\[Service\]/a Environment=GITHUB_WEBHOOK_SECRET='`uuidgen` caddy.service
-curl -fsSL -o /etc/caddy/Caddyfile https://raw.githubusercontent.com/joneskoo/joneskoo.yx.fi/master/Caddyfile
+curl -fsSL -o /etc/caddy/sites/joneskoo.yx.fi.conf https://raw.githubusercontent.com/joneskoo/joneskoo.yx.fi/master/Caddyfile
 
 chown root:root /etc/systemd/system/caddy.service
 chmod 744 /etc/systemd/system/caddy.service
