@@ -13,7 +13,7 @@ sed -i '/\[Service\]/a Environment=GITHUB_WEBHOOK_SECRET='`uuidgen` caddy.servic
 curl -fsSL -o /etc/caddy/sites/joneskoo.yx.fi.conf https://raw.githubusercontent.com/joneskoo/joneskoo.yx.fi/master/Caddyfile
 
 chown root:root /etc/systemd/system/caddy.service
-chmod 744 /etc/systemd/system/caddy.service
+chmod 644 /etc/systemd/system/caddy.service
 
 mkdir -p /var/www /var/www/joneskoo.yx.fi
 chown -R www-data:www-data /var/www
