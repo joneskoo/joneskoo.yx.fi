@@ -1,7 +1,7 @@
 ---
 date: 2009-03-12T00:00:00Z
 tags:
-- yx.fi
+- shorturl
 title: yx.fi-lyhyturlipalvelun historia ja tuoreet muutokset
 slug: yxfi-lyhyturlipalvelun-historia
 ---

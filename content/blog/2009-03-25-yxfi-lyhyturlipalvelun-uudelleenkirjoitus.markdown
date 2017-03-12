@@ -1,7 +1,7 @@
 ---
 date: 2009-03-25T00:00:00Z
 tags:
-- yx.fi
+- shorturl
 title: yx.fi lyhytosoitepalvelun uudelleenkirjoitus
 slug: yxfi-lyhyturlipalvelun-uudelleenkirjoitus
 ---
