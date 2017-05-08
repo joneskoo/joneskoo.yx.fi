@@ -20,8 +20,8 @@ chown -R www-data:www-data /var/www
 chmod -R a+rX /var/www
 
 apt-get update && apt-get install -qyy python-pygments
-wget https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19-64bit.deb
-dpkg -i hugo_0.19-64bit.deb
+wget https://github.com/spf13/hugo/releases/download/v0.20.7/hugo_0.20.7_Linux-64bit.deb
+dpkg -i hugo_0.20.7_Linux-64bit.deb
 
 systemctl enable caddy.service
 systemctl daemon-reload
