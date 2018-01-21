@@ -1,34 +1,24 @@
 <!DOCTYPE html>
-{{- $baseurl := .Site.BaseURL -}}
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ .Title }}</title>
   {{ .Hugo.Generator }}
   <meta name="viewport" content="width=device-width initial-scale=1">
-
-  <!-- opengraph and twitter -->
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <meta name="description" content="{{ .Site.Params.description }}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@joneskoo_yx">
   <meta name="twitter:creator" content="@joneskoo_yx">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:title" content="{{ if .Section }}[{{ .Date.Format "2006-01-02" }}] {{end}}{{ .Title }}">
   <meta property="og:description" content="{{ if .Section }}{{ .Summary }}{{else}}{{.Site.Params.description}}{{end}}">
-  <meta property="og:image" content="{{ $baseurl }}{{ .Site.Data.me.photo }}">
-
-  <link rel="canonical" href="{{ .Permalink }}">
-
-  <title>{{ .Title }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}">
-
-  <link rel="stylesheet" href="/css/style.css">
-
-  <!-- Play font -->
+  <meta property="og:image" content="{{ .Site.Data.me.photo | absURL }}">
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-
-  {{ if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-  {{ end }}
-
+  {{ if .RSSLink -}}
+  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+  {{- end }}
 </head>

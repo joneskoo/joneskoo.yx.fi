@@ -1,0 +1,15 @@
+title = "Hyödyllisiä tuotoksia?"
+
+[[items]]
+  title = "yx.fi-lyhyturlipalvelu"
+  url = "https://yx.fi/"
+  description = """
+    Lyhentää pitkät URLit sopivan lyhyiksi saneltavaksi \
+    puhelimessa tai irkkiin."""
+
+[[items]]
+  title = "Sikteeri"
+  url = "https://github.com/kapsiry/sikteeri"
+  description = """
+    Olen kehittänyt ison osan Kapsin jäsenhallinta- ja \
+    laskutusjärjestelmästä."""
