@@ -2,9 +2,8 @@ title = "Joonas Kuorilehto"
 baseurl = "https://joneskoo.kapsi.fi"
 languageCode = "fi-fi"
 disablePathToLower = true
-markdown = "rdiscount"
 theme = "joneskoo"
-pygmentsstyle = "xcode"
+pygmentsstyle = "vs"
 
 [params]
 description = "Nörtti, radioamatööri, tietotekniikan DI, päivätöissä tietoturva-alalla. Kiinnostunut teknologiasta ja säätämisestä. Mielipiteet omia."
