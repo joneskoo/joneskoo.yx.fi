@@ -14,8 +14,9 @@
       </a>
 
       <div class="trigger">
-        {{ range .Site.Data.nav.menu }}
-        <a class="page-link" href="{{ .url }}">{{ .title }}</a>
+        {{ $currentPage := . }}
+        {{- range .Site.Menus.main }}
+        <a class="page-link" href="{{ .URL }}">{{ .Name }}</a>
         {{ end }}
       </div>
     </nav>
