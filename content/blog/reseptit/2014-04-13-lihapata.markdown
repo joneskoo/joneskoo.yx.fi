@@ -1,8 +1,5 @@
 ---
 date: 2014-04-13T00:00:00Z
-excerpt: |-
-  Reilusti lihaisa ja arkinen lihapata perunamuusilla ja kermakastikkeella.
-  Kopioitu Ameriikan ihmeitä -blogista.
 title: Arkinen lihapata
 slug: lihapata
 tags:

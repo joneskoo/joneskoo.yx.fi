@@ -1,12 +1,5 @@
 ---
 date: 2011-10-15T00:00:00Z
-excerpt: |-
-  Taas on tullut aika kirjoittaa kotisivut uusiksi. Tekniikka kehittyy ja
-  silleen. Lähdin taas tyhjästä suunnittelemaan kotisivuilleni asettelua ja
-  miettimään sisällön esittämistä uusiksi. Edellisen sivun luomisen jälkeen
-  olin ehtinyt muun muassa perustaa blogin ja valokuvien jakamista varten
-  kuvafeedin. Vanhalla saitilla näihin oli vain linkki, mikä alkoi tuntua
-  rajoittuneelta.
 tags:
  - skriptit
  - meta

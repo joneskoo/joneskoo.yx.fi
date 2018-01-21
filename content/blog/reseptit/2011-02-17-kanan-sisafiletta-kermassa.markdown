@@ -1,9 +1,5 @@
 ---
 date: 2011-02-17T00:00:00Z
-excerpt: |-
-  Äidin tekemästä kanasta röyhkeästi apinoiden, tässäpä resepti aivan
-  mahtavaan kanaruokaan. Helkan kanssa maisteluiden perusteella n. neljä
-  annosta.
 title: Kanan sisäfilettä pippurikermakastikkeessa
 slug: kanan-sisafiletta-kermassa
 tags:

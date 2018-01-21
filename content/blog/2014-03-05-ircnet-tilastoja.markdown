@@ -1,10 +1,5 @@
 ---
 date: 2014-03-05T00:00:00Z
-excerpt: |-
-  Tein pikaisen katsauksen IRCnet-verkon hetkellisiin käyttäjämääriin ja
-  erityisesti verkon suomalaisten käyttäjien osuuteen. Tutkimukseni
-  perusteella näyttäisi että jopa 45&nbsp;% IRCnetin käyttäjistä voisi
-  olla suomalaisia. Irkin tulevaisuus herättää kysymyksiä.
 tags:
 - irc
 title: Tilastoja IRCnet-verkon käyttäjistä

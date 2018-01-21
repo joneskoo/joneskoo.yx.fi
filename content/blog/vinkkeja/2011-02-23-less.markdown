@@ -1,9 +1,5 @@
 ---
 date: 2011-02-23T00:00:00Z
-excerpt: |-
-  Olen käyttänyt, kuten varmasti lähes kaikki \*nix-käyttäjät, lessiä niin
-  kauan kuin muistan. Tässä joku aika sitten tuli vastaan pari asiaa, joita en
-  ollut hoksannut. Kenties ovat menneet muiltakin ohi?
 title: Hyödyllisiä vinkkejä, osa less
 slug: less
 tags:

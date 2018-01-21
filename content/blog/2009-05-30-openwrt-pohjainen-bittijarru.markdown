@@ -1,14 +1,5 @@
 ---
 date: 2009-05-30T00:00:00Z
-excerpt: |-
-  Yhteytenä kotonani on tällä hetkellä Soneran 24/2 Mbit/s ADSL2+ Annex
-  M-yhteys. Sen ongelma on ainakin kuluttajamodeemeilla, että jos ulospäin
-  lähtee dataa, niin viive nousee kohtuuttoman suureksi irkkaamiseen.
-  Keksinkin lopulta ongelmaan mitä parhaimman ratkaisun: läpinäkyvä jarruttava
-  silta ADSL-modeemin ja muun verkon välille. Silta pitää huolta, että IPv4-
-  ja IPv6-yhteydet saavat kaistan jaettua reilusti (= IPv6:lle vähintään
-  puolet) ja pienet paketit menevät joka tapauksessa ensin. Ratkaisun toteutin
-  OpenWRT:n päälle.
 tags:
 - kotiverkko
 - skriptit

@@ -1,8 +1,5 @@
 ---
 date: 2011-10-23T00:00:00Z
-excerpt: |-
-  Kyllästyin viimein ssh known_hosts-tiedoston sotkuisuuteen ja koodasin
-  yksinkertaisen skriptin, joka yhdistää saman palvelimen rivit yhdeksi.
 tags:
 - skriptit
 title: SSH known_hosts-tiedoston siistiminen

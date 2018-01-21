@@ -1,13 +1,5 @@
 ---
 date: 2015-06-06T00:00:00Z
-excerpt: |-
-  Voin nyt puhua LTE:stä miltei vuoden kokemuksella
-  kiinteän laajakaistan korvikkeena.
-  Kävin puhumassa LTE-kokemuksistani Itäsuomalaisten
-  radioharrastajien kesäpäivillä Vuokatissa. Matkalla
-  mittasin yhteyden toimivuutta pingillä ja wgetillä.
-  LTE on uskoakseni käyttökelpoisempi kuin useimmat
-  vielä ymmärtävät.
 tags:
 - saunalahti
 - lte

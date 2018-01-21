@@ -1,8 +1,5 @@
 ---
 date: 2014-11-23T00:00:00Z
-excerpt: |-
-  Blogi on elänyt hiljaiseloa ulkomailla asumisen ajan.
-  Jospa taas lisää.
 tags:
 - meta
 title: Blogin hiljaiseloa

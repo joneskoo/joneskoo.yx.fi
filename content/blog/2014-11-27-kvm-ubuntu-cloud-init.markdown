@@ -1,10 +1,5 @@
 ---
 date: 2014-11-27T00:00:00Z
-excerpt: |-
-  Virtuaalikoneen asennuksen ei tarvitse olla vaikeaa. Ubuntu julkaisee
-  viralliset levykuvat pilvipalveluita varten, joita voi käyttää yhtä
-  hyvin myös kotona. Itse asiassa se ei ole edes vaikeaa, mutta ohjeita
-  saa hieman kaivaa.
 tags:
 - skriptit
 - kvm

@@ -1,12 +1,5 @@
 ---
 date: 2011-12-20T00:00:00Z
-excerpt: |-
-  Saunalahden mobiilidatan IP-osoitteiden loppumisen vuoksi Saunalahti
-  lopettaa julkisten IPv4-osoitteiden jakamisen. Huonon ohjeistuksen vuoksi
-  tiedotteesta sai kuvan, että julkisia osoitteita ei enää saisi. Kuitenkin
-  tosiasiassa tarjolle tuotiin uusi APN "internet4", jonka saa erikseen
-  tilaamalla käyttöön (ilmaiseksi). Eli ongelma olikin lopulta
-  tiedottamisessa.
 tags:
 - saunalahti
 - ipv6

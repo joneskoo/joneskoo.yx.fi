@@ -1,11 +1,5 @@
 ---
 date: 2015-02-01T00:00:00Z
-excerpt: |-
-  Kävin työmatkalla Tampereella. Otin mukaan kotoa
-  LTE-modeemin autoon nettiyhteydeksi. Toimivuus yllätti
-  ja nettiyhteys toimi koko matkan lyhyttä katvetta
-  lukuunottamatta suunnilleen yhtä hyvin kuin kiinteä
-  yhteys.
 tags:
 - saunalahti
 - lte
