@@ -1,10 +1,5 @@
 ---
 date: 2010-05-12T00:00:00Z
-excerpt: |-
-  Haluaisin kertoa muutamista liian vähän tunnetuista näppäristä asetuksista
-  eri ohjelmissa. Kerron niistä lyhyesti ja annan kullekin copypastetettavat
-  rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n
-  asetustiedostosta ja siinä käyttämistäni asetuksista.
 title: Hyödyllisiä vinkkejä, osa ssh
 slug: ssh
 tags:
