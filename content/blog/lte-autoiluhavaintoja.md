@@ -216,4 +216,4 @@ Molemmissa mittauksissa käytin siis Kapsin palvelimia, jotka sijaitsevat
 Helsingissä hyvien yhteyksien päässä.
 
 [garde]: https://garde.fi/oh8g.php?func=SHOW&id=46 "Itäsuomalaiset radioharrastajien kesäpäivät 5.-7.6.2015, Vuokatti"
-[tre]: {{< relref "2015-02-01-lte-oulu-tampere.markdown" >}} "LTE-kokemuksia automatkalta Oulu–Tampere"
+[tre]: {{< relref "lte-oulu-tampere.md" >}} "LTE-kokemuksia automatkalta Oulu–Tampere"
