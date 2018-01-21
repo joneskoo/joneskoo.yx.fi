@@ -1,7 +1,6 @@
 ---
 date: 2014-04-13T00:00:00Z
 title: Arkinen lihapata
-slug: lihapata
 tags:
  - resepti
 aliases:
@@ -14,7 +13,7 @@ kirjoitettu. Toivottavasti tuli sinne päinkään sama mitä tänään tein.
 
 <!--more-->
 
-![2014 04 13 Lihapata](/blog/img/2014-04-13-lihapata.jpg)
+![2014 04 13 Lihapata](lihapata.jpg)
 
 Lihapata:
 

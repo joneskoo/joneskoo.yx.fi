@@ -3,7 +3,6 @@ date: 2009-03-25T00:00:00Z
 tags:
 - shorturl
 title: yx.fi lyhytosoitepalvelun uudelleenkirjoitus
-slug: yxfi-lyhyturlipalvelun-uudelleenkirjoitus
 ---
 
 
@@ -28,7 +27,7 @@ Googlettamalla löysin hyvän suosituksen sivuston rungoksi. Werkzeug on kotisiv
 
 Uusi koodini on organisoitu jokseenkin model-view-controller (tai oikeammin model-template-controller) arkkitehtuurin mukaisesti. Siinä on selkeästi erotettavissa erillisinä osina sivurungot (templatet) ja näkymät (view), tietokantamalli (model) ja kontrolleri. Tietokantamalli on vain muutama rivi koodia, sillä tietokanta on todella yksinkertainen. Kontrolleri päättää pyynnön perusteella mitä sisältöä selaimelle tarjotaan ja valitsee oikean sivurungon. Näet hakemistorakenteen alla olevasta kuvasta.
 
-![yx.fi lähdekoodit](/blog/img/2009-03-12-yxfi-main.png)
+![yx.fi lähdekoodit](yxfi.png)
 
 Tietokantamalli todellakin on yksinkertainen. Siinä on peräti neljä riviä koodia:
 

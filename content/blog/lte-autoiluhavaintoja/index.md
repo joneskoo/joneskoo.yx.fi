@@ -5,7 +5,6 @@ tags:
 - lte
 - matka
 title: LTE käytännössä - havaintoja kotoa ja matkalta
-slug: lte-autoiluhavaintoja
 aliases:
  - /blog/2015/06/06/lte-autoiluhavaintoja.html
 ---
@@ -50,7 +49,7 @@ Latausnopeus on kunkin viikon keskiarvo; 100 MB tiedosto on ladattu
 kerran tunnissa ja nopeus kirjattu, siis 24x7 = 168 latausta (16,8 GB)
 per piste.
 
-![Latausnopeus kotona](/blog/img/2015-06-06-elisa-lte-lataus.png)
+![Latausnopeus kotona](elisa-lte-lataus.png)
 
 Kuten kuvaajasta hyvin näkee, keskimääräinen latausnopeus
 ei juuri vaihtele. Keskiarvo jää huipusta uskoakseni pääasiassa siksi
@@ -117,7 +116,7 @@ Odotin, että yhteys katkeaa ainakin osan matkan aikana, mutta Spotify
 soi ongelmitta ja pätkimättä koko matkan Oulusta perille.
 
 
-![Latausnopeus autossa](/blog/img/2015-06-06-elisa-lte-matka-lataus.png)
+![Latausnopeus autossa](elisa-lte-matka-lataus.png)
 
 Latausnopeudet ovat selvästi paremmat mitä olisin odottanut matkalle.
 Ainoastaan 15:15(UTC) mittauksen nopeus on hidas, alle 10 Mbit/s, mutta
@@ -126,7 +125,7 @@ Muun osan matkasta nopeus riittäisi helposti HD-videostriimaukseen.
 Aika hyvin! Siis nyt puhutaan kuitenkin liikkuvasta autosta 80–100 km/h
 ja vielä rakenteilla olevasta LTE-verkosta.
 
-![Vasteaika autossa](/blog/img/2015-06-06-elisa-lte-matka-ping.png)
+![Vasteaika autossa](elisa-lte-matka-ping.png)
 
 Vasteaikamittauksen perusteella yhteys on lukuunottamatta muutamaa
 heikompaa kohtaa erittäin käyttökelpoinen. Helposti riittävän hyvä
@@ -136,7 +135,7 @@ tehtiin samalla yhteydellä, millä yllä olevat lataustestit ja silti
 vasteaika pysyi erittäin kohtuullisena. Samaa ei todellakaan olisi
 voinut tehdä 3G-verkossa.
 
-![Kuuluvuuskartta matkalle](/blog/img/2015-06-06-kuuluvuus.png)
+![Kuuluvuuskartta matkalle](kuuluvuus.png)
 
 Selvästi Itä-Suomen verkko on vielä keskeneräinen, mikä näkyy myös
 kuuluvuusaluekartasta. Kuitenkin jo nyt kuuluvuus riittää liikkuvassa
@@ -216,4 +215,4 @@ Molemmissa mittauksissa käytin siis Kapsin palvelimia, jotka sijaitsevat
 Helsingissä hyvien yhteyksien päässä.
 
 [garde]: https://garde.fi/oh8g.php?func=SHOW&id=46 "Itäsuomalaiset radioharrastajien kesäpäivät 5.-7.6.2015, Vuokatti"
-[tre]: {{< relref "lte-oulu-tampere.md" >}} "LTE-kokemuksia automatkalta Oulu–Tampere"
+[tre]: {{< relref "/blog/lte-oulu-tampere/index.md" >}} "LTE-kokemuksia automatkalta Oulu–Tampere"

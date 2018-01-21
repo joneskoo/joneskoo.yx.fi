@@ -17,7 +17,7 @@ päivityskin on hieman jäänyt töiden ja muiden kiinnostuksenkohteiden taustal
 
 <!--more-->
 
-![Irssi](/blog/img/irssi.png "irssi. Irkissä on hiljaista.")
+![Irssi](irssi.png "irssi. Irkissä on hiljaista.")
 
 Onneksi IRCnet ei tee käyttäjämäärien tutkimisesta tarpeettoman vaikeaa.
 Aloitan tutkimukseni listaamalla verkon rakenteen MAP-komennolla (/MAP):

@@ -3,7 +3,6 @@ date: 2015-12-23T00:00:00Z
 tags:
 - angst
 title: E-laskujen käytettävyysongelmia
-slug: elaskujen-kaytettavyysongelmia
 ---
 
 Tuskailin ladatessani e-laskuja omaan arkistooni. Kirjoitan tässä hieman
@@ -21,7 +20,7 @@ asiakirjoja, siis myös laskuja. Käymme laskut läpi ja säästämme ne
 siltä varalta että myöhemmin tarvii palata asiaan. Erityisesti hyödyt
 tulevat vastaan jos laskusta tarvitsee reklamoida.
 
-![Laskuja arkistossa PDF-muodossa](/blog/img/2015-12-23-elaskujen-kaytettavyydesta-arkisto.png)
+![Laskuja arkistossa PDF-muodossa](elaskujen-kaytettavyydesta-arkisto.png)
 
 Tallentamalla PDF-muodossa omalle koneelle vältämme riippuvuuden
 pankista. Esimerkiksi asuimme kaksi vuotta Yhdysvalloissa. Lisäksi
@@ -35,7 +34,7 @@ laskuja on vaikea hakea muuten kuin saapumisajan mukaan.
 Nordea listaa saapuneet laskut saapumispäivän mukaan ja näyttää listassa
 laskuttajan ja eräpäivän. Tämä on hyvä lähtökohta.
 
-![Nordea verkkopankki: Saapuneet laskut](/blog/img/2015-12-23-elaskujen-kaytettavyydesta-saapuneetlaskut.png)
+![Nordea verkkopankki: Saapuneet laskut](elaskujen-kaytettavyydesta-saapuneetlaskut.png)
 
 Harmillisesti e-laskujen oikeuksia ei voi hallita kuten tilinhaltijoita.
 Eli jos saan laskun,
@@ -50,7 +49,7 @@ talteen. Jos ei, niin "Perustiedot"-linkin takaa löytyy jostain valikosta
 mahdollisuus PDF-version tallentamiseen. Erittelylinkkiä klikkaamalla tulee
 tällainen näkymä:
 
-![Siirtyminen laskuttajan palveluun](/blog/img/2015-12-23-elaskujen-kaytettavyydesta-siirtyminen.png)
+![Siirtyminen laskuttajan palveluun](elaskujen-kaytettavyydesta-siirtyminen.png)
 
 Joka laskuttajalla tuntuu olevan omanlaisensa tapa esittää laskun PDF.
 Pieni vähemmistö ohjaa suoraan PDF:n. Enemmistöllä PDF on upotettu jollain
@@ -59,7 +58,7 @@ ja pitää seurata vielä yhtä linkkiä eteenpäin PDF:n saamiseksi. Sivulle
 upottamisen ongelma on, että selaimen "tallenna sivu" -ominaisuus tallentaa
 upottavan sivun eikä itse PDF-laskua.
 
-![Joukko erilaisia palveluita, joista PDF:n voi tallentaa](/blog/img/2015-12-23-elaskujen-kaytettavyydesta-erilaisia.png)
+![Joukko erilaisia palveluita, joista PDF:n voi tallentaa](elaskujen-kaytettavyydesta-erilaisia.png)
 
 Kun tallennan laskun PDF:n koneelle, tiedoston nimeksi tulee yleensä
 tekninen nimi:

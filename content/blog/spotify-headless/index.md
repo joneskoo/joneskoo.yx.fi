@@ -5,7 +5,6 @@ tags:
 - skriptit
 - systemd
 title: Spotify palvelimella ilman näyttöä
-slug: spotify-headless
 ---
 
 Spotify on varmasti kaikille tuttu musiikkipalvelu. Spotifyn
@@ -16,7 +15,7 @@ Ratkaisu: Spotify kotipalvelimelle ja ohjaus langattomasti.
 
 <!--more-->
 
-![Spotify Connect](/blog/img/2017-05-26-spotify.jpg "Spotify läppärillä ohjaa palvelinta")
+![Spotify Connect](spotify.jpg "Spotify läppärillä ohjaa palvelinta")
 
 Spotifyn [asentaminen Linuxiin on varsin helppoa](https://www.spotify.com/us/download/linux/)
 ja Spotify tarjoaa jopa virallisen Linux-version.

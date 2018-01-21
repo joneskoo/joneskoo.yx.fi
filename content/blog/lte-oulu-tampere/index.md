@@ -5,7 +5,6 @@ tags:
 - lte
 - kotiverkko
 title: LTE-kokemuksia automatkalta Oulu–Tampere
-slug: lte-oulu-tampere
 aliases:
  - /blog/2015/02/01/lte-oulu-tampere.html
 ---
@@ -28,7 +27,7 @@ myös Applen Airport Extreme 802.11ac -tukiaseman. Vähän tuli ehkä
 liioiteltua hätävarjelua, mutta toimiipahan. Tiedän, koska käytän tällä
 hetkellä ainoana yhteytenä kotona kyseistä kalustoa.
 
-![Viritys](/blog/img/2015-02-01-mobiilibitti.jpg "Ihmeviritys. Huawei B593s-22 LTE-modeemi, Apple Airport Extreme 802.11ac, Mobevo W435-antenni")
+![Viritys](mobiilibitti.jpg "Ihmeviritys. Huawei B593s-22 LTE-modeemi, Apple Airport Extreme 802.11ac, Mobevo W435-antenni")
 
 Päädyin aiemmin mainittuun antenniin mietittyäni ensin kiinteän
 antennin asentamista autoon.
@@ -54,7 +53,7 @@ ping-testin ajalta pakettihävikki oli alle 0,1% eli kiinteää
 yhteyttä vastaavassa luokassa. SSH-yhteydessä en huomannut
 havaittavaa viivettä.
 
-![Katve](/blog/img/2015-02-01-katve.png "Kuuluvuusaluekartta ja ainut havaittu katvealue korostettuna kartassa.")
+![Katve](katve.png "Kuuluvuusaluekartta ja ainut havaittu katvealue korostettuna kartassa.")
 
 Kotona selvisi, että Elisan verkossa on tosiaankin katvealue
 Pyhäjärven ja Kärsämäen välillä. Tätä katkosta lukuunottamatta
@@ -91,8 +90,8 @@ mutta sekin riittää hyvin liikkeellä.
 
 **Päivitys 1.2.2015 20:49**. Kilpailevien operaattorien kuuluvuus vertailun vuoksi. Valitettavasti ainakaan vielä nettiyhteydeksi autoon ei ole muita vaihtoehtoja kuin Elisa/Saunalahti.
 
-![Soneran LTE-kuuluvuus](/blog/img/2015-02-01-sonera.png "Soneran LTE-kuuluvuus")
-![DNA:n 4G-kuuluvuus](/blog/img/2015-02-01-dna.png "DNA:n 4G-kuuluvuus")
+![Soneran LTE-kuuluvuus](sonera.png "Soneran LTE-kuuluvuus")
+![DNA:n 4G-kuuluvuus](dna.png "DNA:n 4G-kuuluvuus")
 
 
 [antenni]: https://www.4g-antennit.fi/product/348/mobevo-w435-2-4-dbi-4glte-kaksoisantenni-2-metrin-kaapeleilla "Mobevo W435 4G/LTE kaksoisantenni, 4g-antennit.fi"

@@ -4,7 +4,6 @@ tags:
  - skriptit
  - meta
 title: Jekyll ja uudet sivut
-slug: jekyll_ja_uudet_sivut
 aliases:
  - /blog/2011/10/15/jekyll_ja_uudet_sivut.html
 ---
@@ -36,7 +35,7 @@ ei ole, oletetaan että sivu on raakaa HTML:ää.
 Blogipostaukset toimivat niin, että \_posts-hakemistoon tallennetaan kirjoitus
 ja tiedostonnimen avulla asetetaan kirjoituksen päivämäärä.
 
-![Jekyll-hakemistorakenne](/blog/img/2011-10-15-jekyll-hakemistorakenne.png)
+![Jekyll-hakemistorakenne](jekyll-hakemistorakenne.png)
 
 Parasta tietysti on, että koska www-palvelimelle ei tarvita mitään dynaamista
 käsittelyä, sivujen tietoturvasta ei tarvitse erikseen huolehtia kun ohjelmia
