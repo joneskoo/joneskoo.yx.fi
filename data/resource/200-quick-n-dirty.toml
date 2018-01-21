@@ -9,22 +9,22 @@ title = "Quick & Dirty"
   title = "github: varabitti"
   url = "https://github.com/joneskoo/varabitti"
   description = """
-      Vahtii Internet-yhteyden toimivuutta ja vaihtaa tarvittaessa
-      varayhteyteen. Paristot eivät sisälly."""
+Vahtii Internet-yhteyden toimivuutta ja vaihtaa tarvittaessa \
+varayhteyteen. Paristot eivät sisälly."""
 
 [[items]]
   title = "github: adsl_carrier_plot"
   url = "https://github.com/joneskoo/adsl_carrier_plot"
   description = """
-      Telewell EA-510-modeemien tuottaman tulostuksen parsinta
-      kuvaksi gnuplotilla."""
+Telewell EA-510-modeemien tuottaman tulostuksen parsinta \
+kuvaksi gnuplotilla."""
 
 [[items]]
   title = "gdv.theme irssi-teema"
   url = "/public/gdv.theme"
   description = """
-      Väriteema keskusteluohjelma irssiin. Toimii sekä tummalla että
-      vaalealla taustavärillä."""
+Väriteema keskusteluohjelma irssiin. Toimii sekä tummalla että \
+vaalealla taustavärillä."""
 
 [[items]]
   title = "wshaper++"

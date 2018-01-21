@@ -8,7 +8,7 @@
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
 
-          <li><img src="{{.photo}}" alt="{{ .name }}"></li>
+          <li><img src="{{ .photo | relURL }}" alt="{{ .name }}"></li>
 
           <li><a href="mailto:{{ .email }}">{{ .email }}</a></li>
 
@@ -26,7 +26,7 @@
 
           {{ with .vcardFile }}
             {{ if . }}
-            <small><a href="{{.}}">vCard</a></small>
+            <small><a href="{{. | relURL }}">vCard</a></small>
             {{ end }}
           {{ end }}
         </ul>
