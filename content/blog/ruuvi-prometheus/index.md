@@ -6,7 +6,6 @@ tags:
 - raspberry
 - golang
 title: Oma Ruuvi-sääasema
-draft: true
 ---
 
 Sain entisen työkaverin blogauksesta ([Oma sääasema RuuviTagilla ja Grafanalla][alatalo]) ajatuksen rakentaa itsellenikin oma sääasema.
