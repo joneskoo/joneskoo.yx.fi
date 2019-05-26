@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lte on Joonas Kuorilehto</title>
-    <link>https://joneskoo.kapsi.fi/tags/lte/</link>
+    <link>https://joneskoo.yx.fi/tags/lte/</link>
     <description>Recent content in lte on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
     <lastBuildDate>Sat, 06 Jun 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://joneskoo.kapsi.fi/tags/lte/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joneskoo.yx.fi/tags/lte/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LTE käytännössä - havaintoja kotoa ja matkalta</title>
-      <link>https://joneskoo.kapsi.fi/blog/lte-autoiluhavaintoja/</link>
+      <link>https://joneskoo.yx.fi/blog/lte-autoiluhavaintoja/</link>
       <pubDate>Sat, 06 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/lte-autoiluhavaintoja/</guid>
+      <guid>https://joneskoo.yx.fi/blog/lte-autoiluhavaintoja/</guid>
       <description>&lt;p&gt;Kävin lauantaina puhumassa LTE-kokemuksistani &lt;a href=&#34;https://garde.fi/oh8g.php?func=SHOW&amp;amp;id=46&#34; title=&#34;Itäsuomalaiset radioharrastajien kesäpäivät 5.-7.6.2015, Vuokatti&#34;&gt;Itäsuomalaisten
 radioharrastajien kesäpäivillä&lt;/a&gt; Vuokatissa, Sotkamossa.
 Aiheenani oli &lt;em&gt;“LTE käytännössä - vieläkö kiinteää yhteyttä tarvitaan?”&lt;/em&gt;
@@ -25,10 +25,10 @@ Otsikosta voi päätellä yleiskuvan tähänastisista kokemuksistani.&lt;/p&gt;<
     
     <item>
       <title>LTE-kokemuksia automatkalta Oulu–Tampere</title>
-      <link>https://joneskoo.kapsi.fi/blog/lte-oulu-tampere/</link>
+      <link>https://joneskoo.yx.fi/blog/lte-oulu-tampere/</link>
       <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/lte-oulu-tampere/</guid>
+      <guid>https://joneskoo.yx.fi/blog/lte-oulu-tampere/</guid>
       <description>&lt;p&gt;Kävin työmatkan vuoksi Tampereella. Helka halusi mukaan matkaan,
 joten oli kätevintä tehdä reissu omalla autolla. Reitiksi valitsimme
 Oulu–Jyväskylä–Tampere. Matkalla seurasin LTE-yhteyden toimivuutta.&lt;/p&gt;</description>

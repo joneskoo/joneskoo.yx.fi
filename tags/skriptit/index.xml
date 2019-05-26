@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>skriptit on Joonas Kuorilehto</title>
-    <link>https://joneskoo.kapsi.fi/tags/skriptit/</link>
+    <link>https://joneskoo.yx.fi/tags/skriptit/</link>
     <description>Recent content in skriptit on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
     <lastBuildDate>Fri, 26 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://joneskoo.kapsi.fi/tags/skriptit/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joneskoo.yx.fi/tags/skriptit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Spotify palvelimella ilman näyttöä</title>
-      <link>https://joneskoo.kapsi.fi/blog/spotify-headless/</link>
+      <link>https://joneskoo.yx.fi/blog/spotify-headless/</link>
       <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/spotify-headless/</guid>
+      <guid>https://joneskoo.yx.fi/blog/spotify-headless/</guid>
       <description>&lt;p&gt;Spotify on varmasti kaikille tuttu musiikkipalvelu. Spotifyn
 ongelma kännykällä on kännykän äänentoisto. Musiikin pitää kuulua
 kunnollisista kaiuttimista. Halusin Spotifyn soivan kaiuttimista,
@@ -26,10 +26,10 @@ Ratkaisu: Spotify kotipalvelimelle ja ohjaus langattomasti.&lt;/p&gt;</descripti
     
     <item>
       <title>Ubuntu ja cloud-init kotipalvelimella</title>
-      <link>https://joneskoo.kapsi.fi/blog/kvm-ubuntu-cloud-init/</link>
+      <link>https://joneskoo.yx.fi/blog/kvm-ubuntu-cloud-init/</link>
       <pubDate>Thu, 27 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/kvm-ubuntu-cloud-init/</guid>
+      <guid>https://joneskoo.yx.fi/blog/kvm-ubuntu-cloud-init/</guid>
       <description>&lt;p&gt;Virtuaalikoneen asennuksen ei tarvitse olla vaikeaa. Ubuntu julkaisee
 viralliset levykuvat pilvipalveluita varten, joita voi käyttää yhtä
 hyvin myös kotona. Itse asiassa se ei ole edes vaikeaa, mutta ohjeita
@@ -38,10 +38,10 @@ saa hieman kaivaa.&lt;/p&gt;</description>
     
     <item>
       <title>SSH known_hosts-tiedoston siistiminen</title>
-      <link>https://joneskoo.kapsi.fi/blog/ssh-known-hosts-siistiminen/</link>
+      <link>https://joneskoo.yx.fi/blog/ssh-known-hosts-siistiminen/</link>
       <pubDate>Sun, 23 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/ssh-known-hosts-siistiminen/</guid>
+      <guid>https://joneskoo.yx.fi/blog/ssh-known-hosts-siistiminen/</guid>
       <description>&lt;p&gt;Kyllästyin viimein ssh known_hosts-tiedoston sotkuisuuteen ja koodasin
 yksinkertaisen skriptin, joka yhdistää saman palvelimen rivit yhdeksi.
 Omassa known_hosts-tiedostossani alkaa rivejä olla lähemmäs sata, joten
@@ -50,10 +50,10 @@ siistiminen on oikeasti tarpeen.&lt;/p&gt;</description>
     
     <item>
       <title>Jekyll ja uudet sivut</title>
-      <link>https://joneskoo.kapsi.fi/blog/jekyll_ja_uudet_sivut/</link>
+      <link>https://joneskoo.yx.fi/blog/jekyll_ja_uudet_sivut/</link>
       <pubDate>Sat, 15 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/jekyll_ja_uudet_sivut/</guid>
+      <guid>https://joneskoo.yx.fi/blog/jekyll_ja_uudet_sivut/</guid>
       <description>&lt;p&gt;Taas on tullut aika kirjoittaa kotisivut uusiksi. Tekniikka kehittyy ja silleen.
 Lähdin taas tyhjästä suunnittelemaan kotisivuilleni asettelua ja miettimään
 sisällön esittämistä uusiksi. Edellisen sivun luomisen jälkeen olin ehtinyt
@@ -63,10 +63,10 @@ saitilla näihin oli vain linkki, mikä alkoi tuntua rajoittuneelta.&lt;/p&gt;</
     
     <item>
       <title>Hyödyllisiä vinkkejä, osa less</title>
-      <link>https://joneskoo.kapsi.fi/blog/vinkkeja/less/</link>
+      <link>https://joneskoo.yx.fi/blog/vinkkeja/less/</link>
       <pubDate>Wed, 23 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/vinkkeja/less/</guid>
+      <guid>https://joneskoo.yx.fi/blog/vinkkeja/less/</guid>
       <description>Olen käyttänyt, kuten varmasti lähes kaikki *nix-käyttäjät, lessiä niin kauan kuin muistan. Tässä joku aika sitten tuli vastaan pari asiaa, joita en ollut hoksannut. Kenties ovat menneet muiltakin ohi?
 Olennaisimpana olen käyttänyt lokien seuraamiseen käskyä
 tail -f loki | less  Tässä ei nyt ajateltuna ole mitään järkeä, koska less osaa seurata kasvavaa tiedostoa itsekin. Käsky F kun tiedosto on avattu lessillä alkaa seurata kasvavan tiedoston loppua. Lista käskyistä löytyy esimerkiksi Wikipediasta.</description>
@@ -74,19 +74,19 @@ tail -f loki | less  Tässä ei nyt ajateltuna ole mitään järkeä, koska less
     
     <item>
       <title>Hyödyllisiä vinkkejä, osa ssh</title>
-      <link>https://joneskoo.kapsi.fi/blog/vinkkeja/ssh/</link>
+      <link>https://joneskoo.yx.fi/blog/vinkkeja/ssh/</link>
       <pubDate>Wed, 12 May 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/vinkkeja/ssh/</guid>
+      <guid>https://joneskoo.yx.fi/blog/vinkkeja/ssh/</guid>
       <description>&lt;p&gt;Haluaisin kertoa muutamista liian vähän tunnetuista näppäristä asetuksista eri ohjelmissa. Kerron niistä lyhyesti ja annan kullekin copypastetettavat rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n asetustiedostosta ja siinä käyttämistäni asetuksista.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>OpenWRT-pohjainen bittijarru</title>
-      <link>https://joneskoo.kapsi.fi/blog/openwrt-pohjainen-bittijarru/</link>
+      <link>https://joneskoo.yx.fi/blog/openwrt-pohjainen-bittijarru/</link>
       <pubDate>Sat, 30 May 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/openwrt-pohjainen-bittijarru/</guid>
+      <guid>https://joneskoo.yx.fi/blog/openwrt-pohjainen-bittijarru/</guid>
       <description>&lt;p&gt;Yhteytenä kotonani on tällä hetkellä Soneran 24 / 2 Mbit/s ADSL2+ Annex M-yhteys. Sen ongelma on ainakin kuluttajamodeemeilla, että jos ulospäin lähtee dataa, niin viive nousee kohtuuttoman suureksi irkkaamiseen. Ratkaisuna aiemmin käytin kirjoittamaani &lt;a href=&#34;http://joneskoo.kapsi.fi/public/wshaper++&#34;&gt;wshaper++&lt;/a&gt;-skriptiä (vaikutteita wondershaper-skriptistä). Kun kotipalvelimeni pyörii nyt vmwaressa enkä käytä sitä reitittimenä, muodostuu ongelmaksi että käyttämäni NAT-purkki ei aja Linuxia ja ADSL-modeemiinkaan jarrua en saanut laitettua. Sinänsä Telewellin ADSL-modeemissa on Linux ja korkkasinkin sen asentamalla sarjaportin, mutta softa on jotenkin kohtuuttoman tympeää käyttää.&lt;/p&gt;</description>
     </item>
     

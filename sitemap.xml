@@ -3,256 +3,256 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/</loc>
+    <loc>https://joneskoo.yx.fi/blog/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/</loc>
-    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.kapsi.fi/blog/ruuvi-prometheus/</loc>
-    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.kapsi.fi/tags/</loc>
+    <loc>https://joneskoo.yx.fi/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/golang/</loc>
+    <loc>https://joneskoo.yx.fi/blog/ruuvi-prometheus/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/tags/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/prometheus/</loc>
+    <loc>https://joneskoo.yx.fi/tags/golang/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/raspberry/</loc>
+    <loc>https://joneskoo.yx.fi/tags/prometheus/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/ruuvi/</loc>
+    <loc>https://joneskoo.yx.fi/tags/raspberry/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/spotify-headless/</loc>
+    <loc>https://joneskoo.yx.fi/tags/ruuvi/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/blog/spotify-headless/</loc>
     <lastmod>2017-05-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/skriptit/</loc>
-    <lastmod>2017-05-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.kapsi.fi/tags/spotify/</loc>
+    <loc>https://joneskoo.yx.fi/tags/skriptit/</loc>
     <lastmod>2017-05-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/systemd/</loc>
+    <loc>https://joneskoo.yx.fi/tags/spotify/</loc>
     <lastmod>2017-05-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/elaskujen-kaytettavyysongelmia/</loc>
+    <loc>https://joneskoo.yx.fi/tags/systemd/</loc>
+    <lastmod>2017-05-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/blog/elaskujen-kaytettavyysongelmia/</loc>
     <lastmod>2015-12-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/angst/</loc>
+    <loc>https://joneskoo.yx.fi/tags/angst/</loc>
     <lastmod>2015-12-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/lte-autoiluhavaintoja/</loc>
+    <loc>https://joneskoo.yx.fi/blog/lte-autoiluhavaintoja/</loc>
     <lastmod>2015-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/lte/</loc>
-    <lastmod>2015-06-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.kapsi.fi/tags/matka/</loc>
+    <loc>https://joneskoo.yx.fi/tags/lte/</loc>
     <lastmod>2015-06-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/saunalahti/</loc>
+    <loc>https://joneskoo.yx.fi/tags/matka/</loc>
     <lastmod>2015-06-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/lte-oulu-tampere/</loc>
+    <loc>https://joneskoo.yx.fi/tags/saunalahti/</loc>
+    <lastmod>2015-06-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/blog/lte-oulu-tampere/</loc>
     <lastmod>2015-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/kotiverkko/</loc>
+    <loc>https://joneskoo.yx.fi/tags/kotiverkko/</loc>
     <lastmod>2015-02-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/kvm-ubuntu-cloud-init/</loc>
+    <loc>https://joneskoo.yx.fi/blog/kvm-ubuntu-cloud-init/</loc>
     <lastmod>2014-11-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/kvm/</loc>
-    <lastmod>2014-11-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.kapsi.fi/tags/ubuntu/</loc>
+    <loc>https://joneskoo.yx.fi/tags/kvm/</loc>
     <lastmod>2014-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/blogin-hiljaiseloa/</loc>
+    <loc>https://joneskoo.yx.fi/tags/ubuntu/</loc>
+    <lastmod>2014-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/blog/blogin-hiljaiseloa/</loc>
     <lastmod>2014-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/meta/</loc>
+    <loc>https://joneskoo.yx.fi/tags/meta/</loc>
     <lastmod>2014-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/reseptit/lihapata/</loc>
+    <loc>https://joneskoo.yx.fi/blog/reseptit/lihapata/</loc>
     <lastmod>2014-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/resepti/</loc>
+    <loc>https://joneskoo.yx.fi/tags/resepti/</loc>
     <lastmod>2014-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/ircnet-tilastoja/ircnet-tilastoja/</loc>
+    <loc>https://joneskoo.yx.fi/blog/ircnet-tilastoja/ircnet-tilastoja/</loc>
     <lastmod>2014-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/irc/</loc>
+    <loc>https://joneskoo.yx.fi/tags/irc/</loc>
     <lastmod>2014-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/saunalahti-nat/</loc>
+    <loc>https://joneskoo.yx.fi/blog/saunalahti-nat/</loc>
     <lastmod>2011-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/ipv6/</loc>
-    <lastmod>2011-12-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.kapsi.fi/tags/mobiili/</loc>
+    <loc>https://joneskoo.yx.fi/tags/ipv6/</loc>
     <lastmod>2011-12-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/ssh-known-hosts-siistiminen/</loc>
+    <loc>https://joneskoo.yx.fi/tags/mobiili/</loc>
+    <lastmod>2011-12-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/blog/ssh-known-hosts-siistiminen/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/jekyll_ja_uudet_sivut/</loc>
+    <loc>https://joneskoo.yx.fi/blog/jekyll_ja_uudet_sivut/</loc>
     <lastmod>2011-10-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/vinkkeja/less/</loc>
+    <loc>https://joneskoo.yx.fi/blog/vinkkeja/less/</loc>
     <lastmod>2011-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/shell/</loc>
-    <lastmod>2011-02-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.kapsi.fi/tags/vinkkej%C3%A4/</loc>
+    <loc>https://joneskoo.yx.fi/tags/shell/</loc>
     <lastmod>2011-02-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/reseptit/kanan-sisafiletta-kermassa/</loc>
+    <loc>https://joneskoo.yx.fi/tags/vinkkej%C3%A4/</loc>
+    <lastmod>2011-02-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/blog/reseptit/kanan-sisafiletta-kermassa/</loc>
     <lastmod>2011-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/vinkkeja/bash/</loc>
+    <loc>https://joneskoo.yx.fi/blog/vinkkeja/bash/</loc>
     <lastmod>2010-05-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/vinkkeja/ssh/</loc>
+    <loc>https://joneskoo.yx.fi/blog/vinkkeja/ssh/</loc>
     <lastmod>2010-05-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/openwrt-pohjainen-bittijarru/</loc>
+    <loc>https://joneskoo.yx.fi/blog/openwrt-pohjainen-bittijarru/</loc>
     <lastmod>2009-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/mobiililaajakaista-ja-dsln-korvaaminen/</loc>
+    <loc>https://joneskoo.yx.fi/blog/mobiililaajakaista-ja-dsln-korvaaminen/</loc>
     <lastmod>2009-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/tags/shorturl/</loc>
+    <loc>https://joneskoo.yx.fi/tags/shorturl/</loc>
     <lastmod>2009-03-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/yxfi-lyhyturlipalvelun-uudelleenkirjoitus/</loc>
+    <loc>https://joneskoo.yx.fi/blog/yxfi-lyhyturlipalvelun-uudelleenkirjoitus/</loc>
     <lastmod>2009-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/blog/yxfi-lyhyturlipalvelun-historia/</loc>
+    <loc>https://joneskoo.yx.fi/blog/yxfi-lyhyturlipalvelun-historia/</loc>
     <lastmod>2009-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joneskoo.kapsi.fi/categories/</loc>
+    <loc>https://joneskoo.yx.fi/categories/</loc>
     <priority>0</priority>
   </url>
   

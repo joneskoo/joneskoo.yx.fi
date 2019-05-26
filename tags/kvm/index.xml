@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kvm on Joonas Kuorilehto</title>
-    <link>https://joneskoo.kapsi.fi/tags/kvm/</link>
+    <link>https://joneskoo.yx.fi/tags/kvm/</link>
     <description>Recent content in kvm on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
     <lastBuildDate>Thu, 27 Nov 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://joneskoo.kapsi.fi/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joneskoo.yx.fi/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ubuntu ja cloud-init kotipalvelimella</title>
-      <link>https://joneskoo.kapsi.fi/blog/kvm-ubuntu-cloud-init/</link>
+      <link>https://joneskoo.yx.fi/blog/kvm-ubuntu-cloud-init/</link>
       <pubDate>Thu, 27 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/kvm-ubuntu-cloud-init/</guid>
+      <guid>https://joneskoo.yx.fi/blog/kvm-ubuntu-cloud-init/</guid>
       <description>&lt;p&gt;Virtuaalikoneen asennuksen ei tarvitse olla vaikeaa. Ubuntu julkaisee
 viralliset levykuvat pilvipalveluita varten, joita voi käyttää yhtä
 hyvin myös kotona. Itse asiassa se ei ole edes vaikeaa, mutta ohjeita

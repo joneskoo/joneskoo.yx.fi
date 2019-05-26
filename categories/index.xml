@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Joonas Kuorilehto</title>
-    <link>https://joneskoo.kapsi.fi/categories/</link>
+    <link>https://joneskoo.yx.fi/categories/</link>
     <description>Recent content in Categories on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
     
-	<atom:link href="https://joneskoo.kapsi.fi/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joneskoo.yx.fi/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

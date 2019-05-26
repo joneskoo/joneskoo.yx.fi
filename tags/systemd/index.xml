@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>systemd on Joonas Kuorilehto</title>
-    <link>https://joneskoo.kapsi.fi/tags/systemd/</link>
+    <link>https://joneskoo.yx.fi/tags/systemd/</link>
     <description>Recent content in systemd on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
     <lastBuildDate>Fri, 26 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://joneskoo.kapsi.fi/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joneskoo.yx.fi/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Spotify palvelimella ilman näyttöä</title>
-      <link>https://joneskoo.kapsi.fi/blog/spotify-headless/</link>
+      <link>https://joneskoo.yx.fi/blog/spotify-headless/</link>
       <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/spotify-headless/</guid>
+      <guid>https://joneskoo.yx.fi/blog/spotify-headless/</guid>
       <description>&lt;p&gt;Spotify on varmasti kaikille tuttu musiikkipalvelu. Spotifyn
 ongelma kännykällä on kännykän äänentoisto. Musiikin pitää kuulua
 kunnollisista kaiuttimista. Halusin Spotifyn soivan kaiuttimista,

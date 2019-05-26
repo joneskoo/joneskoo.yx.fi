@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mobiili on Joonas Kuorilehto</title>
-    <link>https://joneskoo.kapsi.fi/tags/mobiili/</link>
+    <link>https://joneskoo.yx.fi/tags/mobiili/</link>
     <description>Recent content in mobiili on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
     <lastBuildDate>Tue, 20 Dec 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://joneskoo.kapsi.fi/tags/mobiili/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joneskoo.yx.fi/tags/mobiili/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Saunalahden mobiiliyhteyksien NAT</title>
-      <link>https://joneskoo.kapsi.fi/blog/saunalahti-nat/</link>
+      <link>https://joneskoo.yx.fi/blog/saunalahti-nat/</link>
       <pubDate>Tue, 20 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/saunalahti-nat/</guid>
+      <guid>https://joneskoo.yx.fi/blog/saunalahti-nat/</guid>
       <description>&lt;p&gt;Saunalahdella on ollut muutaman kuukauden ajan ongelmia IP-osoitteiden
 loppumisen kanssa. Ilmeisesti eivät ole saaneet tarvitsemaansa määrää uusia
 osoitteita mobiiliyhteyksille Euroopan IP-osoitteita myöntävältä RIPE:ltä,
@@ -25,10 +25,10 @@ tuskin tahallaan kiusaisivat asiakkaitaan.&lt;/p&gt;</description>
     
     <item>
       <title>Mobiililaajakaista ja DSL:n korvaaminen</title>
-      <link>https://joneskoo.kapsi.fi/blog/mobiililaajakaista-ja-dsln-korvaaminen/</link>
+      <link>https://joneskoo.yx.fi/blog/mobiililaajakaista-ja-dsln-korvaaminen/</link>
       <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/mobiililaajakaista-ja-dsln-korvaaminen/</guid>
+      <guid>https://joneskoo.yx.fi/blog/mobiililaajakaista-ja-dsln-korvaaminen/</guid>
       <description>Suomalaiset ovat tottuneet kiinteisiin aina päällä oleviin Internet-yhteyksiin, jotka on tyypillisesti toteutettu jollain DSL-tekniikalla (Viestintäviraston markkinakatsauksen 2008&amp;frasl;2 mukaan DSL-yhteyksiä oli 1 270 100 kaikista 1 923 300 laajakaistaliittymästä 30.6.2008). Tällaiset kiinteät yhteydet ovat melko luotettavia. Oman kokemukseni pohjalta katkoja on tyypillisesti lähinnä huoltokatkojen tai melko harvinaisten laiterikkojen aikana.
 “Mobiililaajakaista” on termi, jolla tarkoitetaan kännykkäverkon kautta tarjottavaa “laajakaistaa”. Kännykkäverkon kautta tarjotuissa yhteydessä nopeudet ovat olleen viime vuosiin asti erittäin hitaita, mutta nyt verkkojen nopeudet ovat nousseet jo jopa useisiin megabitteihin sekunnissa, lähelle hitaimpia kiinteitä yhteyksiä.</description>
     </item>

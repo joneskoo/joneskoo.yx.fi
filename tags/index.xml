@@ -2,210 +2,210 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Joonas Kuorilehto</title>
-    <link>https://joneskoo.kapsi.fi/tags/</link>
+    <link>https://joneskoo.yx.fi/tags/</link>
     <description>Recent content in Tags on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
     <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://joneskoo.kapsi.fi/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joneskoo.yx.fi/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>golang</title>
-      <link>https://joneskoo.kapsi.fi/tags/golang/</link>
+      <link>https://joneskoo.yx.fi/tags/golang/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/golang/</guid>
+      <guid>https://joneskoo.yx.fi/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>prometheus</title>
-      <link>https://joneskoo.kapsi.fi/tags/prometheus/</link>
+      <link>https://joneskoo.yx.fi/tags/prometheus/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/prometheus/</guid>
+      <guid>https://joneskoo.yx.fi/tags/prometheus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>raspberry</title>
-      <link>https://joneskoo.kapsi.fi/tags/raspberry/</link>
+      <link>https://joneskoo.yx.fi/tags/raspberry/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/raspberry/</guid>
+      <guid>https://joneskoo.yx.fi/tags/raspberry/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ruuvi</title>
-      <link>https://joneskoo.kapsi.fi/tags/ruuvi/</link>
+      <link>https://joneskoo.yx.fi/tags/ruuvi/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/ruuvi/</guid>
+      <guid>https://joneskoo.yx.fi/tags/ruuvi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>skriptit</title>
-      <link>https://joneskoo.kapsi.fi/tags/skriptit/</link>
+      <link>https://joneskoo.yx.fi/tags/skriptit/</link>
       <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/skriptit/</guid>
+      <guid>https://joneskoo.yx.fi/tags/skriptit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spotify</title>
-      <link>https://joneskoo.kapsi.fi/tags/spotify/</link>
+      <link>https://joneskoo.yx.fi/tags/spotify/</link>
       <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/spotify/</guid>
+      <guid>https://joneskoo.yx.fi/tags/spotify/</guid>
       <description></description>
     </item>
     
     <item>
       <title>systemd</title>
-      <link>https://joneskoo.kapsi.fi/tags/systemd/</link>
+      <link>https://joneskoo.yx.fi/tags/systemd/</link>
       <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/systemd/</guid>
+      <guid>https://joneskoo.yx.fi/tags/systemd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>angst</title>
-      <link>https://joneskoo.kapsi.fi/tags/angst/</link>
+      <link>https://joneskoo.yx.fi/tags/angst/</link>
       <pubDate>Wed, 23 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/angst/</guid>
+      <guid>https://joneskoo.yx.fi/tags/angst/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lte</title>
-      <link>https://joneskoo.kapsi.fi/tags/lte/</link>
+      <link>https://joneskoo.yx.fi/tags/lte/</link>
       <pubDate>Sat, 06 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/lte/</guid>
+      <guid>https://joneskoo.yx.fi/tags/lte/</guid>
       <description></description>
     </item>
     
     <item>
       <title>matka</title>
-      <link>https://joneskoo.kapsi.fi/tags/matka/</link>
+      <link>https://joneskoo.yx.fi/tags/matka/</link>
       <pubDate>Sat, 06 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/matka/</guid>
+      <guid>https://joneskoo.yx.fi/tags/matka/</guid>
       <description></description>
     </item>
     
     <item>
       <title>saunalahti</title>
-      <link>https://joneskoo.kapsi.fi/tags/saunalahti/</link>
+      <link>https://joneskoo.yx.fi/tags/saunalahti/</link>
       <pubDate>Sat, 06 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/saunalahti/</guid>
+      <guid>https://joneskoo.yx.fi/tags/saunalahti/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kotiverkko</title>
-      <link>https://joneskoo.kapsi.fi/tags/kotiverkko/</link>
+      <link>https://joneskoo.yx.fi/tags/kotiverkko/</link>
       <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/kotiverkko/</guid>
+      <guid>https://joneskoo.yx.fi/tags/kotiverkko/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kvm</title>
-      <link>https://joneskoo.kapsi.fi/tags/kvm/</link>
+      <link>https://joneskoo.yx.fi/tags/kvm/</link>
       <pubDate>Thu, 27 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/kvm/</guid>
+      <guid>https://joneskoo.yx.fi/tags/kvm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ubuntu</title>
-      <link>https://joneskoo.kapsi.fi/tags/ubuntu/</link>
+      <link>https://joneskoo.yx.fi/tags/ubuntu/</link>
       <pubDate>Thu, 27 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/ubuntu/</guid>
+      <guid>https://joneskoo.yx.fi/tags/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>meta</title>
-      <link>https://joneskoo.kapsi.fi/tags/meta/</link>
+      <link>https://joneskoo.yx.fi/tags/meta/</link>
       <pubDate>Sun, 23 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/meta/</guid>
+      <guid>https://joneskoo.yx.fi/tags/meta/</guid>
       <description></description>
     </item>
     
     <item>
       <title>resepti</title>
-      <link>https://joneskoo.kapsi.fi/tags/resepti/</link>
+      <link>https://joneskoo.yx.fi/tags/resepti/</link>
       <pubDate>Sun, 13 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/resepti/</guid>
+      <guid>https://joneskoo.yx.fi/tags/resepti/</guid>
       <description></description>
     </item>
     
     <item>
       <title>irc</title>
-      <link>https://joneskoo.kapsi.fi/tags/irc/</link>
+      <link>https://joneskoo.yx.fi/tags/irc/</link>
       <pubDate>Wed, 05 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/irc/</guid>
+      <guid>https://joneskoo.yx.fi/tags/irc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ipv6</title>
-      <link>https://joneskoo.kapsi.fi/tags/ipv6/</link>
+      <link>https://joneskoo.yx.fi/tags/ipv6/</link>
       <pubDate>Tue, 20 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/ipv6/</guid>
+      <guid>https://joneskoo.yx.fi/tags/ipv6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mobiili</title>
-      <link>https://joneskoo.kapsi.fi/tags/mobiili/</link>
+      <link>https://joneskoo.yx.fi/tags/mobiili/</link>
       <pubDate>Tue, 20 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/mobiili/</guid>
+      <guid>https://joneskoo.yx.fi/tags/mobiili/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell</title>
-      <link>https://joneskoo.kapsi.fi/tags/shell/</link>
+      <link>https://joneskoo.yx.fi/tags/shell/</link>
       <pubDate>Wed, 23 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/shell/</guid>
+      <guid>https://joneskoo.yx.fi/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vinkkejä</title>
-      <link>https://joneskoo.kapsi.fi/tags/vinkkej%C3%A4/</link>
+      <link>https://joneskoo.yx.fi/tags/vinkkej%C3%A4/</link>
       <pubDate>Wed, 23 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/vinkkej%C3%A4/</guid>
+      <guid>https://joneskoo.yx.fi/tags/vinkkej%C3%A4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shorturl</title>
-      <link>https://joneskoo.kapsi.fi/tags/shorturl/</link>
+      <link>https://joneskoo.yx.fi/tags/shorturl/</link>
       <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/tags/shorturl/</guid>
+      <guid>https://joneskoo.yx.fi/tags/shorturl/</guid>
       <description></description>
     </item>
     

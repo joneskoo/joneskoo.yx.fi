@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kotiverkko on Joonas Kuorilehto</title>
-    <link>https://joneskoo.kapsi.fi/tags/kotiverkko/</link>
+    <link>https://joneskoo.yx.fi/tags/kotiverkko/</link>
     <description>Recent content in kotiverkko on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
     <lastBuildDate>Sun, 01 Feb 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://joneskoo.kapsi.fi/tags/kotiverkko/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joneskoo.yx.fi/tags/kotiverkko/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>LTE-kokemuksia automatkalta Oulu–Tampere</title>
-      <link>https://joneskoo.kapsi.fi/blog/lte-oulu-tampere/</link>
+      <link>https://joneskoo.yx.fi/blog/lte-oulu-tampere/</link>
       <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/lte-oulu-tampere/</guid>
+      <guid>https://joneskoo.yx.fi/blog/lte-oulu-tampere/</guid>
       <description>&lt;p&gt;Kävin työmatkan vuoksi Tampereella. Helka halusi mukaan matkaan,
 joten oli kätevintä tehdä reissu omalla autolla. Reitiksi valitsimme
 Oulu–Jyväskylä–Tampere. Matkalla seurasin LTE-yhteyden toimivuutta.&lt;/p&gt;</description>
@@ -24,10 +24,10 @@ Oulu–Jyväskylä–Tampere. Matkalla seurasin LTE-yhteyden toimivuutta.&lt;/p&
     
     <item>
       <title>OpenWRT-pohjainen bittijarru</title>
-      <link>https://joneskoo.kapsi.fi/blog/openwrt-pohjainen-bittijarru/</link>
+      <link>https://joneskoo.yx.fi/blog/openwrt-pohjainen-bittijarru/</link>
       <pubDate>Sat, 30 May 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/openwrt-pohjainen-bittijarru/</guid>
+      <guid>https://joneskoo.yx.fi/blog/openwrt-pohjainen-bittijarru/</guid>
       <description>&lt;p&gt;Yhteytenä kotonani on tällä hetkellä Soneran 24 / 2 Mbit/s ADSL2+ Annex M-yhteys. Sen ongelma on ainakin kuluttajamodeemeilla, että jos ulospäin lähtee dataa, niin viive nousee kohtuuttoman suureksi irkkaamiseen. Ratkaisuna aiemmin käytin kirjoittamaani &lt;a href=&#34;http://joneskoo.kapsi.fi/public/wshaper++&#34;&gt;wshaper++&lt;/a&gt;-skriptiä (vaikutteita wondershaper-skriptistä). Kun kotipalvelimeni pyörii nyt vmwaressa enkä käytä sitä reitittimenä, muodostuu ongelmaksi että käyttämäni NAT-purkki ei aja Linuxia ja ADSL-modeemiinkaan jarrua en saanut laitettua. Sinänsä Telewellin ADSL-modeemissa on Linux ja korkkasinkin sen asentamalla sarjaportin, mutta softa on jotenkin kohtuuttoman tympeää käyttää.&lt;/p&gt;</description>
     </item>
     

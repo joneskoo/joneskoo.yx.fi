@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shorturl on Joonas Kuorilehto</title>
-    <link>https://joneskoo.kapsi.fi/tags/shorturl/</link>
+    <link>https://joneskoo.yx.fi/tags/shorturl/</link>
     <description>Recent content in shorturl on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
     <lastBuildDate>Wed, 25 Mar 2009 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://joneskoo.kapsi.fi/tags/shorturl/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joneskoo.yx.fi/tags/shorturl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>yx.fi lyhytosoitepalvelun uudelleenkirjoitus</title>
-      <link>https://joneskoo.kapsi.fi/blog/yxfi-lyhyturlipalvelun-uudelleenkirjoitus/</link>
+      <link>https://joneskoo.yx.fi/blog/yxfi-lyhyturlipalvelun-uudelleenkirjoitus/</link>
       <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/yxfi-lyhyturlipalvelun-uudelleenkirjoitus/</guid>
+      <guid>https://joneskoo.yx.fi/blog/yxfi-lyhyturlipalvelun-uudelleenkirjoitus/</guid>
       <description>Muutaman kerran oli jo aiemmin käynyt mielessä. Nyt sain sen viimein tehtyä. Kirjoitin alusta asti uudestaan yx.fi lyhytosoitepalvelun. Aioin aluksi käyttää Kapsi Internet-käyttäjät ry:n Sikteeri-projektista tuttua TurboGears-frameworkkiä, tai ainakin sen osia. Hetken pidempään tutkittuani huomasin, että Kid-template-kirjastoa ei ole kehitetty muutamaan vuoteen. Sen tilalle on noussut Genshi, joka uppoaa kohtuullisen pienin muutoksin Kidin tilalle.
 Genshi, kuten Kid:kin, vaatii että templatet ovat validia XML:ää. Niissä voi käyttää Python-koodia melko vapaasti. Sain melko nopeasti luotua yhden rungon, johon eri sivujen sisältö sijoitetaan.</description>
     </item>
     
     <item>
       <title>yx.fi-lyhyturlipalvelun historia ja tuoreet muutokset</title>
-      <link>https://joneskoo.kapsi.fi/blog/yxfi-lyhyturlipalvelun-historia/</link>
+      <link>https://joneskoo.yx.fi/blog/yxfi-lyhyturlipalvelun-historia/</link>
       <pubDate>Thu, 12 Mar 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.kapsi.fi/blog/yxfi-lyhyturlipalvelun-historia/</guid>
+      <guid>https://joneskoo.yx.fi/blog/yxfi-lyhyturlipalvelun-historia/</guid>
       <description>Joskus kauan sitten huomasin, että kaksikirjaimisia fi-domaineja on vielä jäljellä. Niitä taitaa olla vielä tänäkin päivänä muutama vapaana. Hankin silloin itselleni domainin yx.fi. Tarkempi historia ja syy domainin hankkimiseen on jo päässyt unohtumaan, mutta taisipa taustalla olla myös kaveriporukan VPN-verkon nimipalvelutkin.
 Myöhemmin ymmärsin miten käteviä lyhyturlit (tinyurl, shorturl etc.) ovat sekä irkissä että puhelimitse. Kirjoittelin yhden illan projektina yksinkertaisen lyhyturlipalvelun omaan käyttööni. Palvelulla on nykyään jo useita aktiivikäyttäjiä. Siirsin sen jo hyvän aikaa sitten pois kotipalvelimeltani Kapsi Internet-käyttäjät ry:n palvelimelle.</description>
     </item>
