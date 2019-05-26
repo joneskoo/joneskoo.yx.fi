@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>saunalahti on Joonas Kuorilehto</title>
+    <link>https://joneskoo.kapsi.fi/tags/saunalahti/</link>
+    <description>Recent content in saunalahti on Joonas Kuorilehto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fi-fi</language>
+    <lastBuildDate>Sat, 06 Jun 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joneskoo.kapsi.fi/tags/saunalahti/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LTE käytännössä - havaintoja kotoa ja matkalta</title>
+      <link>https://joneskoo.kapsi.fi/blog/lte-autoiluhavaintoja/</link>
+      <pubDate>Sat, 06 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/lte-autoiluhavaintoja/</guid>
+      <description>&lt;p&gt;Kävin lauantaina puhumassa LTE-kokemuksistani &lt;a href=&#34;https://garde.fi/oh8g.php?func=SHOW&amp;amp;id=46&#34; title=&#34;Itäsuomalaiset radioharrastajien kesäpäivät 5.-7.6.2015, Vuokatti&#34;&gt;Itäsuomalaisten
+radioharrastajien kesäpäivillä&lt;/a&gt; Vuokatissa, Sotkamossa.
+Aiheenani oli &lt;em&gt;“LTE käytännössä - vieläkö kiinteää yhteyttä tarvitaan?”&lt;/em&gt;
+Otsikosta voi päätellä yleiskuvan tähänastisista kokemuksistani.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LTE-kokemuksia automatkalta Oulu–Tampere</title>
+      <link>https://joneskoo.kapsi.fi/blog/lte-oulu-tampere/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/lte-oulu-tampere/</guid>
+      <description>&lt;p&gt;Kävin työmatkan vuoksi Tampereella. Helka halusi mukaan matkaan,
+joten oli kätevintä tehdä reissu omalla autolla. Reitiksi valitsimme
+Oulu–Jyväskylä–Tampere. Matkalla seurasin LTE-yhteyden toimivuutta.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Saunalahden mobiiliyhteyksien NAT</title>
+      <link>https://joneskoo.kapsi.fi/blog/saunalahti-nat/</link>
+      <pubDate>Tue, 20 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/saunalahti-nat/</guid>
+      <description>&lt;p&gt;Saunalahdella on ollut muutaman kuukauden ajan ongelmia IP-osoitteiden
+loppumisen kanssa. Ilmeisesti eivät ole saaneet tarvitsemaansa määrää uusia
+osoitteita mobiiliyhteyksille Euroopan IP-osoitteita myöntävältä RIPE:ltä,
+tuskin tahallaan kiusaisivat asiakkaitaan.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

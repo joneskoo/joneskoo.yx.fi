@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>resepti on Joonas Kuorilehto</title>
+    <link>https://joneskoo.kapsi.fi/tags/resepti/</link>
+    <description>Recent content in resepti on Joonas Kuorilehto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fi-fi</language>
+    <lastBuildDate>Sun, 13 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joneskoo.kapsi.fi/tags/resepti/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Arkinen lihapata</title>
+      <link>https://joneskoo.kapsi.fi/blog/reseptit/lihapata/</link>
+      <pubDate>Sun, 13 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/reseptit/lihapata/</guid>
+      <description>&lt;p&gt;Kopioin tännekin talteen &lt;a href=&#34;http://helkajajoonas.yx.fi/&#34;&gt;yhteisestä blogistamme&lt;/a&gt; arkisen
+lihapadan &lt;a href=&#34;http://helkajajoonas.yx.fi/2014/04/arkijuttuja-lihapataa.html&#34;&gt;reseptin&lt;/a&gt;. Resepti on jälkikäteen muistikuvien perusteella
+kirjoitettu. Toivottavasti tuli sinne päinkään sama mitä tänään tein.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kanan sisäfilettä pippurikermakastikkeessa</title>
+      <link>https://joneskoo.kapsi.fi/blog/reseptit/kanan-sisafiletta-kermassa/</link>
+      <pubDate>Thu, 17 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/reseptit/kanan-sisafiletta-kermassa/</guid>
+      <description>&lt;p&gt;Äidin tekemästä kanasta röyhkeästi apinoiden, tässäpä resepti aivan mahtavaan kanaruokaan. Helkan kanssa maisteluiden perusteella n. neljä annosta.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

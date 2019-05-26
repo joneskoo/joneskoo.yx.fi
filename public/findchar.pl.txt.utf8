@@ -1,0 +1,30 @@
+#!/usr/bin/env perl
+
+# Find the description of an UTF-8 character
+# Syntax: ./findchar.pl <character>
+# ie. ./findchar.pl €
+# http://www.unicode.org/Public/UNIDATA/UnicodeData.txt
+
+use strict;
+use warnings;
+use Encode;
+use open ':utf8';
+use utf8;
+
+my $char = decode_utf8($ARGV[0]);  # Why is this required?
+unless ($char) { die "Usage: findchar.pl <UTF-8 character>" }
+
+# Convert the character to UCS-2 big endian
+my $ucs2 = uc unpack "H*", Encode::encode("UCS-2BE", $char);
+
+# Read Unicode character list from...
+open (my $UNIDATA, '<', "$ENV{HOME}/UnicodeData.txt");
+
+# Look for the UCS-2
+my $re = qr/^$ucs2;(.*?);/;
+
+my $description;
+while (<$UNIDATA>) {
+	$description = $1 if /$re/;
+}
+print "$ucs2 $description\n";

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>irc on Joonas Kuorilehto</title>
+    <link>https://joneskoo.kapsi.fi/tags/irc/</link>
+    <description>Recent content in irc on Joonas Kuorilehto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fi-fi</language>
+    <lastBuildDate>Wed, 05 Mar 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joneskoo.kapsi.fi/tags/irc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tilastoja IRCnet-verkon käyttäjistä</title>
+      <link>https://joneskoo.kapsi.fi/blog/ircnet-tilastoja/ircnet-tilastoja/</link>
+      <pubDate>Wed, 05 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/ircnet-tilastoja/ircnet-tilastoja/</guid>
+      <description>&lt;p&gt;Joku viikko sitten katson mielenkiinnosta paljonko IRCnetissä on tällä hetkellä
+käyttäjiä. Selkeästi IRC:n suosio on kärsinyt uudempien sosiaalisen median
+palveluiden myötä, mutta Suomessa on edelleen suuri joukko IRC:n vannoutuneita
+käyttäjiä. Myös itselleni IRC on yksi tärkeimpiä henkireikiä viestiä kaverien
+kanssa. Sosiaalisista verkoista en ole innostunut. Kuten näkyy, blogin
+päivityskin on hieman jäänyt töiden ja muiden kiinnostuksenkohteiden taustalle.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

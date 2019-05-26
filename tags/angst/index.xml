@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>angst on Joonas Kuorilehto</title>
+    <link>https://joneskoo.kapsi.fi/tags/angst/</link>
+    <description>Recent content in angst on Joonas Kuorilehto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fi-fi</language>
+    <lastBuildDate>Wed, 23 Dec 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joneskoo.kapsi.fi/tags/angst/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>E-laskujen käytettävyysongelmia</title>
+      <link>https://joneskoo.kapsi.fi/blog/elaskujen-kaytettavyysongelmia/</link>
+      <pubDate>Wed, 23 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/elaskujen-kaytettavyysongelmia/</guid>
+      <description>Tuskailin ladatessani e-laskuja omaan arkistooni. Kirjoitan tässä hieman laajemmin e-laskujen ongelmista ja kehitysmahdollisuuksista. Asia koskee sinänsä kaikkia pankkeja, mutta kokemukseni perustuvat Nordean palveluun. Tässä kokemuksiani ja ehdotuksiani tilanteen parantamiseksi.
+Tausta Tilaan kaikki laskuni e-laskuna kun mahdollista. Olen asettanut niille kätevän automaattisen maksaminen ehtojen täyttyessä.
+Meillä on vaimoni kanssa yhteisiä laskuja ja yhteinen tapa arkistoida asiakirjoja, siis myös laskuja. Käymme laskut läpi ja säästämme ne siltä varalta että myöhemmin tarvii palata asiaan.</description>
+    </item>
+    
+    <item>
+      <title>Saunalahden mobiiliyhteyksien NAT</title>
+      <link>https://joneskoo.kapsi.fi/blog/saunalahti-nat/</link>
+      <pubDate>Tue, 20 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/saunalahti-nat/</guid>
+      <description>&lt;p&gt;Saunalahdella on ollut muutaman kuukauden ajan ongelmia IP-osoitteiden
+loppumisen kanssa. Ilmeisesti eivät ole saaneet tarvitsemaansa määrää uusia
+osoitteita mobiiliyhteyksille Euroopan IP-osoitteita myöntävältä RIPE:ltä,
+tuskin tahallaan kiusaisivat asiakkaitaan.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mobiililaajakaista ja DSL:n korvaaminen</title>
+      <link>https://joneskoo.kapsi.fi/blog/mobiililaajakaista-ja-dsln-korvaaminen/</link>
+      <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/mobiililaajakaista-ja-dsln-korvaaminen/</guid>
+      <description>Suomalaiset ovat tottuneet kiinteisiin aina päällä oleviin Internet-yhteyksiin, jotka on tyypillisesti toteutettu jollain DSL-tekniikalla (Viestintäviraston markkinakatsauksen 2008&amp;frasl;2 mukaan DSL-yhteyksiä oli 1 270 100 kaikista 1 923 300 laajakaistaliittymästä 30.6.2008). Tällaiset kiinteät yhteydet ovat melko luotettavia. Oman kokemukseni pohjalta katkoja on tyypillisesti lähinnä huoltokatkojen tai melko harvinaisten laiterikkojen aikana.
+“Mobiililaajakaista” on termi, jolla tarkoitetaan kännykkäverkon kautta tarjottavaa “laajakaistaa”. Kännykkäverkon kautta tarjotuissa yhteydessä nopeudet ovat olleen viime vuosiin asti erittäin hitaita, mutta nyt verkkojen nopeudet ovat nousseet jo jopa useisiin megabitteihin sekunnissa, lähelle hitaimpia kiinteitä yhteyksiä.</description>
+    </item>
+    
+  </channel>
+</rss>

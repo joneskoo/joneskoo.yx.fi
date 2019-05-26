@@ -1,0 +1,98 @@
+#!/bin/bash
+# $Id: wshaper++ 744 2008-04-06 13:49:45Z joneskoo $
+# 
+# wondershaper++
+# IPv6-over-IPv4 friendly shaper script
+# 
+# Rewritten from scratch. Inspired by wondershaper.
+# at <http://lartc.org/wondershaper/>
+#
+# Written by Joonas Kortesalmi. This script is in the
+# public domain.
+#
+# The design goal of this script is to provide equal
+# performance for both IPv4 and IPv6 traffic while
+# keeping latency low enough for interactive ssh use.
+#
+#             root 1:
+#              | 
+#              1:1
+#          /        \
+#  IPv4 1:4          1:6 IPv6 over IPv4
+#    /  |  \          /  \ 
+# 1:41 1:42 1:43    1:61  1:62
+#
+# 1:41 = IPv4 high priority
+# 1:42 = IPv4 bulk
+# 1:43 = IPv4 ACKs
+# 1:61 = IPv6-over-IPv4 
+# 1:62 = IPv6-over-IPv4
+
+IFACE=fe0
+UPLINK=2112 #kbit/s
+
+# Clean up old qdiscs
+tc qdisc del dev $IFACE root 2>/dev/null
+tc qdisc del dev $IFACE ingress 2>/dev/null
+
+TQ="tc qdisc add dev $IFACE"
+TC="tc class add dev $IFACE"
+
+#
+# Set up classes and their share of the bandwidth
+#
+
+# Set up the root and default to IPv4 bulk
+$TQ root handle 1: htb default 42
+$TC parent 1: classid 1:1 htb rate ${UPLINK}kbit
+
+# IPv4 and IPv6 both are guaranteed to get half of the bandwidth
+$TC parent 1:1 classid 1:4 htb rate $[$UPLINK/2] ceil ${UPLINK}kbit 
+$TC parent 1:1 classid 1:6 htb rate $[$UPLINK/2] ceil ${UPLINK}kbit 
+
+# IPv4 high priority, bulk, acks
+# The rates should sum to uplink bandwidth.
+$TC parent 1:4 classid 1:41 htb rate $[$UPLINK*15/100]kbit ceil ${UPLINK}kbit prio 0
+$TC parent 1:4 classid 1:42 htb rate $[$UPLINK*50/100]kbit ceil ${UPLINK}kbit prio 10
+$TC parent 1:4 classid 1:43 htb rate $[$UPLINK*35/100]kbit ceil ${UPLINK}kbit prio 5
+
+# IPv6 high priority, bulk (big packets)
+# The rates should sum to uplink bandwidth.
+$TC parent 1:6 classid 1:61 htb rate $[$UPLINK*25/100]kbit ceil ${UPLINK}kbit prio 0
+$TC parent 1:6 classid 1:62 htb rate $[$UPLINK*75/100]kbit ceil ${UPLINK}kbit prio 10
+
+# Stochastic Fairness Queueing for all classes
+$TQ parent 1:41 handle 41: sfq perturb 10 limit 16
+$TQ parent 1:42 handle 42: sfq perturb 10 limit 32
+$TQ parent 1:43 handle 43: sfq perturb 10 limit 16
+
+$TQ parent 1:61 handle 61: sfq perturb 10 limit 16
+$TQ parent 1:62 handle 62: sfq perturb 10 limit 16
+
+#
+# Set up the filters which classify traffic to different queues
+#
+
+# Match IPv6-over IPv4 packets < 256 bytes
+tc filter add dev $IFACE parent 1: protocol ip prio 9 u32 \
+    match u16 0x0000 0xff00 at 2 \
+    match ip protocol 41 0xff flowid 1:62
+
+# Match IPv6-over-IPv4
+tc filter add dev $IFACE parent 1: protocol ip prio 10 u32 \
+    match ip protocol 41 0xff flowid 1:61
+
+# Match ICMP (IPv4)
+tc filter add dev $IFACE parent 1:0 protocol ip prio 10 u32 \
+        match ip protocol 1 0xff flowid 1:41
+# Match ToS Minimum Delay
+tc filter add dev $IFACE parent 1:0 protocol ip prio 10 u32 \
+      match ip tos 0x10 0xff  flowid 1:41
+
+# Match TCP ACKs (for speeding up downloads)
+tc filter add dev $IFACE parent 1: protocol ip prio 10 u32 \
+   match ip protocol 6 0xff \
+   match u8 0x05 0x0f at 0 \
+   match u16 0x0000 0xffc0 at 2 \
+   match u8 0x10 0xff at 33 \
+   flowid 1:43

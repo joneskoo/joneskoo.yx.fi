@@ -1,0 +1,29 @@
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+ErrorDocument 404 /404.html
+
+Options +MultiViews -Indexes
+
+AddDefaultCharset utf-8
+
+ExpiresActive On
+ExpiresByType image/jpeg "access plus 7 days"
+ExpiresByType text/css "access plus 2 hours"
+ExpiresByType text/html "access plus 30 minutes"
+
+AddType application/octet-stream .box
+AddType application/x-java-jnlp-file .jnlp
+AddType application/xhtml+xml .xhtml
+AddType application/rss+xml .rss
+
+RewriteEngine On
+
+RewriteRule ^kuveja/?(index\.html)?$ https://joneskoo.kapsi.fi/kuveja.html [R=301,L]
+RewriteRule ^blog/atom\.xml$ https://joneskoo.kapsi.fi/index.xml [R=301,L]
+RewriteRule ^blog\.html?$ https://joneskoo.kapsi.fi/blog/ [R=301,L]
+RewriteRule ^\d\d\d\d/\d\d/(.*)$ https://joneskoo.kapsi.fi/blog/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} !joneskoo.kapsi.fi
+RewriteRule ^(.*)$ https://joneskoo.kapsi.fi/$1
+
+RewriteCond %{HTTP_HOST} !joneskoo.kapsi.fi
+RewriteRule ^(.*)$ https://joneskoo.kapsi.fi/$1

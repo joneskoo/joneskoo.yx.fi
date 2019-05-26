@@ -1,0 +1,150 @@
+% LaTeX-pohja, fysikaaliset mittaukset 761121P, Oulun yliopisto
+% Tekijä: Joonas Kortesalmi
+% Tätä pohjaa saa käyttää vapaasti. This template is in the Public Domain.
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[finnish]{babel}
+\usepackage{ae}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{eurosym}
+\usepackage{fullpage}
+\usepackage{fancyhdr}
+\usepackage{boxedminipage}
+\usepackage{listings}
+\usepackage{minitoc}
+\usepackage{ifpdf}
+\ifpdf
+ \usepackage[pdftex]{graphicx}
+ \pdfcompresslevel=9
+\else
+\usepackage{graphicx}
+\fi
+
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .png, .tif}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg}
+\fi
+
+\nonfrenchspacing
+
+\newcommand{\titlerule}{\rule{\linewidth}{1.5mm}}
+\newcommand*{\unit}[1]{\mbox{ #1}}
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%
+% Kansisivu
+%
+\begin{titlepage}
+ \thispagestyle{empty}
+ \begin{center}
+     \titlerule \\[10mm]
+     \Huge \textsc{
+        761121P Fysikaaliset mittaukset \\
+        Työ 5 \\
+        \LARGE Valon diffraktio ja polarisaatio
+     }\\[10mm]
+     \begin{center}
+       \begin{tabular}{l l}
+         Tekijä: & Joonas Kortesalmi \\
+         Koulutusohjelma: & tietotekniikka (2006) \\
+         Työpari: & PARI \\
+         Työ tehty: & 2007-03-20 \\
+         Assistentti: & ASSISTENTTI
+       \end{tabular}       
+     \end{center}
+     \titlerule\\[10mm]
+          
+     \[ X = \frac{k \lambda L}{D} \]
+     
+     \[ X = (2k + 1)\frac{\lambda L}{2D} \]
+     
+     \[ I = I_0 \cdot cos^2 (\theta) \]
+ \end{center}
+\end{titlepage}
+
+\newpage
+
+\section{Annettu tehtävä ja työn tarkoitus}
+
+Tässä työssä tutkittiin valon käyttäytymistä sen kulkiessa kapean raon läpi (Fraunhoferin diffraktiota). Käytetty valo oli monokromaattista koherenttia laservaloa. Mittaustuloksista tuli piirtää kuvaaja ja laskea raon D leveys (kuva \ref{fig:valontaipuminen}) ja arvioida sille virhettä. Lisäksi piti laskea diffraktiokuvion maksimien intensiteettien suhteet ja verrata tuloksia teoreettisiin arvoihin.
+
+Lisäksi tutkittiin luonnollisen valon polarisointia ja erityisesti valon intensiteettiä sen kuljettua kahden polarisaattorin läpi (Malusin laki). Mittaustuloksista tuli piirtää samaan koordinaatistoon kokeellinen ($\theta$,~$\frac{I_k - I_p}{I_0}$) ja teoreettinen ($\theta$,~$\frac{I}{I_0}$) käyrä. Näiden yhteensopivuutta toisiinsa tuli verrata.
+
+
+%
+% Teoria
+% ------
+%
+\section{Teoria}
+
+\subsection{Fraunhoferin diffraktio}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+\subsection{Polarisaatio}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+%
+% Mittausmenetelmät ja -välineet
+% ------------------------------
+%
+\section{Mittausmenetelmät ja -välineet}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+%
+% Mittaustulokset
+% -------------------------
+%
+\section{Mittaustulokset}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+%
+% Mittaustulosten käsittely
+% -------------------------
+%
+\section{Mittaustulosten käsittely}
+
+\subsection{Diffraktiokoe}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Polarisaatiokoe}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+%
+% Lopputulokset
+% -------------
+%
+\section{Lopputulokset}
+
+\begin{table}[htb]
+    \begin{tabular}{l l}
+        Diffraktiokokeen aukon leveys   & $106\unit{$\mu$m} \pm 5\unit{$\mu$m}$ \\
+                                        & $106\unit{$\mu$m} \pm 4\unit{\%}$ \\
+    \end{tabular}
+\end{table}
+
+%
+% Omia mietteitä
+% --------------
+%
+\section{Omia mietteitä}
+
+Fysikaaliset mittaukset lähestyy loppua. Jos työselostuksia ei tarvitse korjata, jäljellä on enää tentti. Työselostusten tekeminen on ollut työlästä, mutta toisaalta valmiin selostuksen tulostuttua on aina tullut mukava tunne, että on saanut jotain aikaan. \LaTeX{}:in käyttö on tullut kerrattua ja kuvaajien piirtäminen Grapherilla sujuu jo rutiinilla.
+
+Työ 5 oli ihan mukava, vaikka mittausten määrä aluksi hirvittikin. Diffraktiokuvaajasta tuli todella hieno. Piirsin suoran pienimmän mitatun arvon kohdalle - ilmeisesti todellinen nollataso on pikemminkin siinä kuin mitatun 0 mV tasolla. Kolmas diffraktiomaksimi oli sen verran häiriöinen, että jätin sen käyttämättä laskuissa. Mittauksissa kohina oli myös hirvittävän voimakasta. Eikö pimeä huone ollut tarpeeksi pimeä??
+
+Ilmeisesti diffraktiokuvio ei ollut täsmälleen suorassa, koska oikealla puolella sivumaksimit ovat voimakkaampia. Laskuissa käytettiin keskiarvoa ja tulokset vastasivat teoreettisia paremmin kuin olisin uskonut. Hämmentävää.
+
+\end{document}

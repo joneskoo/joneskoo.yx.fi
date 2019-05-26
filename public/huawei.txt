@@ -1,0 +1,29 @@
+Huawei AT commands for setting operational mode
+Ripped from http://public.warp.es/wader/browser/trunk/wader/common/hardware/huawei.py
+
+To set the operating mode of Huawei 3G sticks, use these AT commands
+(at your own risk). Apparently the setting is saved and used in the
+future as well.
+
+Any          : AT^SYSCFG=2,0,3FFFFFFF,2,4
+2G only      : AT^SYSCFG=13,1,3FFFFFFF,2,4
+3G only      : AT^SYSCFG=14,2,3FFFFFFF,2,4
+2G preferred : AT^SYSCFG=2,1,3FFFFFFF,2,4
+3G preferred : AT^SYSCFG=2,2,3FFFFFFF,2,4
+
+To set the band used, you could use these:
+
+Any band:    3FFFFFFF
+EGSM(900):   00000100
+DCS(1800):   00000080
+PCS(1900):   00200000
+GSM850:      00080000
+WCDMA2100:   00400000
+
+
+On Mac OS X, you can use
+
+ screen /dev/tty.HUAWEIMobile-Modem
+
+You can use Ctrl-a k  to terminate screen.
+

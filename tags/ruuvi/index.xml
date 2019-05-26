@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ruuvi on Joonas Kuorilehto</title>
+    <link>https://joneskoo.kapsi.fi/tags/ruuvi/</link>
+    <description>Recent content in ruuvi on Joonas Kuorilehto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fi-fi</language>
+    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joneskoo.kapsi.fi/tags/ruuvi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oma Ruuvi-sääasema</title>
+      <link>https://joneskoo.kapsi.fi/blog/ruuvi-prometheus/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/ruuvi-prometheus/</guid>
+      <description>&lt;p&gt;Sain entisen työkaverin blogauksesta (&lt;a href=&#34;https://medium.com/@ville.alatalo/oma-s%C3%A4%C3%A4asema-ruuvitagilla-ja-grafanalla-25c823f20a20&#34; title=&#34;Oma sääasema RuuviTagilla ja Grafanalla - Ville Alatalo&#34;&gt;Oma sääasema RuuviTagilla ja Grafanalla&lt;/a&gt;) ajatuksen rakentaa itsellenikin oma sääasema.
+Olin aiemminkin lueskellut &lt;a href=&#34;https://ruuvi.com/&#34; title=&#34;Ruuvi Innovations Ltd&#34;&gt;Ruuvi&lt;/a&gt; projektista.
+Ville Alatalon innoittamana lähdin selvittämään mitä vaatisi
+saada oma sääasema. Ihan samoilla teknologioilla en sääasemaa
+toteuttanut, mutta perusajatus on sama. Dataa on nyt kertynyt
+joulukuun alusta.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

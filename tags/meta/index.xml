@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>meta on Joonas Kuorilehto</title>
+    <link>https://joneskoo.kapsi.fi/tags/meta/</link>
+    <description>Recent content in meta on Joonas Kuorilehto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fi-fi</language>
+    <lastBuildDate>Sun, 23 Nov 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joneskoo.kapsi.fi/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogin hiljaiseloa</title>
+      <link>https://joneskoo.kapsi.fi/blog/blogin-hiljaiseloa/</link>
+      <pubDate>Sun, 23 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/blogin-hiljaiseloa/</guid>
+      <description>&lt;p&gt;Asuin kaksi vuotta Yhdysvalloissa Kaliforniassa ja siellä oman
+blogin päivittäminen jäi vähälle. Samoin vähälle jäi siellä
+asuessa iltaisin säätäminen ja puuhastelu, mikä osaltaan selittää
+miksi tähän harrasteblogiin ei ole tullut kirjoiteltua.&lt;/p&gt;
+
+&lt;p&gt;Seli seli, melkein kaikki blogithan kokevat hiljaisia kausia tai
+loppuvat kun kiinnostuksenkohteet vaihtuvat.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jekyll ja uudet sivut</title>
+      <link>https://joneskoo.kapsi.fi/blog/jekyll_ja_uudet_sivut/</link>
+      <pubDate>Sat, 15 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/jekyll_ja_uudet_sivut/</guid>
+      <description>&lt;p&gt;Taas on tullut aika kirjoittaa kotisivut uusiksi. Tekniikka kehittyy ja silleen.
+Lähdin taas tyhjästä suunnittelemaan kotisivuilleni asettelua ja miettimään
+sisällön esittämistä uusiksi. Edellisen sivun luomisen jälkeen olin ehtinyt
+muun muassa perustaa blogin ja valokuvien jakamista varten kuvafeedin. Vanhalla
+saitilla näihin oli vain linkki, mikä alkoi tuntua rajoittuneelta.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,478 @@
+<!DOCTYPE html><html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ubuntu ja cloud-init kotipalvelimella</title>
+  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="canonical" href="https://joneskoo.kapsi.fi/blog/kvm-ubuntu-cloud-init/">
+  <link rel="stylesheet" href="/css/style.css">
+  <meta name="description" content="Nörtti, radioamatööri, tietotekniikan DI, päivätöissä tietoturva-alalla. Kiinnostunut teknologiasta ja säätämisestä. Mielipiteet omia.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@joneskoo_yx">
+  <meta name="twitter:creator" content="@joneskoo_yx">
+  <meta property="og:url" content="https://joneskoo.kapsi.fi/blog/kvm-ubuntu-cloud-init/">
+  <meta property="og:title" content="[2014-11-27] Ubuntu ja cloud-init kotipalvelimella">
+  <meta property="og:description" content="Virtuaalikoneen asennuksen ei tarvitse olla vaikeaa. Ubuntu julkaisee
+viralliset levykuvat pilvipalveluita varten, joita voi käyttää yhtä
+hyvin myös kotona. Itse asiassa se ei ole edes vaikeaa, mutta ohjeita
+saa hieman kaivaa.">
+  <meta property="og:image" content="https://joneskoo.kapsi.fi/img/joneskoo.jpg">
+  <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Joonas Kuorilehto</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+        <a class="page-link" href="/">Kuka minä?</a>
+        
+        <a class="page-link" href="/blog/">Blogi</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+      
+      <header class="post-header">
+        <h1 class="post-title">Ubuntu ja cloud-init kotipalvelimella</h1>
+        <p class="post-meta">2014-11-27</p>
+      </header>
+        <p>Virtuaalikoneen asennuksen ei tarvitse olla vaikeaa. Ubuntu julkaisee
+viralliset levykuvat pilvipalveluita varten, joita voi käyttää yhtä
+hyvin myös kotona. Itse asiassa se ei ole edes vaikeaa, mutta ohjeita
+saa hieman kaivaa.</p>
+
+<p>Jos olet ikinä käynnistänyt virtuaalikoneen pilveen esimerkiksi
+<a href="http://aws.amazon.com/ec2/" title="Amazon Web Services - EC2 (Elastic Compute Cloud)">Amazonin EC2:n</a> tai <a href="https://m.do.co/c/51f6517e0d88" title="Digital Ocean">Digital Oceaniin</a>,
+tiedät että se on aika helppoa ja nopeaa.
+Jos olet puolestaan asentanut Linux-virtuaalikoneita perinteisin menetelmin,
+eli esim. lataamalla CD-kuvan ja käynnistämällä siitä asennuksen, tiedät
+että siinä menee vähintään 5-15 minuuttia. Pilvipalveluiden käyttö maksaa
+kuitenkin rahaa (vaikkakaan ei paljon).</p>
+
+<p>Minä olen useamman kerran halunnut tehdä jotain kikkailua, joka on luonteeltaan
+sellaista että haluan eristää sen käyttöläppäristäni ja palvelimestani.
+Tällöin virtuaalikone tulee kysymykseen. Samaan aikaan jos alkaisin asentamaan
+käyttöjärjestelmän perinteisin keinoin, monissa tilanteissa ehtisin unohtaa
+mitä olin tekemässä tuon 15 minuutin aikana, ja pahimmillaan asennus vaatisi
+välikysymyksiä ja jopa salasanan valintaa tai muuta vastaavaa. Kaikenlaiset
+kysymykset katkaisevat ajatuksen. Täytyi siis löytää ratkaisu miten saadaan
+kestävästi luotua uusia virtuaalikoneita nopeasti, kotona ilman
+pilvipalveluita, ja ilman että käytetään jo lähtökohtaisesti vanhentunutta
+asennusta tai sen kopiota.</p>
+
+<p>Aloin tutkimaan pilvipalveuissa viime aikoina yleistynyttä <em>cloud-init</em>
+teknologiaa. Jos se ei ole tuttu entuudestaan, kyseessä on yksinkertainen
+tekstimuotoinen määrittely asioista, joita uudelle virtuaalikoneelle sovelletaan
+sen ensimmäisellä käynnistyskerralla.</p>
+
+<p><strong>Esimerkki cloud-config tiedostosta</strong></p>
+
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#008000">#cloud-config</span>
+hostname: fuzz01
+
+ssh_pwauth: False
+package_upgrade: <span style="color:#00f">true</span>
+
+password: ubuntu
+
+packages:
+- vim-tiny
+
+ssh_authorized_keys:
+- ssh-rsa AAAAB...
+
+runcmd:
+- update-alternatives --set editor /usr/bin/vim.tiny</code></pre></div>
+
+<p>Löysinkin hetken selailulla <a href="http://serverascode.com/2014/03/17/trusty-libvirt.html" title="Boot Ubuntu Trusty Tahr 14.04 with libvirt">ohjeen cloud-initin käyttöön kvm:ssä</a>.
+Loppuviimein cloud-initin käyttäminen paikallisesti on itse asiassa hyvin
+helppoa.</p>
+
+<p>Ubuntu tarjoaa <a href="https://cloud-images.ubuntu.com/" title="Ubuntu Cloud Images: Ubuntu Cloud Images are pre-installed disk images that have been customized by Ubuntu engineering to run on cloud-platforms such as Amazon EC2, Openstack, Windows and LXC.">viralliset virtuaalikonekuvat pilvipalveluita
+varten</a>. Ne muodostetaan säännöllisesti ja automaattisesti ja
+ovat pohjalla useimpien pilvipalveluiden tarjoamiin Ubuntu-asennuksiin.
+Vastaavia löytyy varmastikin muillekin jakeluille, mutta en ole perehtynyt
+niihin. Ainakin <a href="https://rhn.redhat.com/errata/RHEA-2013-0535.html" title="RHEA-2013:0535-1 Product Enhancement Advisory, new package: cloud-init">Red Hat vaikuttaisi ottaneen käyttöön</a> cloud-initin.</p>
+
+<p>Vaiheet ovat:</p>
+
+<ol>
+<li>Luodaan user-data määrittely</li>
+<li>Tehdään user-datasta levykuva</li>
+<li>Käynnistetään Ubuntu Cloud -virtuaalikone ja annetaan sille edellinen</li>
+</ol>
+
+<p><iframe width="600" height="405" src="//www.youtube-nocookie.com/embed/kPY_eSqJuZA?rel=0" frameborder="0" allowfullscreen></iframe></p>
+
+<p>Tästä eteenpäin homma olikin vain naputtelua kun värkkäsin miten asiat tehdään
+skriptillä niin että käyttäminen on helppoa ja että skripti toimii helposti
+vielä puolen vuoden päästäkin kun Cloud image on päivittynyt.</p>
+
+<p>Lopputuloksena syntyi <a href="https://github.com/joneskoo/cloud-init-start" title="Quickly bring up Cloud instances in local KVM with virsh using cloud-config">kasa skriptejä, joilla Ubuntu Cloud-imagen käyttäminen
+on helppoa</a>. Koodit löytyvät Githubista. Saa käyttäää
+vapaasti ja jos herää ajatuksia niin kuulen mielelläni palautetta esim.
+sähköpostitse.
+Skriptien avulla riittää kun määrittelee cloud-config kuvauksen ja antaa
+käskyn luoda virtuaalikoneen. Noin minuuttia myöhemmin virtuaalikone on
+valmis käyttöön.</p>
+
+<p><strong>PÄIVITYS 29.11.2014: Lisäsin tuen Fedora 20:lle.</strong></p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+  
+    <h2 class="footer-heading">Joonas Kuorilehto</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+
+          <li><img src="/img/joneskoo.jpg" alt="Joonas Kuorilehto"></li>
+
+          <li><a href="mailto:joneskoo@derbian.fi">joneskoo@derbian.fi</a></li>
+
+          
+            
+            <li>&#43;358 500 779 695</li>
+            
+          
+
+          
+            
+            <li>DE OH8GDV</li>
+            
+          
+
+          
+            
+            <small><a href="/public/joneskoo.vcf">vCard</a></small>
+            
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+            
+            <li>
+              <a href="https://github.com/joneskoo">
+<img width="16" height="16" alt="Github logo"
+     src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgZmlsbD0iIzE3MTUxNSIgaGVpZ2h0PSI1MTIiIHJ4PSIxNSUiIHdpZHRoPSI1MTIiLz4KPHBhdGggZD0ibTExOSAyNTVjMTcgMzAgNDkgNDggMTAyIDUzLTggNi0xNyAxNy0xOCAzMC0xMCA2LTI5IDgtNDQgMy0yMS03LTI5LTQ4LTYxLTQyLTcgMS02IDYgMCAxMCAxMCA2IDIxIDE2IDI2IDMwIDEyIDMxIDM3IDM5IDc3IDMzdjQ1YzAgMTQtMjAgMTgtMjAgMjUgMCAzIDcgMyAxMiAzIDEwIDAgMzItOSAzMi0yMyAwLTEyIDAtNTIgMS01OSAwLTE1IDgtMjAgOC0yMHMxIDgyLTIgOTJjLTQgMTMtMTAgMTEtMTAgMTcgMCA5IDI2IDIgMzUtMTcgNy0xNSA0LTk1IDMtOTRoN3MwIDM3IDEgNTNjMCAxNy0xIDM5IDkgNTAgNyA3IDI5IDE5IDI5IDggMC02LTEyLTEyLTEyLTI5di03OWMxMCAwIDggMjYgOCAyNmwxIDQ4cy0yIDE4IDE5IDI1YzggMyAyNCAzIDI1LTFzLTIwLTExLTIwLTI1di00OWMwLTM2LTUtNDktMjItNjAgNTMtNSA4Ni0xOCAxMDItNTMgMTAtMjAgMTItNDQgMTItNjIgMC01MC0yNC02Ny0yOS03NiA3LTM4LTEtNTUtNS02MC0xNC01LTQ4IDEyLTY2IDI0LTMwLTktOTQtOC0xMTggMi00NC0zMS02Ny0yNi02Ny0yNnMtMTUgMjctNCA2NmMtMTUgMTgtMjUgMzEtMjYgNjUgMCAyNyAzIDQ0IDE1IDY3eiIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K">
+
+                <span class="username">joneskoo</span>
+              </a>
+            </li>
+            
+          
+
+          
+            
+            <li>
+              <a href="https://twitter.com/joneskoo_yx">
+<img width="16" height="16" alt="Twitter logo"
+     src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgZmlsbD0iIzFkYTFmMyIgaGVpZ2h0PSI1MTIiIHJ4PSIxNSUiIHdpZHRoPSI1MTIiLz4KPHBhdGggZD0ibTQ1NiAxMzNjLTE0IDctMzEgMTEtNDcgMTMgMTctMTAgMzAtMjcgMzctNDYtMTUgMTAtMzQgMTYtNTIgMjAtNjEtNjItMTU3LTctMTQxIDc1LTY4LTMtMTI5LTM1LTE2OS04NS0yMiAzNy0xMSA4NiAyNiAxMDktMTMgMC0yNi00LTM3LTkgMCAzOSAyOCA3MiA2NSA4MC0xMiAzLTI1IDQtMzcgMiAxMCAzMyA0MSA1NyA3NyA1Ny00MiAzMC03NyAzOC0xMjIgMzQgMTcwIDExMSAzNzgtMzIgMzU5LTIwOCAxNi0xMSAzMC0yNSA0MS00MnoiIGZpbGw9IiNmZmYiLz4KPC9zdmc+Cg==">
+                <span class="username">joneskoo_yx</span>
+              </a>
+            </li>
+            
+          
+
+          
+            
+            <li>
+              <a href="https://www.linkedin.com/in/joneskoo">
+<img width="16" height="16" alt="LinkedIn logo"
+     src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjZmZmIj4KPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxNSUiIGZpbGw9IiMwMDc3YjUiLz4KPGNpcmNsZSBjeD0iMTA0IiBjeT0iMTA0IiByPSI0OCIvPgo8cGF0aCBkPSJtMjM3IDE3OHYyNTltLTEzMy0yNTl2MjU5IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iODYiLz4KPHBhdGggZD0ibTI3OSAyOTNjMC0yNiAxOC01MyA0OC01MyAzMSAwIDQzIDI0IDQzIDU5djEzOGg4NnYtMTQ4YzAtODAtNDItMTE2LTk5LTExNi00NSAwLTY3IDI1LTc4IDQyIi8+Cjwvc3ZnPgo=">
+                joneskoo
+            </li>
+            
+          
+
+          
+            <li>
+              <span class="icon icon--blogger">
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50.664463mm"
+   height="50.575432mm"
+   viewBox="0 0 179.51975 179.20429"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Blogger.svg">
+  <title
+     id="title4226">Blogger logo</title>
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="103.69453"
+     inkscape:cy="94.716359"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4149"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Blogger logo</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+        <dc:date>14/11/2016</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Google, Inc.</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>CMetalCore</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-157.76392,-165.65276)">
+    <g
+       id="g4149"
+       transform="translate(233.34014,-698.87178)">
+      <path
+         style="fill:#f06a35"
+         d="m -55.063807,1043.0234 c -3.359449,-0.8837 -6.258272,-2.1837 -8.931866,-4.0056 -2.256922,-1.5379 -5.555601,-4.7174 -6.810077,-6.5637 -1.532132,-2.255 -3.293254,-6.1168 -4.010994,-8.795 -0.732062,-2.7319 -0.743927,-3.8198 -0.757063,-69.39501 -0.01306,-65.24411 0.0018,-66.67877 0.719335,-69.48264 2.53752,-9.91559 10.395271,-17.45981 20.529599,-19.71045 2.913842,-0.64711 133.079792,-0.76029 136.222893,-0.11843 8.508999,1.73759 15.197718,6.84619 19.06824,14.56362 3.07712,6.13545 2.80203,-0.61622 2.94296,72.23085 0.0897,46.34991 0.007,65.80856 -0.28883,68.23286 -1.38576,11.3442 -9.210679,20.1431 -20.470153,23.0183 -2.880202,0.7354 -3.882129,0.7459 -69.275121,0.7259 -63.227195,-0.019 -66.474476,-0.052 -68.938923,-0.7007 z"
+         id="path4195" />
+      <path
+         style="fill:#fefefe;fill-opacity:0"
+         d="m -158.57144,952.36221 0,-171.89999 510,0 510,0 0,171.89999 0,171.89999 -510,0 -510,0 0,-171.89999 z"
+         id="path4165"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff"
+         d="m 39.58546,1009.3592 c 8.064748,-1.1001 14.384531,-4.3325 20.313328,-10.3896 4.288999,-4.38181 6.973811,-9.12472 8.728379,-15.41921 0.728903,-2.6149 0.790018,-3.88807 0.923587,-19.24149 0.100809,-11.58796 0.01669,-17.01514 -0.285075,-18.38528 -0.437344,-1.98593 -1.67711,-3.83016 -3.091687,-4.59911 -0.435299,-0.23661 -3.224334,-0.53819 -6.197859,-0.67015 -4.982681,-0.22115 -5.540155,-0.31832 -7.11287,-1.24 -2.494681,-1.46198 -3.181724,-3.04069 -3.188544,-7.32677 -0.01304,-8.1894 -3.421087,-15.79237 -10.154891,-22.65435 -4.797263,-4.8886 -10.14889,-8.19759 -16.256563,-10.05172 -1.462167,-0.44388 -4.736105,-0.59493 -15.7023605,-0.72452 -17.2069763,-0.20332 -21.0264035,0.14939 -26.8842785,2.48265 -10.799733,4.30168 -18.559563,13.36742 -21.390152,24.98992 -0.531646,2.18295 -0.634845,5.6815 -0.760427,25.77865 -0.157327,25.17748 0.01622,28.87467 1.589422,33.86414 1.299798,4.12233 2.611223,6.64844 5.312916,10.23388 5.146805,6.83036 12.860236,11.76336 20.572006,13.15646 3.669923,0.6631 48.94793,0.829 53.585069,0.1965 z"
+         id="path4163" />
+      <path
+         style="fill:#f06a35"
+         d="m -8.0012107,940.24201 c -4.1229413,-1.13646 -5.6634683,-7.05179 -2.6332273,-10.11109 1.9367555,-1.95536 2.4721802,-2.02981 14.5952492,-2.02981 10.8833578,0 11.2491898,0.0238 12.8478758,0.83129 2.310253,1.16711 3.314106,2.81263 3.314106,5.43252 0,2.36619 -0.942769,4.0244 -3.045645,5.35691 -1.129143,0.71549 -1.803912,0.76002 -12.4672419,0.82265 -6.5844803,0.0387 -11.829856,-0.0872 -12.6111168,-0.30247 z"
+         id="path4168" />
+      <path
+         style="fill:#f06a35"
+         d="m -8.5177926,980.05059 c -1.7697484,-0.77113 -3.4178244,-2.91327 -3.7026534,-4.81263 -0.271319,-1.80929 0.637963,-4.29669 2.031786,-5.55809 1.7569755,-1.59003 2.5280723,-1.64307 24.134743,-1.66008 22.226353,-0.0174 22.11068,-0.0268 24.218307,1.94113 2.976827,2.77944 2.348939,7.7279 -1.238363,9.75964 l -3.686323,0.59948 -19.213121,0.22489 c -16.8830622,0.19762 -21.6656419,-0.1114 -22.5443756,-0.49433 z"
+         id="path4166" />
+    </g>
+  </g>
+</svg>
+              </span>
+              <a href="http://citna.yx.fi/">Citna-blogi</a>
+            </li>
+          
+            <li>
+              <span class="icon icon--blogger">
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50.664463mm"
+   height="50.575432mm"
+   viewBox="0 0 179.51975 179.20429"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Blogger.svg">
+  <title
+     id="title4226">Blogger logo</title>
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="103.69453"
+     inkscape:cy="94.716359"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4149"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Blogger logo</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+        <dc:date>14/11/2016</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Google, Inc.</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>CMetalCore</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-157.76392,-165.65276)">
+    <g
+       id="g4149"
+       transform="translate(233.34014,-698.87178)">
+      <path
+         style="fill:#f06a35"
+         d="m -55.063807,1043.0234 c -3.359449,-0.8837 -6.258272,-2.1837 -8.931866,-4.0056 -2.256922,-1.5379 -5.555601,-4.7174 -6.810077,-6.5637 -1.532132,-2.255 -3.293254,-6.1168 -4.010994,-8.795 -0.732062,-2.7319 -0.743927,-3.8198 -0.757063,-69.39501 -0.01306,-65.24411 0.0018,-66.67877 0.719335,-69.48264 2.53752,-9.91559 10.395271,-17.45981 20.529599,-19.71045 2.913842,-0.64711 133.079792,-0.76029 136.222893,-0.11843 8.508999,1.73759 15.197718,6.84619 19.06824,14.56362 3.07712,6.13545 2.80203,-0.61622 2.94296,72.23085 0.0897,46.34991 0.007,65.80856 -0.28883,68.23286 -1.38576,11.3442 -9.210679,20.1431 -20.470153,23.0183 -2.880202,0.7354 -3.882129,0.7459 -69.275121,0.7259 -63.227195,-0.019 -66.474476,-0.052 -68.938923,-0.7007 z"
+         id="path4195" />
+      <path
+         style="fill:#fefefe;fill-opacity:0"
+         d="m -158.57144,952.36221 0,-171.89999 510,0 510,0 0,171.89999 0,171.89999 -510,0 -510,0 0,-171.89999 z"
+         id="path4165"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ffffff"
+         d="m 39.58546,1009.3592 c 8.064748,-1.1001 14.384531,-4.3325 20.313328,-10.3896 4.288999,-4.38181 6.973811,-9.12472 8.728379,-15.41921 0.728903,-2.6149 0.790018,-3.88807 0.923587,-19.24149 0.100809,-11.58796 0.01669,-17.01514 -0.285075,-18.38528 -0.437344,-1.98593 -1.67711,-3.83016 -3.091687,-4.59911 -0.435299,-0.23661 -3.224334,-0.53819 -6.197859,-0.67015 -4.982681,-0.22115 -5.540155,-0.31832 -7.11287,-1.24 -2.494681,-1.46198 -3.181724,-3.04069 -3.188544,-7.32677 -0.01304,-8.1894 -3.421087,-15.79237 -10.154891,-22.65435 -4.797263,-4.8886 -10.14889,-8.19759 -16.256563,-10.05172 -1.462167,-0.44388 -4.736105,-0.59493 -15.7023605,-0.72452 -17.2069763,-0.20332 -21.0264035,0.14939 -26.8842785,2.48265 -10.799733,4.30168 -18.559563,13.36742 -21.390152,24.98992 -0.531646,2.18295 -0.634845,5.6815 -0.760427,25.77865 -0.157327,25.17748 0.01622,28.87467 1.589422,33.86414 1.299798,4.12233 2.611223,6.64844 5.312916,10.23388 5.146805,6.83036 12.860236,11.76336 20.572006,13.15646 3.669923,0.6631 48.94793,0.829 53.585069,0.1965 z"
+         id="path4163" />
+      <path
+         style="fill:#f06a35"
+         d="m -8.0012107,940.24201 c -4.1229413,-1.13646 -5.6634683,-7.05179 -2.6332273,-10.11109 1.9367555,-1.95536 2.4721802,-2.02981 14.5952492,-2.02981 10.8833578,0 11.2491898,0.0238 12.8478758,0.83129 2.310253,1.16711 3.314106,2.81263 3.314106,5.43252 0,2.36619 -0.942769,4.0244 -3.045645,5.35691 -1.129143,0.71549 -1.803912,0.76002 -12.4672419,0.82265 -6.5844803,0.0387 -11.829856,-0.0872 -12.6111168,-0.30247 z"
+         id="path4168" />
+      <path
+         style="fill:#f06a35"
+         d="m -8.5177926,980.05059 c -1.7697484,-0.77113 -3.4178244,-2.91327 -3.7026534,-4.81263 -0.271319,-1.80929 0.637963,-4.29669 2.031786,-5.55809 1.7569755,-1.59003 2.5280723,-1.64307 24.134743,-1.66008 22.226353,-0.0174 22.11068,-0.0268 24.218307,1.94113 2.976827,2.77944 2.348939,7.7279 -1.238363,9.75964 l -3.686323,0.59948 -19.213121,0.22489 c -16.8830622,0.19762 -21.6656419,-0.1114 -22.5443756,-0.49433 z"
+         id="path4166" />
+    </g>
+  </g>
+</svg>
+              </span>
+              <a href="http://helkajajoonas.yx.fi/">Ameriikan ihmeitä</a>
+            </li>
+          
+
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Nörtti, radioamatööri, tietotekniikan DI, päivätöissä tietoturva-alalla. Kiinnostunut teknologiasta ja säätämisestä. Mielipiteet omia.</p>
+      </div>
+
+    </div>
+  
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/joneskoo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://joneskoo.yx.fi
+  * I am joneskoo (https://keybase.io/joneskoo) on keybase.
+  * I have a public key with fingerprint FC8A 54F4 7FD1 251D 5290  6CB8 796A 3842 07F0 0C6E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120d3fb1ece04bfb1a80b573d35e75e28184e2c37fb154acdd561766567a63e46010a",
+            "fingerprint": "fc8a54f47fd1251d52906cb8796a384207f00c6e",
+            "host": "keybase.io",
+            "key_id": "796a384207f00c6e",
+            "kid": "0101b940130c6f6e9351a22a03972ba4ccd5495c9db0c3a797a7a856672e86e632470a",
+            "uid": "08e0a1c7d52360bd00e8ade6f84a3919",
+            "username": "joneskoo"
+        },
+        "service": {
+            "hostname": "joneskoo.yx.fi",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1494438243,
+    "expire_in": 157680000,
+    "prev": "1e27bea9b3c6ddc5ac0d0fab93a901eb74924c4f19bd914f6352eaa5e62315c6",
+    "seqno": 38,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.70
+Comment: https://keybase.io/crypto
+
+yMN0AnicbVJtUBVVGOZbLgryJY4lSTuCQQzt7tk9u4tgiTDjMKYjMo7eMDq7exaW
+j72Xey94r8BomBgWmjFm0AATozkaxUfAjALyIRpKMab0AUg1iDkIQyYElDPWXso/
+TefPOe/7Ps9znvedt8/X3cXH1ZHFJyx7uEJzHeipynfZG7RTLiREk+wgYguJbLx0
+4RwZW23p2apMxBIkRZMyUEQKS5hkRP2BeFJkOSADFnMspnmKZzAtAU4vsQySZJmF
+FAchCzkEAWYgSZGIiCYUVcvAFrNF1Wy6rCLxiGUUhlNkimYpmaUFEkoizwkQAZ6h
+SU4hSQlinZhpsjoZujkRWXGMatJzepC+ZO9/8E99k5QoMCQF9LQCsQBYCtE0IoHA
+0SJiJElmGYGVBFkkJYA4gUMc4lkIORrzEENAM9yS7/x/5HhMIkridKMAkqJMkphH
+MoYKzyAgUIITaMUWDeViHZ1l0rA122QiiqMJPVugStg5WGcn/0HEOOwxiqqzzRaT
+zSSZcvRaps1mtsY6uTaH2Qnej8X0f2XSRVWT9UnqjAJssaomjYildKRkU526FCMw
+DOBpBkQT2G5WLThddSJYDvKkfpz/4AJdksI0J2IkiECCsiyxSCJlUkGiAJBAUljk
+GIFmJEahBFEWKEaBgKUxQiyGNKBYCRLOxvI0ExELeN0nytA1rWqGhmz5FkwU9/ak
+ebi4+rh4ebo5V8zFx+D/dPHyjP4utVeUb3vKJjK6V7/6RereufoXn1k9/RH43fuk
+1w/3EicK2+si6kIiuu7dejxlTP1p9/jip/65f10ql3uHiDUvbCs9X3NgsuP+lWo+
+84jWPHnhzdcebr4GsjxXBoYWWcO+GTmy68GxMfWNlRciS17OvzZrv6gcTjn2dZh9
+pMgtHiQosNrjrDa9Q/sg8eh2Q19/eN/zqZvyuKg7nZ/tOTyGaixRXhs7cpISo72C
+Z26m1Tl4bvlcZeig8fLdZzf3DqxpzQRj9s4n8+YHN1Y0le9fjGsc7e3YEODa19bh
+jsouz9AGtqn4RIm5/mjzfOmJfr6l/K0PifMNRcnPvWSwB9WGXIx55ce2xQRj3Mij
+TQNJBwMH4XveZ0/JnoZluSd//qTq4PUdJfWxjeOvu7U8vlXRcCm43jcIluV1Hm90
+jHrST6JKB7/Pb73rvtb+ZeP6VeJ06j7ruoA/jzf94j//dkjh6FBe8nir7/vvNnxX
+WUO3hydrk7B4Vdyh+HNhtcbBluLBjcbZbV39Yd0pNbfjJ5NKI++EBlxf7uM3WpdV
+Udv2cfDpGe8alLJ7wLcIZ96OfDQUUDk8PfnHqQXj1rCvfhsO3zVqoDu7P7+5rvpq
+1qFzs4ETji3jhhsOonvf1M77Z7aenvLbsB1fnTnjYYyuGCGHPQvXVx3Yk9ictCXN
+9521RXNd/SPtfr9WL0T4LWT+DdHpvhk=
+=YHus
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/joneskoo
+
+==================================================================

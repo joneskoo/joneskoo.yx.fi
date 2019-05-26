@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vinkkejä on Joonas Kuorilehto</title>
+    <link>https://joneskoo.kapsi.fi/tags/vinkkej%C3%A4/</link>
+    <description>Recent content in vinkkejä on Joonas Kuorilehto</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fi-fi</language>
+    <lastBuildDate>Wed, 23 Feb 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joneskoo.kapsi.fi/tags/vinkkej%C3%A4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hyödyllisiä vinkkejä, osa less</title>
+      <link>https://joneskoo.kapsi.fi/blog/vinkkeja/less/</link>
+      <pubDate>Wed, 23 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/vinkkeja/less/</guid>
+      <description>Olen käyttänyt, kuten varmasti lähes kaikki *nix-käyttäjät, lessiä niin kauan kuin muistan. Tässä joku aika sitten tuli vastaan pari asiaa, joita en ollut hoksannut. Kenties ovat menneet muiltakin ohi?
+Olennaisimpana olen käyttänyt lokien seuraamiseen käskyä
+tail -f loki | less  Tässä ei nyt ajateltuna ole mitään järkeä, koska less osaa seurata kasvavaa tiedostoa itsekin. Käsky F kun tiedosto on avattu lessillä alkaa seurata kasvavan tiedoston loppua. Lista käskyistä löytyy esimerkiksi Wikipediasta.</description>
+    </item>
+    
+    <item>
+      <title>Hyödyllisiä vinkkejä, osa bash</title>
+      <link>https://joneskoo.kapsi.fi/blog/vinkkeja/bash/</link>
+      <pubDate>Wed, 12 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/vinkkeja/bash/</guid>
+      <description>&lt;p&gt;Jatkan tällä vinkkisarjaa, tällä kertaa vuorossa bash. Samoja ideoita voi koittaa soveltaa muihinkin shelleihin.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hyödyllisiä vinkkejä, osa ssh</title>
+      <link>https://joneskoo.kapsi.fi/blog/vinkkeja/ssh/</link>
+      <pubDate>Wed, 12 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.kapsi.fi/blog/vinkkeja/ssh/</guid>
+      <description>&lt;p&gt;Haluaisin kertoa muutamista liian vähän tunnetuista näppäristä asetuksista eri ohjelmissa. Kerron niistä lyhyesti ja annan kullekin copypastetettavat rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n asetustiedostosta ja siinä käyttämistäni asetuksista.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
