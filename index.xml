@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joonas Kuorilehto</title>
@@ -94,7 +94,6 @@ saa hieman kaivaa.&lt;/p&gt;</description>
 blogin päivittäminen jäi vähälle. Samoin vähälle jäi siellä
 asuessa iltaisin säätäminen ja puuhastelu, mikä osaltaan selittää
 miksi tähän harrasteblogiin ei ole tullut kirjoiteltua.&lt;/p&gt;
-
 &lt;p&gt;Seli seli, melkein kaikki blogithan kokevat hiljaisia kausia tai
 loppuvat kun kiinnostuksenkohteet vaihtuvat.&lt;/p&gt;</description>
     </item>
@@ -112,10 +111,10 @@ kirjoitettu. Toivottavasti tuli sinne päinkään sama mitä tänään tein.&lt;
     
     <item>
       <title>Tilastoja IRCnet-verkon käyttäjistä</title>
-      <link>https://joneskoo.yx.fi/blog/ircnet-tilastoja/ircnet-tilastoja/</link>
+      <link>https://joneskoo.yx.fi/blog/ircnet-tilastoja/</link>
       <pubDate>Wed, 05 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://joneskoo.yx.fi/blog/ircnet-tilastoja/ircnet-tilastoja/</guid>
+      <guid>https://joneskoo.yx.fi/blog/ircnet-tilastoja/</guid>
       <description>&lt;p&gt;Joku viikko sitten katson mielenkiinnosta paljonko IRCnetissä on tällä hetkellä
 käyttäjiä. Selkeästi IRC:n suosio on kärsinyt uudempien sosiaalisen median
 palveluiden myötä, mutta Suomessa on edelleen suuri joukko IRC:n vannoutuneita
@@ -214,7 +213,7 @@ tail -f loki | less  Tässä ei nyt ajateltuna ole mitään järkeä, koska less
       <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
       
       <guid>https://joneskoo.yx.fi/blog/mobiililaajakaista-ja-dsln-korvaaminen/</guid>
-      <description>Suomalaiset ovat tottuneet kiinteisiin aina päällä oleviin Internet-yhteyksiin, jotka on tyypillisesti toteutettu jollain DSL-tekniikalla (Viestintäviraston markkinakatsauksen 2008&amp;frasl;2 mukaan DSL-yhteyksiä oli 1 270 100 kaikista 1 923 300 laajakaistaliittymästä 30.6.2008). Tällaiset kiinteät yhteydet ovat melko luotettavia. Oman kokemukseni pohjalta katkoja on tyypillisesti lähinnä huoltokatkojen tai melko harvinaisten laiterikkojen aikana.
+      <description>Suomalaiset ovat tottuneet kiinteisiin aina päällä oleviin Internet-yhteyksiin, jotka on tyypillisesti toteutettu jollain DSL-tekniikalla (Viestintäviraston markkinakatsauksen 2008/2 mukaan DSL-yhteyksiä oli 1 270 100 kaikista 1 923 300 laajakaistaliittymästä 30.6.2008). Tällaiset kiinteät yhteydet ovat melko luotettavia. Oman kokemukseni pohjalta katkoja on tyypillisesti lähinnä huoltokatkojen tai melko harvinaisten laiterikkojen aikana.
 “Mobiililaajakaista” on termi, jolla tarkoitetaan kännykkäverkon kautta tarjottavaa “laajakaistaa”. Kännykkäverkon kautta tarjotuissa yhteydessä nopeudet ovat olleen viime vuosiin asti erittäin hitaita, mutta nyt verkkojen nopeudet ovat nousseet jo jopa useisiin megabitteihin sekunnissa, lähelle hitaimpia kiinteitä yhteyksiä.</description>
     </item>
     

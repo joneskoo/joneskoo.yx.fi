@@ -1,6 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/tags/golang/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>https://joneskoo.yx.fi/blog/</loc>
@@ -10,7 +15,6 @@
   <url>
     <loc>https://joneskoo.yx.fi/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -19,33 +23,33 @@
   </url>
   
   <url>
-    <loc>https://joneskoo.yx.fi/tags/</loc>
-    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.yx.fi/tags/golang/</loc>
-    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://joneskoo.yx.fi/tags/prometheus/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joneskoo.yx.fi/tags/raspberry/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joneskoo.yx.fi/tags/ruuvi/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/tags/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/tags/skriptit/</loc>
+    <lastmod>2017-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/tags/spotify/</loc>
+    <lastmod>2017-05-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -54,21 +58,13 @@
   </url>
   
   <url>
-    <loc>https://joneskoo.yx.fi/tags/skriptit/</loc>
-    <lastmod>2017-05-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.yx.fi/tags/spotify/</loc>
-    <lastmod>2017-05-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://joneskoo.yx.fi/tags/systemd/</loc>
     <lastmod>2017-05-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/tags/angst/</loc>
+    <lastmod>2015-12-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -77,9 +73,8 @@
   </url>
   
   <url>
-    <loc>https://joneskoo.yx.fi/tags/angst/</loc>
-    <lastmod>2015-12-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://joneskoo.yx.fi/tags/lte/</loc>
+    <lastmod>2015-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -88,21 +83,18 @@
   </url>
   
   <url>
-    <loc>https://joneskoo.yx.fi/tags/lte/</loc>
-    <lastmod>2015-06-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://joneskoo.yx.fi/tags/matka/</loc>
     <lastmod>2015-06-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joneskoo.yx.fi/tags/saunalahti/</loc>
     <lastmod>2015-06-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/tags/kotiverkko/</loc>
+    <lastmod>2015-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -111,26 +103,18 @@
   </url>
   
   <url>
-    <loc>https://joneskoo.yx.fi/tags/kotiverkko/</loc>
-    <lastmod>2015-02-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.yx.fi/blog/kvm-ubuntu-cloud-init/</loc>
-    <lastmod>2014-11-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://joneskoo.yx.fi/tags/kvm/</loc>
     <lastmod>2014-11-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joneskoo.yx.fi/tags/ubuntu/</loc>
     <lastmod>2014-11-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/blog/kvm-ubuntu-cloud-init/</loc>
+    <lastmod>2014-11-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -141,7 +125,6 @@
   <url>
     <loc>https://joneskoo.yx.fi/tags/meta/</loc>
     <lastmod>2014-11-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -152,35 +135,31 @@
   <url>
     <loc>https://joneskoo.yx.fi/tags/resepti/</loc>
     <lastmod>2014-04-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joneskoo.yx.fi/blog/ircnet-tilastoja/ircnet-tilastoja/</loc>
-    <lastmod>2014-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://joneskoo.yx.fi/tags/irc/</loc>
     <lastmod>2014-03-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joneskoo.yx.fi/blog/saunalahti-nat/</loc>
-    <lastmod>2011-12-20T00:00:00+00:00</lastmod>
+    <loc>https://joneskoo.yx.fi/blog/ircnet-tilastoja/</loc>
+    <lastmod>2014-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://joneskoo.yx.fi/tags/ipv6/</loc>
     <lastmod>2011-12-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joneskoo.yx.fi/tags/mobiili/</loc>
     <lastmod>2011-12-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joneskoo.yx.fi/blog/saunalahti-nat/</loc>
+    <lastmod>2011-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -201,13 +180,11 @@
   <url>
     <loc>https://joneskoo.yx.fi/tags/shell/</loc>
     <lastmod>2011-02-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joneskoo.yx.fi/tags/vinkkej%C3%A4/</loc>
     <lastmod>2011-02-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -238,7 +215,6 @@
   <url>
     <loc>https://joneskoo.yx.fi/tags/shorturl/</loc>
     <lastmod>2009-03-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -253,7 +229,6 @@
   
   <url>
     <loc>https://joneskoo.yx.fi/categories/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

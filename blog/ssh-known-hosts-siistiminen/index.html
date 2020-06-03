@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>SSH known_hosts-tiedoston siistiminen</title>
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.71.1" />
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="canonical" href="https://joneskoo.yx.fi/blog/ssh-known-hosts-siistiminen/">
   <link rel="stylesheet" href="/css/style.css">
@@ -19,6 +19,8 @@ Omassa known_hosts-tiedostossani alkaa rivejä olla lähemmäs sata, joten
 siistiminen on oikeasti tarpeen.">
   <meta property="og:image" content="https://joneskoo.yx.fi/img/joneskoo.jpg">
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+  
   
 </head>
 
@@ -65,14 +67,11 @@ siistiminen on oikeasti tarpeen.">
 yksinkertaisen skriptin, joka yhdistää saman palvelimen rivit yhdeksi.
 Omassa known_hosts-tiedostossani alkaa rivejä olla lähemmäs sata, joten
 siistiminen on oikeasti tarpeen.</p>
-
 <p>Kätevin tapa muistaa mille kaikille koneille salasana tai ssh-avain täytyy
 vaihtaa on katsoa known_hosts-tiedostosta mihin kaikkialle on tullut
 kirjauduttua. Aika nopeasti listasta saa käytyä läpi tarpeelliset.</p>
-
 <p>Tässäpä <a href="https://gist.github.com/1306614">koodit</a>, jos lukijoilla sattuisi olemaan sama ongelma. Pitäisi toimia
 Pythonin sekä uusilla 2.x että 3.x versioilla.</p>
-
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">import</span> re
 <span style="color:#00f">import</span> sys
 <span style="color:#00f">import</span> os

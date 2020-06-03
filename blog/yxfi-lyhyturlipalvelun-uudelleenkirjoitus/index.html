@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>yx.fi lyhytosoitepalvelun uudelleenkirjoitus</title>
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.71.1" />
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="canonical" href="https://joneskoo.yx.fi/blog/yxfi-lyhyturlipalvelun-uudelleenkirjoitus/">
   <link rel="stylesheet" href="/css/style.css">
@@ -17,6 +17,8 @@
 Genshi, kuten Kid:kin, vaatii että templatet ovat validia XML:ää. Niissä voi käyttää Python-koodia melko vapaasti. Sain melko nopeasti luotua yhden rungon, johon eri sivujen sisältö sijoitetaan.">
   <meta property="og:image" content="https://joneskoo.yx.fi/img/joneskoo.jpg">
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+  
   
 </head>
 
@@ -60,41 +62,27 @@ Genshi, kuten Kid:kin, vaatii että templatet ovat validia XML:ää. Niissä voi
         <p class="post-meta">2009-03-25</p>
       </header>
         <p>Muutaman kerran oli jo aiemmin käynyt mielessä. Nyt sain sen viimein tehtyä. Kirjoitin alusta asti uudestaan yx.fi lyhytosoitepalvelun. Aioin aluksi käyttää Kapsi Internet-käyttäjät ry:n Sikteeri-projektista tuttua TurboGears-frameworkkiä, tai ainakin sen osia. Hetken pidempään tutkittuani huomasin, että Kid-template-kirjastoa ei ole kehitetty muutamaan vuoteen. Sen tilalle on noussut Genshi, joka uppoaa kohtuullisen pienin muutoksin Kidin tilalle.</p>
-
 <p>Genshi, kuten Kid:kin, vaatii että templatet ovat validia XML:ää. Niissä voi käyttää Python-koodia melko vapaasti. Sain melko nopeasti luotua yhden rungon, johon eri sivujen sisältö sijoitetaan. Käytin vanhasta koodista suoraan CSS-tyylimäärittelyjä. Tämän vuoksi uutta lyhyturlipalvelua voi hädintuskin erottaa alkuperäisestä ulkoisesti.</p>
-
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div py:if=<span style="color:#a31515">&#34;errors&#34;</span> class=<span style="color:#a31515">&#34;error&#34;</span>&gt;
  &lt;p&gt;Creating the short URL failed:&lt;/p&gt;
   &lt;ul&gt;
    &lt;li py:for=<span style="color:#a31515">&#34;error in errors&#34;</span>&gt;${error}&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</code></pre></div>
-
 <p>Esimerkki Genshi-templatesta</p>
-
 <p>Kun olin saanut rungon kasaan, tarvitsi selvittää miten sisällön saa näkymään. Aiemmin minulla oli staattinen HTML-etusivu ja kaksi erillistä skriptiä, lyhyturlin lisäämiseen ja uudelleenohjausta varten. Suoraan sanoen vanha koodi oli läjä purkkaa liimattuna kasaan. Hyi kauhistus.</p>
-
 <p>Googlettamalla löysin hyvän suosituksen sivuston rungoksi. Werkzeug on kotisivunsa mukaan kokoelma WSGI-työkaluja ja apuohjelmia. Siihen kuuluu debuggeri, erinäisiä webbisovelluksissa tarvittuja kirjastotoimintoja ja URL-reititys. Viimeinen on tärkeimpiä syitä, miksi tarvitsin Werkzeugin.</p>
-
 <p>Uusi koodini on organisoitu jokseenkin model-view-controller (tai oikeammin model-template-controller) arkkitehtuurin mukaisesti. Siinä on selkeästi erotettavissa erillisinä osina sivurungot (templatet) ja näkymät (view), tietokantamalli (model) ja kontrolleri. Tietokantamalli on vain muutama rivi koodia, sillä tietokanta on todella yksinkertainen. Kontrolleri päättää pyynnön perusteella mitä sisältöä selaimelle tarjotaan ja valitsee oikean sivurungon. Näet hakemistorakenteen alla olevasta kuvasta.</p>
-
-<p><img src="yxfi.png" alt="yx.fi lähdekoodit" /></p>
-
+<p><img src="yxfi.png" alt="yx.fi lähdekoodit"></p>
 <p>Tietokantamalli todellakin on yksinkertainen. Siinä on peräti neljä riviä koodia:</p>
-
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00f">class</span> <span style="color:#2b91af">Shorturl</span>(SQLObject):
     url = StringCol()
     host = StringCol(length=42)
     ts = DateTimeCol()</code></pre></div>
-
 <p>Kuten näkyy, käytän SQLObject objektirelaatiomapperia (ORM) tietokannan käyttämiseen. Näin minun ei tarvitse huolehtia tietokannan käsittelystä, ei tarvitse kirjoittaa SQL-lausekkeita eikä huolehtia siitä että koodivirheeni vuoksi koko tietokanta voitaisiin tyhjentää (SQL injection).</p>
-
 <p>Tosin myös SQLObject taitaa olla nykyään hylätty projekti. Hyvä idea voisi olla siirtyä käyttämään SQLAlchemyä, jota kehitetään yhä. Muutenkin SQLAlchemy on käsittääkseni monipuolisempi ja kun tietokanta on näin yksinkertainen, muutokset muuhun koodiin jäisivät luultavasti erittäin vähäisiksi.</p>
-
 <p>Kaikenkaikkiaan olen erittäin tyytyväinen uusittuun yx.fi lyhyturlipalveluun. Nyt pystyin toteuttamaan skriptejä varten tarvittavan RPC-rajapinnan helposti (pyytäkää speksit jos haluatte käyttää, annan ne kyllä mielelläni). Lisäksi lisäsin esikatselumahdollisuuden, esimerkiksi jos haluaa nähdä mihin yx.fi/1 ohjaa, voi surffata osoitteeseen <a href="http://yx.fi/p/1">http://yx.fi/p/1</a>.</p>
-
 <p>Oikeilla työkaluilla harrastekoodausprojektit ovat ihan kivoja. Ihan kuin ohjelmointi alkaisi taas kiinnostaa minua muutaman vuoden tauon jälkeen, jota ennen kirjoitin melko paljon Perliä. Nykyään olen siirtynyt Applen koneisiin ja OS X:n ja Python istuu huomattavasti paremmin päähäni, vaikka aiemmin olin Perlin kannalla. Myös hieman Emacs-henkinen editori TextMate tuntuu sopivan äärimmäisen hyvin ajattelumalleihini, vaikka ennen olinkin vahvasti tykästynyt vi:n.</p>
-
 <p>Toisaalta enpä vielä 3 vuotta sitten uskonut seurustelevani saati harkitsevani avioliittoa…</p>
 
       </div>

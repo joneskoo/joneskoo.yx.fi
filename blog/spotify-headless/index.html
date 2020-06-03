@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Spotify palvelimella ilman näyttöä</title>
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.71.1" />
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="canonical" href="https://joneskoo.yx.fi/blog/spotify-headless/">
   <link rel="stylesheet" href="/css/style.css">
@@ -20,6 +20,8 @@ mutta en halua piuhoja tai kuluttaa akkua loppuun Airplayllä.
 Ratkaisu: Spotify kotipalvelimelle ja ohjaus langattomasti.">
   <meta property="og:image" content="https://joneskoo.yx.fi/img/joneskoo.jpg">
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+  
   
 </head>
 
@@ -67,28 +69,21 @@ ongelma kännykällä on kännykän äänentoisto. Musiikin pitää kuulua
 kunnollisista kaiuttimista. Halusin Spotifyn soivan kaiuttimista,
 mutta en halua piuhoja tai kuluttaa akkua loppuun Airplayllä.
 Ratkaisu: Spotify kotipalvelimelle ja ohjaus langattomasti.</p>
-
-<p><img src="spotify.jpg" alt="Spotify Connect" title="Spotify läppärillä ohjaa palvelinta" /></p>
-
+<p><img src="spotify.jpg" alt="Spotify Connect" title="Spotify läppärillä ohjaa palvelinta"></p>
 <p>Spotifyn <a href="https://www.spotify.com/us/download/linux/">asentaminen Linuxiin on varsin helppoa</a>
 ja Spotify tarjoaa jopa virallisen Linux-version.
 Seuraava ongelma onkin, että Spotify vaatii näytön, mitä palvelimellani ei ole.</p>
-
 <p>Aluksi Spotify vaatii kirjautumisen, ja koska komentoriviparametrejä
 ei löytynyt, käynnistin Spotifyn ensin käsin.
 Ensin kirjauduin ssh:lla kautta ja käytin X-edelleenohjausta, kirjauduin
 Spotify:n, ja sammutin ohjelman.</p>
-
 <p><strong>Asennetaan Spotify palveluksi</strong></p>
-
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#008000"># Luodaan erillinen käyttäjä palvelulle</span>
 useradd -m -c <span style="color:#a31515">&#34;Spotify&#34;</span> -s /bin/bash spotify
 <span style="color:#008000"># Kopioidaan asetukset (ml. valmiiksi kirjautunut sessio)</span>
 mkdir /home/spotify/.config
 mv /home/joneskoo/.config/spotify /home/spotify/.config/</code></pre></div>
-
 <p>Seuraavaksi systemd-palvelumäärittely:</p>
-
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#008000"># /etc/systemd/system/spotify.service</span>
 <span style="color:#00f">[Unit]</span>
 Description=<span style="color:#a31515">Spotify connect</span>
@@ -103,7 +98,6 @@ Group=<span style="color:#a31515">spotify</span>
 
 <span style="color:#00f">[Install]</span>
 WantedBy=<span style="color:#a31515">multi-user.target</span></code></pre></div>
-
 <p>xvfb on X virtual frame buffer. Se tarjoaa Spotifylle &ldquo;näytön&rdquo;
 jolle se voi piirtää ikkunansa, mutta se ei varsinaisesti näy kuitenkaan
 missään. Onneksi Spotify käynnistyy vaatimatta klikkauksia, kunhan
@@ -112,9 +106,7 @@ Jätän tässä kuvaamatta yksityiskohdat miten ylipäätään äänet saa toimi
 Linux-koneella ilman työpöytäympäristöä, se kun on tietynlainen initiaatioriitti
 Linux-säätämisessä. Pulse Audio, ALSA… Puhumattakaan jos haluaa äänen
 optisesta lähdöstä. Mutta toimii kun on kerran tehty!</p>
-
 <p>Viimeistellään täräyttämällä palvelu käyntiin.</p>
-
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#008000"># Lisätään palvelu käynnistymään automaattisesti</span>
 systemctl enable spotify.service
 <span style="color:#008000"># Käynnistetään palvelu</span>
@@ -124,13 +116,11 @@ journalctl --unit=spotify --follow
 -- Logs begin at Mon 2017-05-22 02:00:46 EEST. --
 May 26 21:11:13 hansu systemd[1]: Started Spotify connect.
 May 26 21:11:13 hansu xvfb-run[2291]: [0526/211113:ERROR:main_delegate.cc(752)] Could not load cef_extensions.pak</code></pre></div>
-
 <p>Nyt Spotify pyörii palvelimella ja päivittyy muiden ohjelmien mukana,
 käynnistyy automaattisesti uudelleenkäynnistyksen jälkeen. Spotify Connectin
 avulla pystyn vaihtamaan kappaletta ja säätämään äänenvoimakkuutta kännykällä
 tai läppärillä, myöskin kun en ole kotona sillä Spotify Connect toimii
 Internetin kautta, ei paikallisverkossa.</p>
-
 <p>ROCK!</p>
       </div>
     </div>

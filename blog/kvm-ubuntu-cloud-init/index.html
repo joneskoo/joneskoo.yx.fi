@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ubuntu ja cloud-init kotipalvelimella</title>
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.71.1" />
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="canonical" href="https://joneskoo.yx.fi/blog/kvm-ubuntu-cloud-init/">
   <link rel="stylesheet" href="/css/style.css">
@@ -19,6 +19,8 @@ hyvin myös kotona. Itse asiassa se ei ole edes vaikeaa, mutta ohjeita
 saa hieman kaivaa.">
   <meta property="og:image" content="https://joneskoo.yx.fi/img/joneskoo.jpg">
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+  
   
 </head>
 
@@ -65,7 +67,6 @@ saa hieman kaivaa.">
 viralliset levykuvat pilvipalveluita varten, joita voi käyttää yhtä
 hyvin myös kotona. Itse asiassa se ei ole edes vaikeaa, mutta ohjeita
 saa hieman kaivaa.</p>
-
 <p>Jos olet ikinä käynnistänyt virtuaalikoneen pilveen esimerkiksi
 <a href="http://aws.amazon.com/ec2/" title="Amazon Web Services - EC2 (Elastic Compute Cloud)">Amazonin EC2:n</a> tai <a href="https://m.do.co/c/51f6517e0d88" title="Digital Ocean">Digital Oceaniin</a>,
 tiedät että se on aika helppoa ja nopeaa.
@@ -73,7 +74,6 @@ Jos olet puolestaan asentanut Linux-virtuaalikoneita perinteisin menetelmin,
 eli esim. lataamalla CD-kuvan ja käynnistämällä siitä asennuksen, tiedät
 että siinä menee vähintään 5-15 minuuttia. Pilvipalveluiden käyttö maksaa
 kuitenkin rahaa (vaikkakaan ei paljon).</p>
-
 <p>Minä olen useamman kerran halunnut tehdä jotain kikkailua, joka on luonteeltaan
 sellaista että haluan eristää sen käyttöläppäristäni ja palvelimestani.
 Tällöin virtuaalikone tulee kysymykseen. Samaan aikaan jos alkaisin asentamaan
@@ -84,55 +84,45 @@ kysymykset katkaisevat ajatuksen. Täytyi siis löytää ratkaisu miten saadaan
 kestävästi luotua uusia virtuaalikoneita nopeasti, kotona ilman
 pilvipalveluita, ja ilman että käytetään jo lähtökohtaisesti vanhentunutta
 asennusta tai sen kopiota.</p>
-
 <p>Aloin tutkimaan pilvipalveuissa viime aikoina yleistynyttä <em>cloud-init</em>
 teknologiaa. Jos se ei ole tuttu entuudestaan, kyseessä on yksinkertainen
 tekstimuotoinen määrittely asioista, joita uudelle virtuaalikoneelle sovelletaan
 sen ensimmäisellä käynnistyskerralla.</p>
-
 <p><strong>Esimerkki cloud-config tiedostosta</strong></p>
-
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#008000">#cloud-config</span>
-hostname: fuzz01
+<span style="color:#00f">hostname</span>: fuzz01
 
-ssh_pwauth: False
-package_upgrade: <span style="color:#00f">true</span>
+<span style="color:#00f">ssh_pwauth</span>: False
+<span style="color:#00f">package_upgrade</span>: <span style="color:#00f">true</span>
 
-password: ubuntu
+<span style="color:#00f">password</span>: ubuntu
 
-packages:
+<span style="color:#00f">packages</span>:
 - vim-tiny
 
-ssh_authorized_keys:
+<span style="color:#00f">ssh_authorized_keys</span>:
 - ssh-rsa AAAAB...
 
-runcmd:
+<span style="color:#00f">runcmd</span>:
 - update-alternatives --set editor /usr/bin/vim.tiny</code></pre></div>
-
 <p>Löysinkin hetken selailulla <a href="http://serverascode.com/2014/03/17/trusty-libvirt.html" title="Boot Ubuntu Trusty Tahr 14.04 with libvirt">ohjeen cloud-initin käyttöön kvm:ssä</a>.
 Loppuviimein cloud-initin käyttäminen paikallisesti on itse asiassa hyvin
 helppoa.</p>
-
 <p>Ubuntu tarjoaa <a href="https://cloud-images.ubuntu.com/" title="Ubuntu Cloud Images: Ubuntu Cloud Images are pre-installed disk images that have been customized by Ubuntu engineering to run on cloud-platforms such as Amazon EC2, Openstack, Windows and LXC.">viralliset virtuaalikonekuvat pilvipalveluita
 varten</a>. Ne muodostetaan säännöllisesti ja automaattisesti ja
 ovat pohjalla useimpien pilvipalveluiden tarjoamiin Ubuntu-asennuksiin.
 Vastaavia löytyy varmastikin muillekin jakeluille, mutta en ole perehtynyt
 niihin. Ainakin <a href="https://rhn.redhat.com/errata/RHEA-2013-0535.html" title="RHEA-2013:0535-1 Product Enhancement Advisory, new package: cloud-init">Red Hat vaikuttaisi ottaneen käyttöön</a> cloud-initin.</p>
-
 <p>Vaiheet ovat:</p>
-
 <ol>
 <li>Luodaan user-data määrittely</li>
 <li>Tehdään user-datasta levykuva</li>
 <li>Käynnistetään Ubuntu Cloud -virtuaalikone ja annetaan sille edellinen</li>
 </ol>
-
-<p><iframe width="600" height="405" src="//www.youtube-nocookie.com/embed/kPY_eSqJuZA?rel=0" frameborder="0" allowfullscreen></iframe></p>
-
+ <iframe width="600" height="405" src="//www.youtube-nocookie.com/embed/kPY_eSqJuZA?rel=0" frameborder="0" allowfullscreen></iframe>
 <p>Tästä eteenpäin homma olikin vain naputtelua kun värkkäsin miten asiat tehdään
 skriptillä niin että käyttäminen on helppoa ja että skripti toimii helposti
 vielä puolen vuoden päästäkin kun Cloud image on päivittynyt.</p>
-
 <p>Lopputuloksena syntyi <a href="https://github.com/joneskoo/cloud-init-start" title="Quickly bring up Cloud instances in local KVM with virsh using cloud-config">kasa skriptejä, joilla Ubuntu Cloud-imagen käyttäminen
 on helppoa</a>. Koodit löytyvät Githubista. Saa käyttäää
 vapaasti ja jos herää ajatuksia niin kuulen mielelläni palautetta esim.
@@ -140,7 +130,6 @@ sähköpostitse.
 Skriptien avulla riittää kun määrittelee cloud-config kuvauksen ja antaa
 käskyn luoda virtuaalikoneen. Noin minuuttia myöhemmin virtuaalikone on
 valmis käyttöön.</p>
-
 <p><strong>PÄIVITYS 29.11.2014: Lisäsin tuen Fedora 20:lle.</strong></p>
       </div>
     </div>

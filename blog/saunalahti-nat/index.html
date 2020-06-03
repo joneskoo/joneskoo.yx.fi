@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Saunalahden mobiiliyhteyksien NAT</title>
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.71.1" />
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="canonical" href="https://joneskoo.yx.fi/blog/saunalahti-nat/">
   <link rel="stylesheet" href="/css/style.css">
@@ -19,6 +19,8 @@ osoitteita mobiiliyhteyksille Euroopan IP-osoitteita myöntävältä RIPE:ltä,
 tuskin tahallaan kiusaisivat asiakkaitaan.">
   <meta property="og:image" content="https://joneskoo.yx.fi/img/joneskoo.jpg">
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+  
   
 </head>
 
@@ -65,7 +67,6 @@ tuskin tahallaan kiusaisivat asiakkaitaan.">
 loppumisen kanssa. Ilmeisesti eivät ole saaneet tarvitsemaansa määrää uusia
 osoitteita mobiiliyhteyksille Euroopan IP-osoitteita myöntävältä RIPE:ltä,
 tuskin tahallaan kiusaisivat asiakkaitaan.</p>
-
 <p>Jotkin palvelut, kuten eräät VPN-yhteysratkaisut, ääni- tai
 videoneuvottelusovellukset tai verkkopelit eivät toimi osoitteenmuunnoksen (NAT)
 kanssa. Koska Saunalahden osoitteet eivät ole riittäneet, Saunalahti on
@@ -73,48 +74,36 @@ pakottanut osan käyttäjistä osoitteenmuunnoksen taakse. Kun asiakkaat ovat
 valittaneet toimimattomista palveluista, Saunalahden ohje on ollut yhdistää
 uudestaan kunnes arpa antaa sellaisen osoitteen joka ei ole osoitteenmuunnoksen
 takana. Hirveän kätevää?</p>
-
 <p>Uusin Saunalahden tiedote asiasta oli hyvin synkkä:</p>
-
 <blockquote>
 <p>Kaikissa Saunalahden mobiili- ja mobiililaajakaistaliittymissä siirrytään
 ip-osoitteiden riittävyyden turvaamiseksi ns. osoitemuunnoksen käyttöön.
 Lokakuussa alkanut muutos laajenee 23.1.2012 alkaen koskemaan kaikkia mobiili-
 ja mobiililaajakaistaliittymiä lukuunottamatta prepaid-liittymiä, ja se on
 voimassa kaikkina vuorokaudenaikoina.</p>
-
 <p>IP-osoitteiden myöntämiskäytännön muuttaminen ei vaadi toimenpiteitä
 asiakkaalta eikä vaikuta normaaliin internet-käyttöön.</p>
-
 <p>Lue lisätiedot ja ohjeet erityistilanteisiin: saunalahti.fi/asiakaspalvelu &gt; Ohjeet tuotteittain &gt; Mobiililaajakaista &gt; Mobiililaajakaistan käyttäminen &gt; Osoitteenmuunnos (NAT)</p>
 </blockquote>
-
 <p>Ehkä en vain tajua mutta tiedote antaa ymmärtää että osoitteenmuutos tulee
 jatkossa kaikkiin yhteyksiin. Piste. IPv4 on loppu. IPv6:sta ei puhuta.</p>
-
 <p>Ensimmäinen reaktio oli heittää tiedoteurli irkkiin parille kanavalle keskusteltavaksi. MIKSI IHMEESSÄ SAUNALAHTI RIKKOO MINUN INTERNETTINI?!</p>
-
 <p>Sitten luin linkitetyn <a href="http://www.elisa.fi/saunalahti/asiakaspalvelu/570/osoitteenmuunnos-nat/" title="Osoitteenmuunnos (NAT)">Osoitteenmuunnos (NAT)</a> -ohjesivun.
 Siellä on kerrottu, että jos jokin palvelu ei toimi muutoksen jälkeen, on
 mahdollista käyttää lisämaksutonta vaihtoehtoista APN:ää mobiiliyhteyttä
 yhdistäessä, jolloin entiseen tapaan saa julkisen IPv4-osoitteen. Aha.</p>
-
 <p>Ohjeet kiireisimmille:</p>
-
 <ul>
 <li>GSM-Liittymät ja Mobiililaajakaista &gt; Liittymät &gt; Palvelut &gt; Ilmaiset &gt; Muokkaa asetuksia</li>
 <li>Julkinen (vaihtuva) ip-osoite: ruksi paikalleen =&gt; tallenna</li>
 <li>Vaihda päätelaitteeseen APN-osoitteeksi &ldquo;internet4&rdquo; &ldquo;internet.saunalahti&rdquo; tilalle</li>
 </ul>
-
 <p>Jos tiedotteessa olisi sanottu että tämä tarjotaan edelleen vaihtoehtona, olisi
 tilanne ollut aivan toinen. Minkä ihmeen takia tiedotteessa ei voitu mainita,
 että itse asiassa tässä ollaan PARANTAMASSA palvelua. Sen sijaan että NAT
 arvotaan käyttäjille, se tulee oletukseksi mutta ne, jotka tekevät yhteydellä
 muutakin kuin surffailevat webbisivuja, saavat edelleen suorat yhteydet.</p>
-
 <p>Ihmeellistä tiedotusta. Mutta lopulta mitään mullistavaa ei sattunut.</p>
-
 <p>P.S. Laitoin Saunalahdelle kyselyn milloin IPv6:n saa käyttöön. En pidättäisi
 hengitystä. Edellisellä kerralla kun kysyin useammilta operaattoreilta, yksikään
 ei kertonut sanallakaan aikataulusta. Joku sanoi että on sisäisesti kokeiltu,

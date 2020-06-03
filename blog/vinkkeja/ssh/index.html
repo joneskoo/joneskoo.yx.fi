@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Hyödyllisiä vinkkejä, osa ssh</title>
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.71.1" />
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="canonical" href="https://joneskoo.yx.fi/blog/vinkkeja/ssh/">
   <link rel="stylesheet" href="/css/style.css">
@@ -16,6 +16,8 @@
   <meta property="og:description" content="Haluaisin kertoa muutamista liian vähän tunnetuista näppäristä asetuksista eri ohjelmissa. Kerron niistä lyhyesti ja annan kullekin copypastetettavat rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n asetustiedostosta ja siinä käyttämistäni asetuksista.">
   <meta property="og:image" content="https://joneskoo.yx.fi/img/joneskoo.jpg">
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+  
   
 </head>
 
@@ -59,19 +61,14 @@
         <p class="post-meta">2010-05-12</p>
       </header>
         <p>Haluaisin kertoa muutamista liian vähän tunnetuista näppäristä asetuksista eri ohjelmissa. Kerron niistä lyhyesti ja annan kullekin copypastetettavat rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n asetustiedostosta ja siinä käyttämistäni asetuksista.</p>
-
-<h3 id="ssh-ja-ssh-config">SSH ja <em>~/.ssh/config</em></h3>
-
+<h3 id="ssh-ja-sshconfig-">SSH ja <em>~/.ssh/config</em></h3>
 <p>Erittäin näppärä ominaisuus ssh:ssa on <em>.ssh/config</em>-tiedosto, johon voi laittaa kaikenlaisia näppäriä asetuksia. Tiedoston formaatti on kuvattu man-sivulla (<em>man ssh_config</em>). Tiedosto sijaitsee kotihakemiston alla piilotetussa <em>.ssh</em>-hakemistossa. Jos tiedosto puuttuu, luo se.</p>
-
 <pre>
 Host st
     Hostname st-cn0001.oulu.fi
     HostKeyAlias st-cn0001.oulu.fi
 </pre>
-
 <p>Tämä pätkä <em>.ssh/config</em>-tiedostossa määrittelisi uuden nimen st, johon voi yhdistää käskyllä <em>ssh st</em>. Koneen oikea nimi on st-cn0001.oulu.fi, joka on aivan järjetön kirjoittaa joka kerta uudestaan. Määrittelemällä alias näin yhdistämisestä tulee taas helppoa. HostKeyAlias-rivi tarkoittaa sitä nimeä, jota ssh käyttää osoitteen ssh-sormenjäljen muistamiseen. Jos vaikka samalla IP-osoitteella olisi monta eri ssh-palvelinta eri porteissa, ssh valittaisi normaalisti sormenjäljen muuttumisesta. Asetuksella ongelma voitaisiin kiertää vaikkapa näin:</p>
-
 <pre>
 Host kone1
     Hostname koti.dyndns.org
@@ -82,11 +79,8 @@ Host kone2
     Port 2223
     HostKeyAlias kone2.koti
 </pre>
-
 <p>HostKeyAlias-nimen ei tarvitse olla todellinen DNS-nimi.</p>
-
 <p>SSH:lle komentoriviltä annetut liput, kuten porttiohjaukset voi myös määritellä asetustiedostoon, jotta niitä ei tarvitse kirjoittaa käsin joka kerta uudestaan:</p>
-
 <pre>
 Host hansu
     HostKeyAlias hansu
@@ -95,15 +89,12 @@ Host hansu
     LocalForward 8080 127.0.0.1:8080
     LocalForward 5901 adam:5900
 </pre>
-
 <p>Näin saadaan samalla kertaa alias ja yleisesti käytetyt porttiohjaukset. DynamicForward lisää SOCKS-proxyn yhteyteen (sama kuin <em>ssh -D 8888</em>). SOCKS:ia voi käyttää esim. välittämään selaimen liikenne ssh-putken läpi. Suosittelen, jos on pääsy yliopiston koneelle ja sitä kautta yliopiston oikeuksilla esim. IEEE:n tai vastaaviin kirjastoihin.</p>
-
 <pre>
 Host *.oulu.fi
     User kortesjo
 </pre>
-Edellisestä puolestaan saattaisi olla hyötyä, jos yliopisto on pakottanut käyttämään nimestä johdettua käyttäjätunnusta.
-
+<p>Edellisestä puolestaan saattaisi olla hyötyä, jos yliopisto on pakottanut käyttämään nimestä johdettua käyttäjätunnusta.</p>
 <pre>
 Host *
     Compression yes
@@ -111,11 +102,8 @@ Host *
     ServerAliveCountMax 3
     ServerAliveInterval 10
 </pre>
-
-<p>Yllä oleva pätkä tarkoittaisi, että kaikkiin osoitteisiin yhdistäessä käytetään pakkausta ja keepalive-toiminnallisuutta, joka katkaisee yhteyden jos liikenne ei kulje 3·10&nbsp;=&nbsp;30 sekunnin aikana. Ensimmäinen on erittäin näppärä GPRS-yhteyksiä käytettäessä eikä omien kokemusteni perusteella ole koskaan haitaksi. Jälkimmäisestä on hyötyä, jos käyttää ssh-porttiohjauksia. Kun keepalive katkaisee ssh-yhteyden, ssh kuolee ja sen voi yhdistää uudestaan. Muuten portti voi jäädä varatuksi ja käyttökelvottomaksi kun ssh-yhteys ei ole vielä katkennut mutta yhteys ei myöskään toimi.</p>
-
+<p>Yllä oleva pätkä tarkoittaisi, että kaikkiin osoitteisiin yhdistäessä käytetään pakkausta ja keepalive-toiminnallisuutta, joka katkaisee yhteyden jos liikenne ei kulje 3·10 = 30 sekunnin aikana. Ensimmäinen on erittäin näppärä GPRS-yhteyksiä käytettäessä eikä omien kokemusteni perusteella ole koskaan haitaksi. Jälkimmäisestä on hyötyä, jos käyttää ssh-porttiohjauksia. Kun keepalive katkaisee ssh-yhteyden, ssh kuolee ja sen voi yhdistää uudestaan. Muuten portti voi jäädä varatuksi ja käyttökelvottomaksi kun ssh-yhteys ei ole vielä katkennut mutta yhteys ei myöskään toimi.</p>
 <p>Ensimmäisenä tiedostossa löytynyt asetus jää voimaan, eli yleiset oletukset kannattaa laittaa loppuun, jotta tarkemmat osoitekohtaiset asetukset ohittavat ne.</p>
-
 <p>Toivottavasti vinkeistä on iloa.</p>
       </div>
     </div>

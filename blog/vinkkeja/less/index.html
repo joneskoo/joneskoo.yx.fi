@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Hyödyllisiä vinkkejä, osa less</title>
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.71.1" />
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="canonical" href="https://joneskoo.yx.fi/blog/vinkkeja/less/">
   <link rel="stylesheet" href="/css/style.css">
@@ -18,6 +18,8 @@ Olennaisimpana olen käyttänyt lokien seuraamiseen käskyä
 tail -f loki | less  Tässä ei nyt ajateltuna ole mitään järkeä, koska less osaa seurata kasvavaa tiedostoa itsekin. Käsky F kun tiedosto on avattu lessillä alkaa seurata kasvavan tiedoston loppua. Lista käskyistä löytyy esimerkiksi Wikipediasta.">
   <meta property="og:image" content="https://joneskoo.yx.fi/img/joneskoo.jpg">
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+  
   
 </head>
 
@@ -61,30 +63,19 @@ tail -f loki | less  Tässä ei nyt ajateltuna ole mitään järkeä, koska less
         <p class="post-meta">2011-02-23</p>
       </header>
         <p>Olen käyttänyt, kuten varmasti lähes kaikki *nix-käyttäjät, lessiä niin kauan kuin muistan. Tässä joku aika sitten tuli vastaan pari asiaa, joita en ollut hoksannut. Kenties ovat menneet muiltakin ohi?</p>
-
 <p>Olennaisimpana olen käyttänyt lokien seuraamiseen käskyä</p>
-
 <pre><code>tail -f loki | less
 </code></pre>
-
 <p>Tässä ei nyt ajateltuna ole mitään järkeä, koska less osaa seurata kasvavaa tiedostoa itsekin. Käsky <strong>F</strong> kun tiedosto on avattu lessillä alkaa seurata kasvavan tiedoston loppua. <a href="http://en.wikipedia.org/wiki/Less_(Unix)#Frequently_used_commands" title="Lista less-komennon usein käytetyistä käskyistä">Lista käskyistä</a> löytyy esimerkiksi Wikipediasta.</p>
-
 <p>Muita hyödyllisiä ovat esimerkiksi vimistä tuttu m<strong>X</strong> ja vastaava &lsquo;<strong>X</strong>, joista ensimmäinen laittaa nykyisen sijainnin tiedostossa muistiin paikkaan <strong>X</strong> (missä X on esimerkiksi jokin kirjain) ja vastaavasti jälkimmäinen siirtyy tallennettuun sijaintiin.</p>
-
 <p>Toinen mitä olen aiemmin käyttänyt on:</p>
-
 <pre><code>zcat tiedosto.gz | less
 </code></pre>
-
 <p>Paljon kätevämpi on käyttää lesspipe-suodatinta, joka osaa purkaa gzipin. Vaihtoehtoisesti voi tietysti käyttää myös zlessiä, mutta lesspipe on monipuolisempi. Se osaa näyttää tiedostolistaukset esim. .tar.gz-tiedostoista. Lesspipen käyttö on helpointa LESSOPEN-ympäristömuuttujan avulla, jolloin less käyttää sitä automaattisesti pakattujen tiedostojen kanssa (tarkemmin kokeilee sitä aina, mutta lesspipe ei tee mitään jos tiedosto ei ole pakattu, jolloin less toimii kuten tavallisesti).</p>
-
 <p>Seuraava rivi shellin profiilili- tai rc-skriptissä ottaa käyttöön lesspipe-suodattimen:</p>
-
 <pre><code>export LESSOPEN='| /usr/bin/lesspipe %s'
 </code></pre>
-
 <p>Lesspipe ei sentään yritä näyttää HTML:ää w3m:llä, kuten muistaakseni Gentoon oletusasetuksilla toimiva less. Uskoakseni lesspipen käyttö on kuitenkin ihan ok. Ubuntu käyttää lesspipeä oletuksena.</p>
-
 <p>Hauskoja hetkiä lessin kanssa. Less is more.</p>
 
       </div>

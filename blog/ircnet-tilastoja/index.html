@@ -3,15 +3,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Tilastoja IRCnet-verkon käyttäjistä</title>
-  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="generator" content="Hugo 0.71.1" />
   <meta name="viewport" content="width=device-width initial-scale=1">
-  <link rel="canonical" href="https://joneskoo.yx.fi/blog/ircnet-tilastoja/ircnet-tilastoja/">
+  <link rel="canonical" href="https://joneskoo.yx.fi/blog/ircnet-tilastoja/">
   <link rel="stylesheet" href="/css/style.css">
   <meta name="description" content="Nörtti, radioamatööri, tietotekniikan DI, päivätöissä tietoturva-alalla. Kiinnostunut teknologiasta ja säätämisestä. Mielipiteet omia.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@joneskoo_yx">
   <meta name="twitter:creator" content="@joneskoo_yx">
-  <meta property="og:url" content="https://joneskoo.yx.fi/blog/ircnet-tilastoja/ircnet-tilastoja/">
+  <meta property="og:url" content="https://joneskoo.yx.fi/blog/ircnet-tilastoja/">
   <meta property="og:title" content="[2014-03-05] Tilastoja IRCnet-verkon käyttäjistä">
   <meta property="og:description" content="Joku viikko sitten katson mielenkiinnosta paljonko IRCnetissä on tällä hetkellä
 käyttäjiä. Selkeästi IRC:n suosio on kärsinyt uudempien sosiaalisen median
@@ -21,6 +21,8 @@ kanssa. Sosiaalisista verkoista en ole innostunut. Kuten näkyy, blogin
 päivityskin on hieman jäänyt töiden ja muiden kiinnostuksenkohteiden taustalle.">
   <meta property="og:image" content="https://joneskoo.yx.fi/img/joneskoo.jpg">
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+
+  
   
 </head>
 
@@ -69,12 +71,9 @@ palveluiden myötä, mutta Suomessa on edelleen suuri joukko IRC:n vannoutuneita
 käyttäjiä. Myös itselleni IRC on yksi tärkeimpiä henkireikiä viestiä kaverien
 kanssa. Sosiaalisista verkoista en ole innostunut. Kuten näkyy, blogin
 päivityskin on hieman jäänyt töiden ja muiden kiinnostuksenkohteiden taustalle.</p>
-
-<p><img src="irssi.png" alt="Irssi" title="irssi. Irkissä on hiljaista." /></p>
-
+<p><img src="irssi.png" alt="Irssi" title="irssi. Irkissä on hiljaista."></p>
 <p>Onneksi IRCnet ei tee käyttäjämäärien tutkimisesta tarpeettoman vaikeaa.
 Aloitan tutkimukseni listaamalla verkon rakenteen MAP-komennolla (/MAP):</p>
-
 <pre>
 Server
 irc.nebula.fi
@@ -115,32 +114,25 @@ irc.nebula.fi
          `- irc1.inet.fi
 End of MAP
 </pre>
-
 <p>Kuten näkyy, tein reittikyselyn irc.nebula.fi:llä (irkkaan <a href="http://www.kapsi.fi/" title="Kapsi Internet-käyttäjät ry">Kapsin</a>
 shell-palvelimen kautta). Tästä johtuen verkon reittikartta on Nebulan
 IRC-palvelimen näkemys maailmasta.</p>
-
 <p>IRCnet-palvelinten välisissä yhteyksissä on käytössä tarkkojen reittien piilotus (mask); tästä johtuen esimerkiksi Alankomaiden (.nl) sisäiset palvelimet eivät näy kartassa vaan niistä näkyy ainoastaan *.nl. Tosiasiassa palvelimia on useampia.</p>
-
 <p>Käyttäjätilastojen osalta parempia lukuja saisi jos seuraisi käyttäjämäärää eri
 vuorokaudenaikoihin. Olen kuitenkin sivuttanut sen tällä kertaa, sillä palvelin
 kertoo kuitenkin yhteyksien maksimimäärän. Koska nykyinen tilanne on lähellä
 maksimia, teen oletuksen että tilanne ei eri vuorokaudenaikaan ole
 ratkaisevasti eri. Tämän kirjoituksen tiedot hain 5.3.2014 klo 23:40
 Tyynenmeren aikaa eli Suomessa 6.3.2014 klo 09:40.</p>
-
 <p>Eri palvelinten käyttäjätilastot sain /LUSERS-käskyllä (esim. /LUSERS
 irc.opoy.fi irc.opoy.fi). LUSERS-käskyn tulos näyttää seuraavalta:</p>
-
 <pre>
 [irc.nebula.fi] I have 5434 users, 0 services and 1 servers
 [irc.nebula.fi] 5434 5567 Current local users 5434, max 5567
 [irc.nebula.fi] 48892 56017 Current global users 48892, max 56017
 </pre>
-
 <p>Tässä vapaamuotoinen tiivistelmäni ja yhdistelmä MAP ja LUSERS-käskyjen
 tuloksista:</p>
-
 <pre>
                       yhteyksiä  - palvelimia
   irc.nebula.fi             5431 - 1
@@ -180,42 +172,34 @@ tuloksista:</p>
            |   `- *.se                       +1032  - 4
            `- *.il                           +4     = (yht. 27062)
 </pre>
-
 <p>Nebulan palvelimen yhteyksistä valtaosa luultavasti ovat Kapsin palvelimelta.
 Julkisia tietoja ei ole, mutta yhdistyksen jäsenmäärä 5205 jäsentä on samaa
 suuruusluokkaa ja siltä ajalta kun olin ylläpitäjä muistikuvan mukaan
 IRC-yhteyksien määrä oli suunnilleen jäsenmäärän luokkaa tai kenties yhteensä
 jopa vähän korkeampi.</p>
-
 <p>On hyvä huomata että käyttäjän ja yhteyden välillä on pieni ero. Joillakin
 käyttäjillä on useampia yhteyksiä, toisaalta osa käyttäjistä voi sulkea
 yhteyden kun ei ole paikalla. Käytän termejä tässä hieman sekaisin. Oletan että
 sama ilmiö on jokseenkin alueista riippumaton, mutta tämä voi aiheuttaa hieman
 poikkeamaa käyttäjä- ja yhteysmäärien välillä.</p>
-
 <p>Tämän selvitykseni perusteella näyttäisi että IRCnetissä on hieman vajaa
-50&nbsp;000 yhtäaikaista käyttäjää (määrä vaihtelee vuorokaudenajan mukaan).
-Näistä n. 22&nbsp;000 vaikuttaisi olevan suomalaisilla palvelimilla eli n.
-45&nbsp;% kaikista IRCnet-käyttäjistä olisi suomalaisia. Jos kuvitellaan että
+50 000 yhtäaikaista käyttäjää (määrä vaihtelee vuorokaudenajan mukaan).
+Näistä n. 22 000 vaikuttaisi olevan suomalaisilla palvelimilla eli n.
+45 % kaikista IRCnet-käyttäjistä olisi suomalaisia. Jos kuvitellaan että
 Kapsin jäsenistä kaikki irkkaisivat IRCnetissä ja jokaisella olisi täsmälleen
 yksi yhteys, suurinpiirtein kolmasosa suomalaisista irkkaajista olisi Kapsin
-jäseniä, eli noin 24&nbsp;% Suomen IRCnet-käyttäjistä ja 11&nbsp;% kaikista
+jäseniä, eli noin 24 % Suomen IRCnet-käyttäjistä ja 11 % kaikista
 IRCnet-käyttäjistä.</p>
-
 <p>Minussa tulos herättää ristiriitaisia tunteita. Toisaalta tulos kertoo IRC:n
 edelleen vahvasta asemassa Suomessa, mutta toisaalta hieman huolestuttavasti
 yleisemmin kertoo IRCnetin hitaasta rappiosta. Kuinka kauan rakas IRC-verkkomme
 vielä pyörii ja jatkuuko toiminta Suomessa kun muissa maissa käyttäjät ovat
 kokonaan kadonneet? Mikä korvaa irkin? Minulle pikaviestimet eivät ikinä ole
 korvanneet irkin omanlaista kulttuuriaan.</p>
-
 <p>Irkkailemisiin. Kuulen mielelläni kommentteja irkissä tai sähköpostitse (osoite sivun ylänurkassa).</p>
-
 <p><strong>Päivitys 1. Lisätty kommentti erosta yhteyksien ja käyttäjien välillä.</strong></p>
-
 <p><strong>Päivitys 2. Vaihdettu LUSERS käskyn syntaksia; laskee oikein useiden hubin
 kautta löytyvät yhteydet.</strong></p>
-
 <p>&ndash; Joonas Kuorilehto (joneskoo), Kaliforniassa 5.3.2014.</p>
       </div>
     </div>
