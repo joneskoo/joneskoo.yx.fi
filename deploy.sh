@@ -31,4 +31,4 @@ echo "Updating public branch"
 cd public && git add --all && git commit -m "Publishing to public (publish.sh)"
 #git push origin public
 
-rsync --size-only -Pvr public/ caddy-01.hez.yx.fi:/www/joneskoo.yx.fi/
+rsync --size-only --delete -Pvr public/ caddy-01.hez.yx.fi:/www/joneskoo.yx.fi/
