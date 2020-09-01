@@ -19,8 +19,7 @@ git worktree prune
 rm -rf .git/worktrees/public/
 
 echo "Checking out public branch into public"
-#git worktree add -B public public origin/public
-git worktree add -B public public public
+git worktree add -B public public origin/public
 
 echo "Removing existing files"
 rm -rf public/*
@@ -29,6 +28,6 @@ echo "Generating site"
 hugo
 echo "Updating public branch"
 cd public && git add --all && git commit -m "Publishing to public (publish.sh)"
-#git push origin public
+git push origin public
 
 rsync --size-only --delete -Pvr public/ caddy-01.hez.yx.fi:/www/joneskoo.yx.fi/
