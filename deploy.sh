@@ -2,32 +2,14 @@
 
 set -e
 
-DIR=$(dirname "$0")
+# After github actions has built the site...
 
-cd $DIR
-
-if [[ $(git status -s) ]]
-then
-    echo "The working directory is dirty. Please commit any pending changes."
-    exit 1;
-fi
-
-echo "Deleting old publication"
-rm -rf public
-mkdir public
-git worktree prune
-rm -rf .git/worktrees/public/
-
-echo "Checking out public branch into public"
-git worktree add -B public public origin/public
-
-echo "Removing existing files"
-rm -rf public/*
-
-echo "Generating site"
-hugo
-echo "Updating public branch"
-cd public && git add --all && git commit -m "Publishing to public (publish.sh)"
-git push origin public
-
-rsync --size-only --delete -Pvr public/ caddy-01.hez.yx.fi:/www/joneskoo.yx.fi/
+echo "Deploying github.com/joneskoo/joneskoo.yx.fi branch public to caddy-01.hez.yx.fi:/www/joneskoo.yx.fi"
+ssh caddy-01.hez.yx.fi bash -c "'
+    set -e
+    rm -rf /tmp/joneskoo.yx.fi
+    mkdir -p /tmp/joneskoo.yx.fi
+    curl -L -s https://github.com/joneskoo/joneskoo.yx.fi/archive/public.tar.gz \
+        | tar zx -C /tmp/joneskoo.yx.fi -zx --strip-components=1
+    rsync -a --delete /tmp/joneskoo.yx.fi/ /www/joneskoo.yx.fi/
+    '"
