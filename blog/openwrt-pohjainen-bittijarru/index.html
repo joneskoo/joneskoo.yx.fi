@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>OpenWRT-pohjainen bittijarru</title>
-  <meta name="generator" content="Hugo 0.72.0" />
+  <meta name="generator" content="Hugo 0.74.3" />
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="canonical" href="https://joneskoo.yx.fi/blog/openwrt-pohjainen-bittijarru/">
   <link rel="stylesheet" href="/css/style.css">
@@ -63,7 +63,7 @@
         <p>Yhteytenä kotonani on tällä hetkellä Soneran 24 / 2 Mbit/s ADSL2+ Annex M-yhteys. Sen ongelma on ainakin kuluttajamodeemeilla, että jos ulospäin lähtee dataa, niin viive nousee kohtuuttoman suureksi irkkaamiseen. Ratkaisuna aiemmin käytin kirjoittamaani <a href="http://joneskoo.kapsi.fi/public/wshaper++">wshaper++</a>-skriptiä (vaikutteita wondershaper-skriptistä). Kun kotipalvelimeni pyörii nyt vmwaressa enkä käytä sitä reitittimenä, muodostuu ongelmaksi että käyttämäni NAT-purkki ei aja Linuxia ja ADSL-modeemiinkaan jarrua en saanut laitettua. Sinänsä Telewellin ADSL-modeemissa on Linux ja korkkasinkin sen asentamalla sarjaportin, mutta softa on jotenkin kohtuuttoman tympeää käyttää.</p>
 <p>Kotona pyörittämäni Linux-palvelin suli jostain mystisestä syystä, jota en ole vieläkään jaksanut selvittää. Siirsin sen järjestelmän ajoon Vmwaren päälle iMacilleni. Huonona puolena en jaksanut alkaa kikkailemaan palomuuria vmwaren sisään kun vlan tagien kanssa oli jotain ongelmia.</p>
 <p>Keksinkin lopulta ongelmaan mitä parhaimman ratkaisun: läpinäkyvä jarruttava silta ADSL-modeemin ja muun verkon välille. Silta pitää huolta, että IPv4- ja IPv6-yhteydet saavat kaistan jaettua reilusti (= IPv6:lle vähintään puolet) ja pienet paketit menevät joka tapauksessa ensin. Ratkaisun toteutin OpenWRT:n päälle. Käytännössä wshaper++-skripti toimi suoraan kun latasin oikeat kernelimoduulit, jotka asensin opkg:llä. Säädin verkkoasetukset niin, että portissa 1 on management, WAN-portissa on Internet-yhteys ja portit 2-4 ovat sillattu siihen.</p>
-<h2 id="pakettien-asentelua-">Pakettien asentelua</h2>
+<h2 id="pakettien-asentelua">Pakettien asentelua</h2>
 <pre>
 # opkg install tcpdump # muutenkin hyödyllinen
 # opkg install kmod-sched
@@ -73,7 +73,7 @@
 # opkg install wget
 # wget http://joneskoo.kapsi.fi/public/wshaper++
 </pre>
-<h2 id="verkkoasetukset-">Verkkoasetukset</h2>
+<h2 id="verkkoasetukset">Verkkoasetukset</h2>
 <p>Verkkoasetukset saa hoidettua kivuttomasti OpenWRT:n asetustiedostoilla. Jaetaan &ldquo;LAN&rdquo;-portit kahteen ryhmään, jotta saadaan hallintaportti erilleen. WAN ei tarvitse IP:tä enää sen jälkeen, kun tarvittavat ohjelmat on asennettu. Näin purkki on entistä läpinäkyvämpi.</p>
 <pre>
 config switch eth0
@@ -91,7 +91,7 @@ config interface wan
   option ifname "eth0.1 eth0.2"
   option proto none
 </pre>
-<h2 id="kernelimoduulien-lataus-">Kernelimoduulien lataus</h2>
+<h2 id="kernelimoduulien-lataus">Kernelimoduulien lataus</h2>
 <p>Kernelimoduulitkin on syytä ladata buutissa, muuten skripti antaa ihmeellisiä virheitä. Moduulit voi ladata insmodilla tai voi buutata purkin seuraavan tiedoston lisäämisen jälkeen.</p>
 <pre>
 # /etc/modules.d/45-qos
