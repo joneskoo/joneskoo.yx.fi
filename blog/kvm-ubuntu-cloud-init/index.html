@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ubuntu ja cloud-init kotipalvelimella</title>
-  <meta name="generator" content="Hugo 0.74.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="canonical" href="https://joneskoo.yx.fi/blog/kvm-ubuntu-cloud-init/">
   <link rel="stylesheet" href="/css/style.css">
@@ -90,20 +90,20 @@ tekstimuotoinen määrittely asioista, joita uudelle virtuaalikoneelle sovelleta
 sen ensimmäisellä käynnistyskerralla.</p>
 <p><strong>Esimerkki cloud-config tiedostosta</strong></p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#008000">#cloud-config</span>
-<span style="color:#00f">hostname</span>: fuzz01
+hostname: fuzz01
 
-<span style="color:#00f">ssh_pwauth</span>: False
-<span style="color:#00f">package_upgrade</span>: <span style="color:#00f">true</span>
+ssh_pwauth: <span style="color:#00f">False</span>
+package_upgrade: <span style="color:#00f">true</span>
 
-<span style="color:#00f">password</span>: ubuntu
+password: ubuntu
 
-<span style="color:#00f">packages</span>:
+packages:
 - vim-tiny
 
-<span style="color:#00f">ssh_authorized_keys</span>:
+ssh_authorized_keys:
 - ssh-rsa AAAAB...
 
-<span style="color:#00f">runcmd</span>:
+runcmd:
 - update-alternatives --set editor /usr/bin/vim.tiny</code></pre></div>
 <p>Löysinkin hetken selailulla <a href="http://serverascode.com/2014/03/17/trusty-libvirt.html" title="Boot Ubuntu Trusty Tahr 14.04 with libvirt">ohjeen cloud-initin käyttöön kvm:ssä</a>.
 Loppuviimein cloud-initin käyttäminen paikallisesti on itse asiassa hyvin

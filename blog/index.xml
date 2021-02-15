@@ -6,11 +6,7 @@
     <description>Recent content in Joonaksen blogi on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
-    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://joneskoo.yx.fi/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://joneskoo.yx.fi/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Oma Ruuvi-sääasema</title>
       <link>https://joneskoo.yx.fi/blog/ruuvi-prometheus/</link>
