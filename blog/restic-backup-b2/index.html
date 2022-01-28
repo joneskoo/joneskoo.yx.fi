@@ -2,33 +2,34 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>skriptit</title>
+  <title>Restic-varmuuskopiot Backblaze B2:n</title>
   <meta name="generator" content="Hugo 0.80.0" />
   <meta name="viewport" content="width=device-width initial-scale=1">
-  <link rel="canonical" href="https://joneskoo.yx.fi/tags/skriptit/">
+  <link rel="canonical" href="https://joneskoo.yx.fi/blog/restic-backup-b2/">
   <link rel="stylesheet" href="/css/style.css">
   <meta name="description" content="Nörtti, radioamatööri, tietotekniikan DI, päivätöissä tietoturva-alalla. Kiinnostunut teknologiasta ja säätämisestä. Mielipiteet omia.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@joneskoo_yx">
   <meta name="twitter:creator" content="@joneskoo_yx">
-  <meta property="og:url" content="https://joneskoo.yx.fi/tags/skriptit/">
-  <meta property="og:title" content="[2022-01-28] skriptit">
-  <meta property="og:description" content="">
+  <meta property="og:url" content="https://joneskoo.yx.fi/blog/restic-backup-b2/">
+  <meta property="og:title" content="[2022-01-28] Restic-varmuuskopiot Backblaze B2:n">
+  <meta property="og:description" content="Varmuuskopiot on tunnetusti hyvä olla. Hoksasin ettei minulla ollut
+web-palvelimeltani varmuuskopioita, koska &ldquo;eihän siellä ole mitään tärkeää&rdquo;.
+Kuitenkin jos onnistuisin sen tuhoamaan, niin luultavasti kaipaisin juuri sitä
+yhtä crontab-tiedostoa jota en ottanut muualle talteen. Niinpä päätin laittaa
+varmuuskopiot kuntoon ja ajastaa päivittäisin restic-varmuuskopion Backblazen
+B2-pilveen.">
   <meta property="og:image" content="https://joneskoo.yx.fi/img/joneskoo.jpg">
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 
   
   
-  <link href="https://joneskoo.yx.fi/tags/skriptit/index.xml" rel="alternate" type="application/rss+xml" title="Joonas Kuorilehto" />
-  <link href="https://joneskoo.yx.fi/tags/skriptit/index.xml" rel="feed" type="application/rss+xml" title="Joonas Kuorilehto" />
-  
 </head>
 
 
+  <body>
 
-<body>
-
-  <header class="site-header">
+    <header class="site-header">
 
   <div class="wrapper">
 
@@ -57,200 +58,133 @@
 </header>
 
 
-  <div class="page-content">
-
-    <div class="wrapper">
-
-      <section>
-        <div id="blogitekstit" class="laatikko">
-
-        
-
-        <h2>
-          <a href="/blog/restic-backup-b2/">Restic-varmuuskopiot Backblaze B2:n</a>
-          (<time class="pub_date">2022-01-28</time>)
-        </h2>
-
+    <div class="page-content">
+      <div class="wrapper">
+      
+      <header class="post-header">
+        <h1 class="post-title">Restic-varmuuskopiot Backblaze B2:n</h1>
+        <p class="post-meta">2022-01-28</p>
+      </header>
         <p>Varmuuskopiot on tunnetusti hyvä olla. Hoksasin ettei minulla ollut
 web-palvelimeltani varmuuskopioita, koska &ldquo;eihän siellä ole mitään tärkeää&rdquo;.
 Kuitenkin jos onnistuisin sen tuhoamaan, niin luultavasti kaipaisin juuri sitä
 yhtä crontab-tiedostoa jota en ottanut muualle talteen. Niinpä päätin laittaa
 varmuuskopiot kuntoon ja ajastaa päivittäisin restic-varmuuskopion Backblazen
 B2-pilveen.</p>
-
-        
-          <small class="tags">
-          
-            <a href="/tags/skriptit/">#skriptit</a>
-          
-            <a href="/tags/backup/">#backup</a>
-          
-          </small>
-        
-
-        
-
-        <h2>
-          <a href="/blog/spotify-headless/">Spotify palvelimella ilman näyttöä</a>
-          (<time class="pub_date">2017-05-26</time>)
-        </h2>
-
-        <p>Spotify on varmasti kaikille tuttu musiikkipalvelu. Spotifyn
-ongelma kännykällä on kännykän äänentoisto. Musiikin pitää kuulua
-kunnollisista kaiuttimista. Halusin Spotifyn soivan kaiuttimista,
-mutta en halua piuhoja tai kuluttaa akkua loppuun Airplayllä.
-Ratkaisu: Spotify kotipalvelimelle ja ohjaus langattomasti.</p>
-
-        
-          <small class="tags">
-          
-            <a href="/tags/spotify/">#spotify</a>
-          
-            <a href="/tags/skriptit/">#skriptit</a>
-          
-            <a href="/tags/systemd/">#systemd</a>
-          
-          </small>
-        
-
-        
-
-        <h2>
-          <a href="/blog/kvm-ubuntu-cloud-init/">Ubuntu ja cloud-init kotipalvelimella</a>
-          (<time class="pub_date">2014-11-27</time>)
-        </h2>
-
-        <p>Virtuaalikoneen asennuksen ei tarvitse olla vaikeaa. Ubuntu julkaisee
-viralliset levykuvat pilvipalveluita varten, joita voi käyttää yhtä
-hyvin myös kotona. Itse asiassa se ei ole edes vaikeaa, mutta ohjeita
-saa hieman kaivaa.</p>
-
-        
-          <small class="tags">
-          
-            <a href="/tags/skriptit/">#skriptit</a>
-          
-            <a href="/tags/kvm/">#kvm</a>
-          
-            <a href="/tags/ubuntu/">#ubuntu</a>
-          
-          </small>
-        
-
-        
-
-        <h2>
-          <a href="/blog/ssh-known-hosts-siistiminen/">SSH known_hosts-tiedoston siistiminen</a>
-          (<time class="pub_date">2011-10-23</time>)
-        </h2>
-
-        <p>Kyllästyin viimein ssh known_hosts-tiedoston sotkuisuuteen ja koodasin
-yksinkertaisen skriptin, joka yhdistää saman palvelimen rivit yhdeksi.
-Omassa known_hosts-tiedostossani alkaa rivejä olla lähemmäs sata, joten
-siistiminen on oikeasti tarpeen.</p>
-
-        
-          <small class="tags">
-          
-            <a href="/tags/skriptit/">#skriptit</a>
-          
-          </small>
-        
-
-        
-
-        <h2>
-          <a href="/blog/jekyll_ja_uudet_sivut/">Jekyll ja uudet sivut</a>
-          (<time class="pub_date">2011-10-15</time>)
-        </h2>
-
-        <p>Taas on tullut aika kirjoittaa kotisivut uusiksi. Tekniikka kehittyy ja silleen.
-Lähdin taas tyhjästä suunnittelemaan kotisivuilleni asettelua ja miettimään
-sisällön esittämistä uusiksi. Edellisen sivun luomisen jälkeen olin ehtinyt
-muun muassa perustaa blogin ja valokuvien jakamista varten kuvafeedin. Vanhalla
-saitilla näihin oli vain linkki, mikä alkoi tuntua rajoittuneelta.</p>
-
-        
-          <small class="tags">
-          
-            <a href="/tags/skriptit/">#skriptit</a>
-          
-            <a href="/tags/meta/">#meta</a>
-          
-          </small>
-        
-
-        
-
-        <h2>
-          <a href="/blog/vinkkeja/less/">Hyödyllisiä vinkkejä, osa less</a>
-          (<time class="pub_date">2011-02-23</time>)
-        </h2>
-
-        Olen käyttänyt, kuten varmasti lähes kaikki *nix-käyttäjät, lessiä niin kauan kuin muistan. Tässä joku aika sitten tuli vastaan pari asiaa, joita en ollut hoksannut. Kenties ovat menneet muiltakin ohi?
-Olennaisimpana olen käyttänyt lokien seuraamiseen käskyä
-tail -f loki | less  Tässä ei nyt ajateltuna ole mitään järkeä, koska less osaa seurata kasvavaa tiedostoa itsekin. Käsky F kun tiedosto on avattu lessillä alkaa seurata kasvavan tiedoston loppua. Lista käskyistä löytyy esimerkiksi Wikipediasta.
-
-        
-          <small class="tags">
-          
-            <a href="/tags/vinkkej%C3%A4/">#vinkkejä</a>
-          
-            <a href="/tags/skriptit/">#skriptit</a>
-          
-            <a href="/tags/shell/">#shell</a>
-          
-          </small>
-        
-
-        
-
-        <h2>
-          <a href="/blog/vinkkeja/ssh/">Hyödyllisiä vinkkejä, osa ssh</a>
-          (<time class="pub_date">2010-05-12</time>)
-        </h2>
-
-        <p>Haluaisin kertoa muutamista liian vähän tunnetuista näppäristä asetuksista eri ohjelmissa. Kerron niistä lyhyesti ja annan kullekin copypastetettavat rivit, joilla pääsee eteenpäin. Aloitan sarjan kertomalla hieman OpenSSH:n asetustiedostosta ja siinä käyttämistäni asetuksista.</p>
-
-        
-          <small class="tags">
-          
-            <a href="/tags/vinkkej%C3%A4/">#vinkkejä</a>
-          
-            <a href="/tags/skriptit/">#skriptit</a>
-          
-            <a href="/tags/shell/">#shell</a>
-          
-          </small>
-        
-
-        
-
-        <h2>
-          <a href="/blog/openwrt-pohjainen-bittijarru/">OpenWRT-pohjainen bittijarru</a>
-          (<time class="pub_date">2009-05-30</time>)
-        </h2>
-
-        <p>Yhteytenä kotonani on tällä hetkellä Soneran 24 / 2 Mbit/s ADSL2+ Annex M-yhteys. Sen ongelma on ainakin kuluttajamodeemeilla, että jos ulospäin lähtee dataa, niin viive nousee kohtuuttoman suureksi irkkaamiseen. Ratkaisuna aiemmin käytin kirjoittamaani <a href="http://joneskoo.kapsi.fi/public/wshaper++">wshaper++</a>-skriptiä (vaikutteita wondershaper-skriptistä). Kun kotipalvelimeni pyörii nyt vmwaressa enkä käytä sitä reitittimenä, muodostuu ongelmaksi että käyttämäni NAT-purkki ei aja Linuxia ja ADSL-modeemiinkaan jarrua en saanut laitettua. Sinänsä Telewellin ADSL-modeemissa on Linux ja korkkasinkin sen asentamalla sarjaportin, mutta softa on jotenkin kohtuuttoman tympeää käyttää.</p>
-
-        
-          <small class="tags">
-          
-            <a href="/tags/kotiverkko/">#kotiverkko</a>
-          
-            <a href="/tags/skriptit/">#skriptit</a>
-          
-          </small>
-        
-
-        
-
-        </div>
-      </section>
+<h2 id="varmuuskopioista">Varmuuskopioista</h2>
+<p>Varmuuskopioita varten ensimmäinen tarvittava asia on turvallinen säilö johon
+varmuuskopioita voi jemmata. Paras säilö on sellainen joka:</p>
+<ul>
+<li>on luotettava (ei hukkaa tietoja)</li>
+<li>on edullinen</li>
+<li>sallii varmuuskopioiden määrän kasvamisen tarpeiden muuttuessa</li>
+<li>estää tietojen poistamisen vaikka haittaohjelma varastaisi tunnukset
+varmuuskopion kohteesta ja yrittäisi tunnusten avulla poistaa kopiot</li>
+</ul>
+<p>Luotettavia palveluntarjoajia on useita. Jos tietoja ei salattaisi, olisi
+hyvä huolehtia myös missä maassa tietoja säilytetään, mutta koska lähtökohta
+on että varmuuskopiot on salattava niin ettei tallennuspalveluntarjoaja niihin
+voi päästä, niin sijainnilla on eniten merkitystä tiedonsiirtonopeuteen.</p>
+<p>Kustannusten osalta eri tarjoajilla hinta riippuu usein tallennettavan tiedon
+määrästä. Esimerkiksi Microsoft 365:n OneDrive-tallennustila voisi olla tavallaan
+edullinen jos palvelusta joka tapauksessa maksaa. Toisaalta tilan määrä on
+kiinteä, mikä rajoittaa kasvua.</p>
+<p>Varmuuskopiointisovelluksissa on paljon valinnanvaraa. Monet palveluntarjoajat
+tarjoavat omat sovelluksensa, eli koko palvelu on yksi kokonaisuus. Itse
+päädyin kuitenkin valitsemaan varmuuskopiosovelluksen ja tallennustarjoajan
+erikseen erityisesti joustavuuden vuoksi.</p>
+<p>Käytän varmuuskopiointiin <a href="https://restic.readthedocs.io/en/stable/" title="Restic Documentation">restic</a>-sovellusta, joka löytyy useimmista Linux-jakeluista
+ja Mac-käyttäjänä <a href="https://brew.sh" title="The Missing Package Manager for macOS (or Linux)">Homebrew</a>-paketinhallinnasta. Restic tallentaa varmuuskopiot
+arkistoon (repository), joka <a href="https://restic.readthedocs.io/en/stable/070_encryption.html">on aina salattu</a>. Arkistoon voi liittää yhden tai
+useita salasanoja, joilla varsinainen tietojen salausavain puretaan.</p>
+<p>Restic tukee useita tallennustarjoajia suoraan ja <a href="https://rclone.org" title="Rclone syncs your files to cloud storage">rclone avulla valtavaa määrää</a>.
+Minulle tutuin olisi ollut AWS S3, jonne voi tallentaa tiedostoja pohjattomaan
+ämpäriin ja lasku seuraa luottokortilla. S3 on kuitenkin varsin monimutkainen ja
+maksaa &ldquo;S3 One Zone – Infrequent access&rdquo; asetuksilla $0.01/GB, minkä lisäksi
+$0.10/GB kun tietoa haetaan, eli 1 teratavun varmuuskopion palauttaminen maksaisi
+huimat $100 + 24 % ALV. Päädyin valitsemaan tarjoajaksi Backblaze B2 palvelun,
+joka on ominaisuuksiltaan hieman rajoitetumpi mutta pääosin vastaava kuin S3.
+B2:n tallennustila maksaa $0.005/GB (eli $5/TB/kk) ja tietojen palautus $0.01/GB
+(eli $10/TB + ALV). Ensimmäiset 10 GB saa käyttöön ilmaiseksi,
+mikä helpottaa testaamista sillä luottokorttia ei tarvitse antaa.</p>
+<p>Jokaisesta varmuuskopointikerrasta restic tuottaa oman tilavedoksen (snapshot),
+joten palautuksessa voi valita miltä hetkeltä tiedot palautetaan. Oletuksena
+kaikki versiot säilytetään kunnes toisin pyydetään. Muutokset säilytetään
+melko tehokkaasti joten varmuuskopioiden koko riippuu lähinnä siitä kuinka paljon
+tietoa on ja kuinka nopeasti se muuttuu.</p>
+<h2 id="restic-varmuuskopionti-estäen-tietojen-poistaminen">restic varmuuskopionti estäen tietojen poistaminen</h2>
+<p><strong>Aiheesta on kirjoittanut paremmin englanniksi <a href="https://pricey.uk/blog/restic-backups-without-delete/" title="Joseph Price: Restic backups to B2 without delete">Joseph Price</a>.</strong></p>
+<p>Halusin toteuttaa varmuuskopiot niin, että vaikka palvelimelle tallennetut
+tunnukset B2-palveluun kirjoittamista varten varastettaisiin, tietoja ei silti
+voisi hävittää.</p>
+<p>B2:n käyttöönotto alkaa rekisteröintien jälkeen ämpärin (bucket) luonnilla.
+Ämpäriin voi tallentaa rajattoman paljon tiedostoja. Varmuuskopiot luontaisesti
+kertyvät, joten aluksi muutan asetuksen että B2:n ei pidä säilyttää vanhoja
+tietoja ikuisesti vaan vanhat versiot poistetaan pysyvästi 180 päivän jälkeen.</p>
+<p><img src="b2-bucket-lifecycle.png" alt="Elinkaariasetukset - Lifecycle settings"></p>
+<p>Huomattavaa on, että elinkaariasetus EI estä tietojen poistamista, vaan nimenomaan
+poistaa vanhentuneet tiedostot. B2:ssa on myös Object Lock -toiminto, joka estää
+tiedoston poistamisen valitun määrän päiviä tallentamisesta. Huonona puolena tässä
+on että päiväraja koskee nimenomaan aikaa tallentamisesta ja koska restic tallentaa
+vain muuttuneet tiedot, niin osa varmuuskopiosta voisi jäädä suojan ulkopuolelle.
+Lisäksi ominaisuus estää resticin toiminnan koska restic käyttää oletuksena
+<a href="https://www.backblaze.com/b2/docs/b2_delete_file_version.html" title="b2_delete_file_version ohjelmointirajapinta">b2_delete_file_version</a> rajapintaa.</p>
+<p>Ratkaisu ongelmaan löytyy siitä mitä oikeuksia palvelulle annettaville tunnuksille
+annetaan. B2-ämpäriin tarvittavat tunnukset muodostuvat tunnukseta ja salaisuudesta,
+joihin liitetään oikeudet. Selainkäyttöliittymästä B2 antaa vain vaihtoehdot luku,
+kirjoitus tai luku/kirjoitus, mutta ohjelmointirajapinnan avulla avaimia on mahdollista
+luoda tarkoilla oikeuksilla. Palvelimelle pitää antaa varmuuskopiointia varten oikeudet
+lukea, kirjoittaa ja listata tiedostoja. Kuitenkin jätän pois oikeuden poistaa versioita,
+sillä writeFiles oikeus sisältää oikeuden &ldquo;piilottaa&rdquo; tiedostoja, eli korvata ne merkillä
+että tiedosto on poistettu. Tällöin vanhat versiot jäävät talteen ja ne voi palauttaa
+poistamalla tämä piilotusmerkintä. Tunnukset luodaan komentorivillä:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">b2 create-key caddy-01 listBuckets,readFiles,writeFiles,listFiles <span style="color:#a31515">\
+</span><span style="color:#a31515"></span>   --bucket backup-SATUNNAINEN <span style="color:#a31515">\
+</span><span style="color:#a31515"></span>   --namePrefix caddy-01/
+</code></pre></div><p>Antamalla ämpärin nimi ja tiedostonimen etuliite, voidaan samaan ämpäriin
+tallentaa eri tietokoneilta varmuuskopioita turvallisesti, sillä yksi tietokone
+ei pääse sörkkimään toisten varmuuskopioita.</p>
+<p><img src="b2-application-key.png" alt="B2 sovellusavaimen tiedot"></p>
+<p>Tämän jälkeen normaalisti ne annettaisiin resticille ympäristömuuttujissa
+<code>B2_APPLICATION_KEY_ID</code> ja <code>B2_APPLICATION_KEY</code>, ja käytettäisiin resticin
+sisäänrakennettua b2-tukea. Koska restic ei tue piilotusta poiston asemesta,
+pitää käyttää välissä <code>rclone</code>-työkalua, jolle voi asettaa tarkempia asetuksia.</p>
+<p>Harmillisesti <a href="https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#other-services-via-rclone">restic asettaa aina <code>--b2-hard-delete</code> asetuksen</a>,
+joten vaikka rclone olisi asetettu käyttämään piilotusta, restic ohjaa sen
+kuitenkin poistamaan versiot mikä ei tässä luodulla avaimella siis ole sallittua.
+Ratkaisuna tähän on antaa komentorivillä <code>-o rclone.args=&quot;serve restic --stdio&quot;</code>
+mikä ohjaa resticiä käyttämään eri komentoriviä rclonen kutsumiseen ja näin
+tottelemaan asetusta olla poistamatta versioita.</p>
+<p>Lopulta resticin komentorivi on siis:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export RESTIC_PASSWORD_FILE=/etc/restic/caddy01.key
+export RESTIC_REPOSITORY=rclone:b2:backup-SATUNNAINEN/caddy-01/
+restic backup --quiet -o rclone.args=<span style="color:#a31515">&#34;serve restic --stdio&#34;</span> / --one-file-system --exclude-file /etc/restic/exclude-file
+restic check  --quiet -o rclone.args=<span style="color:#a31515">&#34;serve restic --stdio&#34;</span>
+</code></pre></div><p>rclone.conf näyttää tältä:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#00f">[b2]</span>
+type = <span style="color:#a31515">b2</span>
+account = <span style="color:#a31515">...tähän B2_APPLICATION_KEY_ID...</span>
+key = <span style="color:#a31515">...tähän B2_APPLICATION_KEY...</span>
+hard_delete = <span style="color:#a31515">false</span>
+</code></pre></div><p>Tilan vapauttamiseksi voi käyttää <code>forget</code> käskyä, missä asetetaan
+kuinka paljon varmuuskopioita säilytään. Lippu <code>--prune</code>
+poistaa tiedot arkistosta, eli tässä tapauksessa merkitsee ne
+piilotetuksi. B2 siivoilee piilotetut tiedostot sitten asetetun
+elinkaaren mukaan.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">restic forget <span style="color:#a31515">\
+</span><span style="color:#a31515"></span>  -o rclone.args=<span style="color:#a31515">&#34;serve restic --stdio&#34;</span> <span style="color:#a31515">\
+</span><span style="color:#a31515"></span>  --keep-daily 7 <span style="color:#a31515">\
+</span><span style="color:#a31515"></span>  --keep-weekly 4 <span style="color:#a31515">\
+</span><span style="color:#a31515"></span>  --keep-monthly 12 <span style="color:#a31515">\
+</span><span style="color:#a31515"></span>  --keep-yearly 3 <span style="color:#a31515">\
+</span><span style="color:#a31515"></span>  --prune
+</code></pre></div><p>Itse Backblazen portaaliin kirjautumiseen käytän Googlen
+kertakirjautumista, koska se minulla on jo valmiiksi hyvin
+suojattu <a href="https://landing.google.com/intl/fi/advancedprotection/">Googlen Lisäsuojaus-ohjelmalla</a>. Siitä ehkä toisella kertaa lisää.</p>
+      </div>
     </div>
-  </div>
 
-  <footer class="site-footer">
+    <footer class="site-footer">
 
   <div class="wrapper">
   
@@ -578,5 +512,6 @@ tail -f loki | less  Tässä ei nyt ajateltuna ole mitään järkeä, koska less
 </footer>
 
 
-</body>
+  </body>
+
 </html>

@@ -6,7 +6,21 @@
     <description>Recent content in skriptit on Joonas Kuorilehto</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fi-fi</language>
-    <lastBuildDate>Fri, 26 May 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://joneskoo.yx.fi/tags/skriptit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://joneskoo.yx.fi/tags/skriptit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Restic-varmuuskopiot Backblaze B2:n</title>
+      <link>https://joneskoo.yx.fi/blog/restic-backup-b2/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://joneskoo.yx.fi/blog/restic-backup-b2/</guid>
+      <description>&lt;p&gt;Varmuuskopiot on tunnetusti hyvä olla. Hoksasin ettei minulla ollut
+web-palvelimeltani varmuuskopioita, koska &amp;ldquo;eihän siellä ole mitään tärkeää&amp;rdquo;.
+Kuitenkin jos onnistuisin sen tuhoamaan, niin luultavasti kaipaisin juuri sitä
+yhtä crontab-tiedostoa jota en ottanut muualle talteen. Niinpä päätin laittaa
+varmuuskopiot kuntoon ja ajastaa päivittäisin restic-varmuuskopion Backblazen
+B2-pilveen.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Spotify palvelimella ilman näyttöä</title>
       <link>https://joneskoo.yx.fi/blog/spotify-headless/</link>
