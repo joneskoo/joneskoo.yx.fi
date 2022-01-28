@@ -5,7 +5,7 @@ set -e
 # After github actions has built the site...
 
 echo "Deploying github.com/joneskoo/joneskoo.yx.fi branch public to caddy-01.hez.yx.fi:/www/joneskoo.yx.fi"
-ssh caddy-01.hez.yx.fi bash -c "'
+ssh caddy-01.joneskoo.github.beta.tailscale.net bash -c "'
     set -e
     rm -rf /tmp/joneskoo.yx.fi
     mkdir -p /tmp/joneskoo.yx.fi
