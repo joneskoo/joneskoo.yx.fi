@@ -1,15 +1,27 @@
 title = "Hyödyllisiä tuotoksia?"
 
 [[items]]
-  title = "yx.fi-lyhyturlipalvelu"
-  url = "https://yx.fi/"
-  description = """
-Lyhentää pitkät URLit sopivan lyhyiksi saneltavaksi \
-puhelimessa tai irkkiin."""
+  title = "github: ruuvi-prometheus"
+  url = "https://github.com/joneskoo/ruuvi-prometheus"
+  description = "vastaanottaa Ruuvitag-sensoreilta mittauksia ja tarjoilee ne Prometheus metriikoina."
 
 [[items]]
   title = "Sikteeri"
   url = "https://github.com/kapsiry/sikteeri"
-  description = """
-Olen kehittänyt ison osan Kapsin jäsenhallinta- ja \
-laskutusjärjestelmästä."""
+  description = "Olen aikanaan osallistunut Kapsin jäsenhallinta- ja laskutusjärjestelmän Sikteerin kehittämiseen."
+
+
+[[items]]
+  title = "Citna-blogi"
+  url = "http://citna.yx.fi/"
+  description = "Meidän ensimmäisellä yhteisellä koiralla oli blogi."
+
+[[items]]
+  title = "Ameriikan ihmeitä"
+  url = "http://helkajajoonas.yx.fi/"
+  description = "Muistoja ja kokemuksia ajalta kun asuttiin lähetettynä työntekijänä Kaliforniassa 2012–2014."
+
+[[items]]
+  title = "yx.fi-lyhyturlipalvelu"
+  url = "https://yx.fi/"
+  description = "oli julkinen lyhyturlipalvelu. Poistettu käytöstä spammin vuoksi."

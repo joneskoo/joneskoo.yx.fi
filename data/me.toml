@@ -2,9 +2,7 @@
 name = "Joonas Kuorilehto"
 photo = "img/joneskoo.jpg"
 email = "joneskoo@derbian.fi"
-phoneNumber = "+358 500 779 695"
 amateurCallsign = "OH8GDV"
-vcardFile = "public/joneskoo.vcf"
 
 # Footer right
 description = """
@@ -14,14 +12,10 @@ Kiinnostunut teknologiasta ja säätämisestä. \
 Mielipiteet omia."""
 
 # Footer center
+signalLink = "https://signal.me/#eu/XMdlsHSerhcwVyREBOLJgtT1PiJH2u6MvzsBIYErhYpXcbzIzXBGzqgbDbN0V9Q0"
 linkedinUsername = "joneskoo"
 githubUsername = "joneskoo"
-twitterUsername = "joneskoo_yx"
 
-[[blogger]]
-  title = "Citna-blogi"
-  url = "http://citna.yx.fi/"
-
-[[blogger]]
-  title = "Ameriikan ihmeitä"
-  url = "http://helkajajoonas.yx.fi/"
+[[mastodon]]
+profile = "https://infosec.exchange/@joneskoo"
+username = "@joneskoo"

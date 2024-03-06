@@ -1,23 +1,19 @@
 title = "Quick & Dirty"
 
 [[items]]
-  title = "github: bittivahti"
-  url = "https://github.com/joneskoo/bittivahti"
-  description = "bittivahti Näyttää verkkoliikenteen määrän Linuxissa."
+  title = "github: ipgrep"
+  url = "https://github.com/joneskoo/ipgrep"
+  description = "on vähän kuin grep mutta IP-osoitteille ja aliverkoille."
 
 [[items]]
-  title = "github: varabitti"
-  url = "https://github.com/joneskoo/varabitti"
-  description = """
-Vahtii Internet-yhteyden toimivuutta ja vaihtaa tarvittaessa \
-varayhteyteen. Paristot eivät sisälly."""
+  title = "github: git-get"
+  url = "https://github.com/joneskoo/git-get"
+  description = "on apuväline jolle voi antaa eri muodossa git osoitteita ja se kloonaa ne ennalta määritettyyn hakemistorakenteeseen."
 
 [[items]]
-  title = "github: adsl_carrier_plot"
-  url = "https://github.com/joneskoo/adsl_carrier_plot"
-  description = """
-Telewell EA-510-modeemien tuottaman tulostuksen parsinta \
-kuvaksi gnuplotilla."""
+  title = "github: colorout"
+  url = "https://github.com/joneskoo/colorout"
+  description = "ajaa useita käskyjä rinnakkain ja yhdistelee niiden tuottamat rivit värikoodattuna."
 
 [[items]]
   title = "gdv.theme irssi-teema"
@@ -25,8 +21,3 @@ kuvaksi gnuplotilla."""
   description = """
 Väriteema keskusteluohjelma irssiin. Toimii sekä tummalla että \
 vaalealla taustavärillä."""
-
-[[items]]
-  title = "wshaper++"
-  url = "https://joneskoo.kapsi.fi/public/wshaper++"
-  description = "Internet-yhteyden jarrutus- ja priorisointiskripti Linuxille."
