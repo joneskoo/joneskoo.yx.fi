@@ -314,16 +314,39 @@ Tailscale netcheck
 
 **Huonot puolet**
 
+*Edit: tätä kappaletta päivitetty ja laajennettu julkaisun jälkeen.*
+
 Selvästi Valoo:n yhteydet Internetiin
-ovat parhaimmillaan erinomaiset, mutta vaihtelua on paljon. Onkin isoja eroja mistä
+ovat parhaimmillaan erinomaiset, mutta nopeus riippuu kohteesta.
+Ajan suhteen vaihtelua en ole huomannut.
+
+Onkin isoja eroja mistä
 tietoa lataa ja minkä operaattorien kautta yhteys kulkee. En ole huomannut mitään
 varsinaisesti huonoa, mutta ihan selvästi operaattorina Valoo:n yhteydet eivät
 tällä hetkellä ole huippuluokkaa. Myös latausnopeudet ulkomailta, ja tietyistä
-kohteista Suomestakin, jäävät paikoin 200 Mbit/s luokkaan, mikä ei käytännössä ole
-ongelma, mutta uskoisin että kun vaihtoehtoisia palveluntarjoajia tulee käytettäväksi,
-kilpailu korjaa tämän ongelman. Itse teknisessä "last mile" yhteydessä en keksi
+kohteista Suomestakin, jäävät 200-500 Mbit/s välille, mikä ei käytännössä ole
+ongelma. Kun vaihtoehtoisia palveluntarjoajia tulee myöhemmin käytettäväksi,
+kilpailu parantanee tilannetta. Itse teknisessä "last mile" yhteydessä en keksi
 valittamista, mutta perinteisesssä ISP/palveluntarjoajapuolessa on vielä tilaa
 parantaa.
+
+Osin toki kyse on ihan vaan siitä että 1 Gbit/s tai nopeammalla yhteydellä huomaa
+eroja mitä hitaammilla yhteyksillä ei ollut, koska oma yhteys rajoitti.
+
+Tukemaan väitettä että nopeus voisi olla parempi, tässä vielä taulukko
+latausnopeuksista vertailukohtana mittaukset [Kapsi Internet-käyttäjät ry] ja [Hetzner Cloud] palvelimilta.
+Pitää muistaa että yli 100 MB/s numeroita ei 1G liittymältä tarvi odottaa ja
+kuluttajaliittymältä odotukset eivät välttämättä ole samat kuin konesaliverkolta.
+Ja kuten aiemmista speedtesteistä näkyi, kotimaan yhteydet ovat sinänsä nopeat.
+
+![Taulukko latausnopeuksista](speedtest-chart.png)
+> Taulukko latausnopeuksista.
+
+![Taulukko pingeistä](ping-chart.png)
+> Taulukko pingeistä. Kapsi ja Hetzner Helsingistä, OLKA ja Valoo Oulusta.
+
+[Kapsi Internet-käyttäjät ry]: https://www.kapsi.fi
+[Hetzner Cloud]: https://www.hetzner.com/cloud/
 
 Toisaalta Valoo on myös uusi operaattori, sillä irtautuminen Cinia:n verkosta
 omaksi operaattoriksi ja FICIX-yhdysliikennepisteeseeen liittyminen on tapahtunut
