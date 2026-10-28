@@ -1,4 +1,4 @@
-{{ with site.Data.me }}
+{{ with hugo.Data.me }}
 <ul class="contact" aria-label="Yhteystiedot">
   <li><a href="mailto:{{ .email }}"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg>{{ .email }}</a></li>
   {{ with .githubUsername }}<li><a href="https://github.com/{{ . }}"><img src="{{ "img/icons/github.svg" | relURL }}" alt="" width="18" height="18">GitHub</a></li>{{ end }}

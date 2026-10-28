@@ -1,6 +1,7 @@
 title = "Joonas Kuorilehto"
 baseurl = "https://joneskoo.yx.fi"
-languageCode = "fi-fi"
+defaultContentLanguage = "fi"
+locale = "fi-FI"
 disablePathToLower = true
 theme = "joneskoo"
 

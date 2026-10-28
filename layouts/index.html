@@ -2,7 +2,7 @@
 <body>
   {{ partial "header.html" . }}
   <main id="sisalto" class="wrapper">
-    {{ with site.Data.me }}
+    {{ with hugo.Data.me }}
     <section class="intro" aria-labelledby="intro-title">
       <img class="intro__photo" src="{{ .photo | relURL }}" alt="" width="160" height="160">
       <div class="intro__text">
@@ -28,7 +28,7 @@
         <p><a class="more" href="{{ "/blog/" | relURL }}">Kaikki kirjoitukset <span aria-hidden="true">→</span></a></p>
       </section>
 
-      {{ range site.Data.resource }}
+      {{ range hugo.Data.resource }}
       <section aria-label="{{ .title }}">
         <h2>{{ .title }}</h2>
         <ul class="projects">
