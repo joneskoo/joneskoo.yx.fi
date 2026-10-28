@@ -9,9 +9,10 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#131518" media="(prefers-color-scheme: dark)">
+  <link rel="preload" href="{{ "fonts/atkinson-hyperlegible-next-latin-400-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ "fonts/oxanium-latin-500-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}">
-  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
   {{ $desc := cond (and .IsPage (ne .Summary "")) (.Summary | plainify | htmlUnescape | truncate 160) site.Params.description }}
   <meta name="description" content="{{ $desc }}">
   <meta property="og:url" content="{{ .Permalink }}">
