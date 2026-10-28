@@ -1,0 +1,3 @@
+{{- $img := .Page.Resources.Get .Destination -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }}
+  {{- with $img }}{{ if and (ne .MediaType.SubType "svg") (ne .MediaType.SubType "gif") }} width="{{ .Width }}" height="{{ .Height }}"{{ end }}{{ end }} loading="lazy" decoding="async">
