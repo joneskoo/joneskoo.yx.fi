@@ -6,7 +6,7 @@
     <section class="intro" aria-labelledby="intro-title">
       <img class="intro__photo" src="{{ .photo | relURL }}" alt="" width="160" height="160">
       <div class="intro__text">
-        <h1 id="intro-title">Hei, olen {{ .name }}</h1>
+        <h1 id="intro-title">{{ .name }}</h1>
         <p class="intro__lead">{{ .description }}</p>
         {{ with .amateurCallsign }}<p class="intro__callsign"><span class="callsign">de {{ . }}</span></p>{{ end }}
         {{ partial "contact.html" $ }}
