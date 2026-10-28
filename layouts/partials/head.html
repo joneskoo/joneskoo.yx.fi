@@ -1,27 +1,21 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html lang="fi">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ .Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
   {{ hugo.Generator }}
-  <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-  <meta name="description" content="{{ .Site.Params.description }}">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@joneskoo_yx">
-  <meta name="twitter:creator" content="@joneskoo_yx">
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  {{ $desc := cond (and .IsPage (ne .Summary "")) (.Summary | plainify | htmlUnescape | truncate 160) site.Params.description }}
+  <meta name="description" content="{{ $desc }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:title" content="{{ if .Section }}[{{ .Date.Format "2006-01-02" }}] {{end}}{{ .Title }}">
-  <meta property="og:description" content="{{ if .Section }}{{ .Summary }}{{else}}{{.Site.Params.description}}{{end}}">
-  <meta property="og:image" content="{{ .Site.Data.me.photo | absURL }}">
-  <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-
-  {{ $title := .Site.Title }}
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:image" content="{{ site.Data.me.photo | absURL }}">
+  <meta name="twitter:card" content="summary">
   {{ with .OutputFormats.Get "RSS" }}
-  {{ if .Permalink -}}
-  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
-  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
+  <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
   {{ end }}
-  {{- end }}
 </head>
