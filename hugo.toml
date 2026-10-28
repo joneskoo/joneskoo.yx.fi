@@ -3,7 +3,6 @@ baseurl = "https://joneskoo.yx.fi"
 defaultContentLanguage = "fi"
 locale = "fi-FI"
 disablePathToLower = true
-theme = "joneskoo"
 
 
 [markup.goldmark.renderer]
