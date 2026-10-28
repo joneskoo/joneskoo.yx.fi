@@ -197,7 +197,8 @@ time, .callsign { font-family: var(--font-mono); font-size: 0.88em; font-variant
 }
 .prose figure img { margin-bottom: 0.5rem; }
 .prose figcaption { color: var(--muted); font-size: var(--step--1); text-align: center; }
-.prose iframe { display: block; max-width: 100%; margin: 1.5rem auto; border: 0; }
+.prose iframe { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 4 / 3; margin: 1.5rem auto; border: 0; }
+.prose iframe[src*="youtube"] { aspect-ratio: 16 / 9; }
 .prose blockquote {
   margin-inline: 0; padding: 0.2rem 0 0.2rem 1.1rem;
   border-left: 3px solid var(--accent); color: var(--muted); font-style: italic;

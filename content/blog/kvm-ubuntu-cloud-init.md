@@ -78,7 +78,7 @@ Vaiheet ovat:
  2. Tehdään user-datasta levykuva
  3. Käynnistetään Ubuntu Cloud -virtuaalikone ja annetaan sille edellinen
 
- <iframe width="600" height="405" src="//www.youtube-nocookie.com/embed/kPY_eSqJuZA?rel=0" frameborder="0" allowfullscreen></iframe>
+ <iframe title="Video: Ubuntu Cloud -virtuaalikoneen käynnistys cloud-initillä" width="600" height="405" loading="lazy" src="https://www.youtube-nocookie.com/embed/kPY_eSqJuZA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Tästä eteenpäin homma olikin vain naputtelua kun värkkäsin miten asiat tehdään
 skriptillä niin että käyttäminen on helppoa ja että skripti toimii helposti

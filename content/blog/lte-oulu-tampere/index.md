@@ -15,7 +15,7 @@ Oulu–Jyväskylä–Tampere. Matkalla seurasin LTE-yhteyden toimivuutta.
 
 <!--more-->
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m35!1m12!1m3!1d3685280.1602383927!2d20.11909369049114!3d63.19141266241929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m20!1i0!3e0!4m5!1s0x46802ce18bafffc1%3A0xa0146d8a395e450!2sKuivasj%C3%A4rvi%2C+Oulu!3m2!1d65.0698244!2d25.497168199999997!4m5!1s0x46857415d1a93119%3A0xba57697d6790a2d7!2zSnl2w6Rza3lsw6Q!3m2!1d62.244747!2d25.747218399999998!4m5!1s0x468edf554593da5d%3A0x6adfe3bd1e0b22c0!2sTampere!3m2!1d61.4981508!2d23.761025399999998!5e0!3m2!1sen!2sfi!4v1422809559795" width="600" height="450" frameborder="0" style="border:0"></iframe>
+<iframe title="Kartta: ajoreitti Oulusta Tampereelle" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m35!1m12!1m3!1d3685280.1602383927!2d20.11909369049114!3d63.19141266241929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m20!1i0!3e0!4m5!1s0x46802ce18bafffc1%3A0xa0146d8a395e450!2sKuivasj%C3%A4rvi%2C+Oulu!3m2!1d65.0698244!2d25.497168199999997!4m5!1s0x46857415d1a93119%3A0xba57697d6790a2d7!2zSnl2w6Rza3lsw6Q!3m2!1d62.244747!2d25.747218399999998!4m5!1s0x468edf554593da5d%3A0x6adfe3bd1e0b22c0!2sTampere!3m2!1d61.4981508!2d23.761025399999998!5e0!3m2!1sen!2sfi!4v1422809559795" width="600" height="450" frameborder="0" style="border:0"></iframe>
 
 Olin pari viikkoa
 aiemmin ostanut autokäyttöön

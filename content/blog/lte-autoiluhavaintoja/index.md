@@ -108,7 +108,7 @@ mitä enemmän tukiasemia on, sitä enemmän verkossa on kapasiteettia.
 
 ## LTE automatkalla Oulusta Vuokattiin
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d3509839.2651142473!2d26.868107!3d64.561595!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x468032a8c02185c1%3A0x8bb02d322b12e97d!2sOulu%2C+Finland!3m2!1d65.0126148!2d25.4714526!4m5!1s0x4682f16866c1ee3f%3A0xa0146d8a395b970!2sVuokatti%2C+Finland!3m2!1d64.1457767!2d28.268998999999997!5e0!3m2!1sen!2sfi!4v1433673500711" width="400" height="300" frameborder="0" style="border:0"></iframe>
+<iframe title="Kartta: ajoreitti Oulusta Vuokattiin" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d3509839.2651142473!2d26.868107!3d64.561595!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x468032a8c02185c1%3A0x8bb02d322b12e97d!2sOulu%2C+Finland!3m2!1d65.0126148!2d25.4714526!4m5!1s0x4682f16866c1ee3f%3A0xa0146d8a395b970!2sVuokatti%2C+Finland!3m2!1d64.1457767!2d28.268998999999997!5e0!3m2!1sen!2sfi!4v1433673500711" width="400" height="300" frameborder="0" style="border:0"></iframe>
 
 Matkalla Oulusta Vuokattiin mittasin yhteyden toimivuutta fpingillä
 (ICMP echo) ja wgetillä. Koko matkan LTE-modeemini oli pakotettu 4G-tilaan.
