@@ -5,13 +5,20 @@
     <article class="post">
       <header class="post__header">
         <h1>{{ .Title }}</h1>
-        <p class="post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></p>
+        <p class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          · {{ .ReadingTime }} min lukuaika
+        </p>
         {{ partial "tags.html" . }}
       </header>
       <div class="prose">
         {{ .Content }}
       </div>
     </article>
+    <nav class="post-nav" aria-label="Muut kirjoitukset">
+      {{ with .NextInSection }}<a href="{{ .RelPermalink }}" rel="next"><span>Uudempi</span>{{ .Title }}</a>{{ end }}
+      {{ with .PrevInSection }}<a href="{{ .RelPermalink }}" rel="prev"><span>Vanhempi</span>{{ .Title }}</a>{{ end }}
+    </nav>
   </main>
   {{ partial "footer.html" . }}
 </body>
