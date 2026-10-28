@@ -3,7 +3,7 @@
     {{ with site.Data.me }}
     <p class="site-footer__name">{{ .name }}</p>
     {{ end }}
-    {{ partial "contact.html" . }}
+    {{ if not .IsHome }}{{ partial "contact.html" . }}{{ end }}
     <p class="site-footer__meta">Mielipiteet omia. <a href="{{ "/blog/index.xml" | relURL }}">RSS-syöte</a></p>
   </div>
 </footer>
