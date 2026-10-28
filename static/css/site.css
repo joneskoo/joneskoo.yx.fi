@@ -257,3 +257,16 @@ pre {
 .projects a { font-weight: 600; }
 .projects p { margin: 0.15rem 0 0; color: var(--muted); font-size: var(--step--1); line-height: 1.5; }
 
+
+/* Blog list */
+.year__title {
+  font-family: var(--font-mono); font-size: var(--step--1); color: var(--muted);
+  letter-spacing: 0.08em; margin: 2.5rem 0 0.5rem; padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+.post-card { padding-block: 1.1rem; }
+.post-card + .post-card { border-top: 1px dashed var(--rule); }
+.post-card h3 { margin: 0 0 0.2rem; font-size: var(--step-1); }
+.post-card h3 a { text-decoration: none; }
+.post-card h3 a:hover { text-decoration: underline; }
+.post-card__summary { color: var(--muted); margin: 0.4rem 0 0.6rem; }
