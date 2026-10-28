@@ -1,42 +1,17 @@
 {{ partial "head.html" . }}
-{{ $baseurl := .Site.BaseURL }}
-
 <body>
-
   {{ partial "header.html" . }}
-
-  <div class="page-content">
-
-    <div class="wrapper">
-
-      <section>
-        <div id="blogitekstit" class="laatikko">
-
-        {{ range .Data.Pages }}
-
-        <h2>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          (<time class="pub_date">{{ .Date.Format "2006-01-02" }}</time>)
-        </h2>
-
-        {{ .Summary }}
-
-        {{ if .Params.tags }}
-          <small class="tags">
-          {{ range .Params.tags }}
-            <a href="/tags/{{ . | urlize }}/">#{{ . | lower }}</a>
-          {{ end }}
-          </small>
-        {{ end }}
-
-        {{ end }}
-
-        </div>
-      </section>
-    </div>
-  </div>
-
+  <main id="sisalto" class="wrapper">
+    <h1 class="page-title">{{ if eq .Kind "term" }}#{{ .Title | lower }}{{ else if eq .Section "blog" }}Blogi{{ else }}{{ .Title }}{{ end }}</h1>
+    {{ range .Pages }}
+    <article class="post">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></p>
+      {{ .Summary }}
+      {{ partial "tags.html" . }}
+    </article>
+    {{ end }}
+  </main>
   {{ partial "footer.html" . }}
-
 </body>
 </html>

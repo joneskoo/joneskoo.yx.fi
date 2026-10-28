@@ -1,29 +1,13 @@
 {{ partial "head.html" . }}
-
-  <body>
-
-    {{ partial "header.html" . }}
-
-    <div class="page-content">
-
-      <div class="wrapper">
-
-        <div class="home">
-
-            <h1>Sivua ei löydy</h1>
-
-            <p>
-                Hakemaasi sivua ei löytynyt. Olen ehkä kämmännyt ja poistanut
-                tai siirtänyt sen. Jos kaipaat sisältöä, ota rohkeasti yhteyttä
-                niin tutkin asiaa.
-            </p>
-            <p><strong>HTTP 404.</strong></p>
-        </div>
+<body>
+  {{ partial "header.html" . }}
+  <main id="sisalto" class="wrapper">
+    <h1 class="page-title">Sivua ei löydy</h1>
+    <div class="prose">
+      <p>Hakemaasi sivua ei löytynyt. Olen ehkä kämmännyt ja poistanut tai siirtänyt sen. Jos kaipaat sisältöä, ota rohkeasti yhteyttä niin tutkin asiaa.</p>
+      <p><code>HTTP 404</code> · <a href="{{ "/" | relURL }}">Etusivulle</a> · <a href="{{ "/blog/" | relURL }}">Blogiin</a></p>
     </div>
-  </div>
-
+  </main>
   {{ partial "footer.html" . }}
-
-  </body>
-  <!-- HTTP 404 Not Found -->
+</body>
 </html>

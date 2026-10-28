@@ -1,0 +1,5 @@
+{{ with .Params.tags }}
+<ul class="tags" aria-label="Avainsanat">
+  {{ range . }}<li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}/">#{{ . | lower }}</a></li>{{ end }}
+</ul>
+{{ end }}

@@ -1,22 +1,18 @@
 {{ partial "head.html" . }}
-
-  <body>
-
-    {{ partial "header.html" . }}
-
-    <div class="page-content">
-      <div class="wrapper">
-      
-      <header class="post-header">
-        <h1 class="post-title">{{ .Title }}</h1>
-        <p class="post-meta">{{ .Date.Format "2006-01-02" }}</p>
+<body>
+  {{ partial "header.html" . }}
+  <main id="sisalto" class="wrapper">
+    <article class="post">
+      <header class="post__header">
+        <h1>{{ .Title }}</h1>
+        <p class="post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></p>
+        {{ partial "tags.html" . }}
       </header>
-        {{.Content}}
+      <div class="prose">
+        {{ .Content }}
       </div>
-    </div>
-
-    {{ partial "footer.html" . }}
-
-  </body>
-
+    </article>
+  </main>
+  {{ partial "footer.html" . }}
+</body>
 </html>

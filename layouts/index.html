@@ -1,51 +1,30 @@
 {{ partial "head.html" . }}
+<body>
+  {{ partial "header.html" . }}
+  <main id="sisalto" class="wrapper">
+    <h1 class="page-title">{{ site.Title }}</h1>
 
-  <body>
-
-    {{ partial "header.html" . }}
-
-    <div class="page-content">
-
-      <div class="wrapper">
-
-        <div class="home">
-
-        <section id="blogissa">
-          <h2>Uusimmat blogikirjoitukset</h2>
-
-          <ul class="blogissa">{{ range where site.RegularPages "Section" "blog" | first 3 }}
-            <li>
-              <span>
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                (<time class="pull-right post-list">{{ .Date.Format "2006-01-02" }}</time>)
-              </span>
-            </li>
-          {{ end }}</ul>
-
-          <p>
-            <a href="/blog/">Lisää kirjoituksia blogissa…</a>
-          </p>
-        </section>
-
-        {{ range .Site.Data.resource }}
-          <section>
-            <h2>{{ .title }}</h2>
-            <ul>
-              {{ range .items }}
-                <li>
-                  <a href="{{ .url }}">{{ .title }}</a>
-                  <small class="desc">{{ .description }}</small>
-                </li>
-              {{ end }}
-            </ul>
-          </section>
+    <section aria-labelledby="uusimmat">
+      <h2 id="uusimmat">Uusimmat blogikirjoitukset</h2>
+      <ul>
+        {{ range where site.RegularPages "Section" "blog" | first 3 }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> (<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>)</li>
         {{ end }}
-        </div>
-    </div>
-  </div>
+      </ul>
+      <p><a href="{{ "/blog/" | relURL }}">Lisää kirjoituksia blogissa…</a></p>
+    </section>
 
+    {{ range site.Data.resource }}
+    <section aria-label="{{ .title }}">
+      <h2>{{ .title }}</h2>
+      <ul>
+        {{ range .items }}
+        <li><a href="{{ .url }}">{{ .title }}</a> {{ .description }}</li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  </main>
   {{ partial "footer.html" . }}
-
-  </body>
-
+</body>
 </html>
