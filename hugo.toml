@@ -1,9 +1,9 @@
 title = "Joonas Kuorilehto"
 baseurl = "https://joneskoo.yx.fi"
-languageCode = "fi-fi"
+defaultContentLanguage = "fi"
+locale = "fi-FI"
 disablePathToLower = true
-theme = "joneskoo"
-pygmentsstyle = "vs"
+
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -16,3 +16,6 @@ description = "Nörtti, radioamatööri, tietotekniikan DI, päivätöissä tiet
     weight = -110
     identifier = "main"
     url = "/"
+
+[markup.highlight]
+noClasses = false

@@ -1,0 +1,15 @@
+<a class="skip-link" href="#sisalto">Siirry sisältöön</a>
+<header class="site-header">
+  <div class="wrapper site-header__inner">
+    <a class="site-title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+    <nav class="site-nav" aria-label="Päävalikko">
+      <ul>
+        {{- $current := . }}
+        {{- range site.Menus.main }}
+        {{- $active := or ($current.IsMenuCurrent "main" .) (and (eq .URL "/blog/") (eq $current.Section "blog")) (and (eq .URL "/") $current.IsHome) }}
+        <li><a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</header>

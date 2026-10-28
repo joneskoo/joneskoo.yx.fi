@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="wrapper site-footer__inner">
+    {{ with hugo.Data.me }}
+    <p class="site-footer__name">{{ .name }}</p>
+    {{ end }}
+    {{ if not .IsHome }}{{ partial "contact.html" . }}{{ end }}
+    <p class="site-footer__meta">Mielipiteet omia. <a href="{{ "/blog/index.xml" | relURL }}">RSS-syöte</a></p>
+  </div>
+</footer>
+<script>document.querySelectorAll('pre, .prose table').forEach(function(p){if(p.scrollWidth>p.clientWidth)p.tabIndex=0})</script>

@@ -1,0 +1,48 @@
+{{ partial "head.html" . }}
+<body>
+  {{ partial "header.html" . }}
+  <main id="sisalto" class="wrapper">
+    {{ with hugo.Data.me }}
+    <section class="intro" aria-labelledby="intro-title">
+      <img class="intro__photo" src="{{ .photo | relURL }}" alt="" width="160" height="160">
+      <div class="intro__text">
+        <h1 id="intro-title">{{ .name }}</h1>
+        <p class="intro__lead">{{ .description }}</p>
+        {{ with .amateurCallsign }}<p class="intro__callsign"><span class="callsign">de {{ . }}</span></p>{{ end }}
+        {{ partial "contact.html" $ }}
+      </div>
+    </section>
+    {{ end }}
+
+    <div class="home-grid">
+      <section aria-labelledby="uusimmat">
+        <h2 id="uusimmat">Uusimmat kirjoitukset</h2>
+        <ol class="post-index">
+          {{ range where site.RegularPages "Section" "blog" | first 5 }}
+          <li>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ol>
+        <p><a class="more" href="{{ "/blog/" | relURL }}">Kaikki kirjoitukset <span aria-hidden="true">→</span></a></p>
+      </section>
+
+      {{ range hugo.Data.resource }}
+      <section aria-label="{{ .title }}">
+        <h2>{{ .title }}</h2>
+        <ul class="projects">
+          {{ range .items }}
+          <li>
+            <a href="{{ .url }}">{{ .title }}</a>
+            <p>{{ .description }}</p>
+          </li>
+          {{ end }}
+        </ul>
+      </section>
+      {{ end }}
+    </div>
+  </main>
+  {{ partial "footer.html" . }}
+</body>
+</html>

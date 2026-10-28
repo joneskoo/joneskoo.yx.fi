@@ -1,0 +1,22 @@
+{{ partial "head.html" . }}
+<body>
+  {{ partial "header.html" . }}
+  <main id="sisalto" class="wrapper">
+    <h1 class="page-title">{{ if eq .Kind "term" }}#{{ .Title | lower }}{{ else if eq .Section "blog" }}Blogi{{ else }}{{ .Title }}{{ end }}</h1>
+    {{ range .Pages.GroupByDate "2006" }}
+    <section class="year" aria-labelledby="v{{ .Key }}">
+      <h2 id="v{{ .Key }}" class="year__title">{{ .Key }}</h2>
+      {{ range .Pages }}
+      <article class="post-card">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time></p>
+        <div class="post-card__summary">{{ .Summary | plainify | htmlUnescape | truncate 280 }}</div>
+        {{ partial "tags.html" . }}
+      </article>
+      {{ end }}
+    </section>
+    {{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+</body>
+</html>
