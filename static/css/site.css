@@ -79,6 +79,7 @@ body {
   color: var(--fg);
   font: 400 var(--step-0)/1.65 var(--font-body);
   border-top: 5px solid var(--bar);
+  overflow-wrap: break-word;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -100,6 +101,8 @@ h1, h2, h3, h4 {
   letter-spacing: -0.01em;
   margin: 2em 0 0.6em;
   text-wrap: balance;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 h1 { font-size: var(--step-3); margin-top: 0; }
 h2 { font-size: var(--step-2); }
@@ -169,9 +172,10 @@ time, .callsign { font-family: var(--font-mono); font-size: 0.88em; font-variant
   min-height: 2.75rem; padding: 0.4rem 0.9rem;
   border: 1px solid var(--rule); border-radius: 999px; background: var(--surface);
   color: var(--fg); text-decoration: none; font-size: var(--step--1);
+  max-width: 100%; overflow-wrap: anywhere;
 }
 .contact a:hover { border-color: var(--accent); color: var(--accent); }
-.contact img, .contact svg { width: 18px; height: 18px; border-radius: 4px; flex: none; }
+.contact img, .contact svg { width: 1.25em; height: 1.25em; border-radius: 4px; flex: none; }
 
 
 .tags { list-style: none; padding: 0; margin: 0.5rem 0 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
@@ -191,6 +195,7 @@ time, .callsign { font-family: var(--font-mono); font-size: 0.88em; font-variant
 .prose h2 { font-size: var(--step-2); }
 .prose h3 { font-size: var(--step-1); }
 .prose li + li { margin-top: 0.3em; }
+.prose a { overflow-wrap: anywhere; }
 .prose img {
   display: block; margin: 1.5rem auto; max-height: 75vh; width: auto;
   border-radius: 6px; box-shadow: 0 0 0 1px var(--rule);
@@ -227,6 +232,7 @@ pre {
 /* Footer */
 .site-footer { border-top: 1px solid var(--rule); padding-block: 2rem 2.5rem; font-size: var(--step--1); color: var(--muted); }
 .site-footer__inner { display: grid; gap: 1rem; }
+.site-footer__inner > * { min-width: 0; }
 .site-footer__name { font-family: var(--font-head); font-weight: 500; font-size: var(--step-0); color: var(--fg); margin: 0; }
 .site-footer__meta { margin: 0; }
 
@@ -249,7 +255,7 @@ pre {
   border-bottom: 1px solid var(--rule);
 }
 .intro__photo {
-  width: clamp(96px, 22vw, 168px); aspect-ratio: 1; object-fit: cover;
+  width: clamp(6rem, 22vw, 10.5rem); aspect-ratio: 1; object-fit: cover;
   border-radius: 50%; border: 3px solid var(--surface);
   box-shadow: 0 0 0 1px var(--rule), 0 8px 24px rgb(0 0 0 / 0.08);
 }
@@ -260,6 +266,7 @@ pre {
   display: inline-block; padding: 0.1em 0.55em; border: 1px solid var(--rule);
   border-radius: 4px; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase;
 }
+.intro__text { min-width: 0; }
 @media (min-width: 40rem) {
   .intro { grid-template-columns: auto 1fr; }
 }
@@ -305,6 +312,7 @@ pre {
 }
 @media (min-width: 40rem) { .post-nav { grid-template-columns: 1fr 1fr; } }
 .post-nav a {
+  min-width: 0; overflow-wrap: anywhere;
   display: block; padding: 0.9rem 1.1rem; border: 1px solid var(--rule); border-radius: var(--radius);
   background: var(--surface); text-decoration: none; color: var(--fg); line-height: 1.35;
 }
